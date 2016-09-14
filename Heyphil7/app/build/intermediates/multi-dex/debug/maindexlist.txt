@@ -328,6 +328,7 @@ android/support/design/widget/Snackbar$4.class
 com/applause/android/ui/ProblemActivity$1.class
 com/google/ads/mediation/EmptyNetworkExtras.class
 android/support/v4/app/FragmentManagerImpl.class
+com/app/heyphil/CreateLOA$SynthesisTask.class
 com/google/android/gms/internal/zzhp.class
 com/google/android/gms/internal/zzdk.class
 com/app/heyphil/LoginScreen$5.class
@@ -693,7 +694,6 @@ android/support/v7/app/ActionBar$Tab.class
 com/google/android/gms/common/api/Scope.class
 ext/dagger/Provides.class
 com/google/android/gms/ads/internal/client/SearchAdRequestParcel.class
-com/app/heyphil/CreateLOA$14.class
 android/support/design/widget/ValueAnimatorCompat$AnimatorUpdateListener.class
 com/app/heyphil/ProductList.class
 com/apphance/android/ui/FeedbackActivity.class
@@ -826,7 +826,6 @@ com/app/heyphil/MapActivity$GetCity.class
 com/applause/android/dialog/TestCycleDialog.class
 com/app/heyphil/ChatBubbleActivity$onGetAllXMLDataMedInfo.class
 com/google/android/gms/ads/internal/client/zzk.class
-com/app/heyphil/MainActivity$GetAddressTask.class
 com/google/android/gms/internal/zzit.class
 com/app/heyphil/CreateLOA$GetDoctors.class
 com/google/android/gms/internal/zzjm.class
@@ -883,6 +882,7 @@ android/support/v7/appcompat/R$attr.class
 com/google/android/gms/ads/internal/overlay/zza.class
 com/google/android/gms/ads/internal/client/zzh.class
 com/google/android/gms/internal/zzco.class
+com/google/maps/android/ui/IconGenerator.class
 com/app/heyphil/PdfCreator$1.class
 com/google/android/gms/maps/StreetViewPanoramaFragment.class
 com/applause/android/dialog/DisableAppDialog.class
@@ -1165,6 +1165,7 @@ android/support/v4/view/ViewCompatLollipop.class
 android/support/v4/media/MediaMetadataCompat$TextKey.class
 com/google/gson/annotations/JsonAdapter.class
 android/support/design/widget/AppBarLayout$OnOffsetChangedListener.class
+com/google/maps/android/ui/BubbleIconFactory.class
 com/app/heyphil/ProductBuy$1.class
 android/support/design/widget/Snackbar$SnackbarLayout$OnLayoutChangeListener.class
 com/google/android/gms/wallet/Wallet.class
@@ -1224,6 +1225,7 @@ com/google/android/gms/internal/zzcg.class
 com/google/android/gms/ads/internal/overlay/zzm.class
 com/google/android/gms/internal/zzir.class
 com/google/android/gms/ads/internal/request/LargeParcelTeleporter.class
+com/google/maps/android/projection/Point.class
 android/support/v4/view/ViewCompat$ScrollIndicators.class
 com/ibm/watson/developer_cloud/visual_recognition/v3/model/Face$Identity.class
 com/applause/android/dialog/report/ReportView.class

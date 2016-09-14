@@ -1,5 +1,5 @@
--injars 'C:\Users\ABDalisay\Desktop\M'HANNA\8-30-16\Heyphil7\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
--outjars 'C:\Users\ABDalisay\Desktop\M'HANNA\8-30-16\Heyphil7\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+-injars 'C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\multi-dex\debug\componentClasses.jar'
 
 -libraryjars 'D:\adt-bundle-windows-x86-20130917\sdk\build-tools\24.0.0\lib\shrinkedAndroid.jar'
 
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
 -dontwarn **
--printconfiguration 'C:\Users\ABDalisay\Desktop\M'HANNA\8-30-16\Heyphil7\app\build\intermediates\multi-dex\debug\components.flags'
+-printconfiguration 'C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\multi-dex\debug\components.flags'
 
 
 -keep class com.app.heyphil.LoginScreen {
