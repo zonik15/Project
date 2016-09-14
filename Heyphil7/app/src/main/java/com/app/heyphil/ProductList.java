@@ -20,8 +20,8 @@ public class ProductList extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product_list);
 
-        CustomList.CustomList adapter = new
-                CustomList.CustomList(ProductList.this,proID, proContent, product);
+        CustomList adapter = new
+               CustomList(ProductList.this,proID, proContent, product);
         list=(ListView)findViewById(R.id.list);
                 list.setAdapter(adapter);
                 list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
