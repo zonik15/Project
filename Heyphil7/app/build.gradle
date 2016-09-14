@@ -47,4 +47,5 @@ dependencies {
     compile project(':speech')
     compile project(':MQA-Android-3.4.0')
     compile 'com.mikhaellopez:circularimageview:3.0.2'
+    compile 'com.google.maps.android:android-maps-utils:0.4+'
 }
