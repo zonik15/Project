@@ -1,18 +1,18 @@
 package com.app.heyphil;
 
-import CustomList.CustomList;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import CustomList.CustomList;
+
 public class ProductList extends Activity {
     ListView list;
     String[] proID = Data.productID.toArray(new String[Data.productID.size()]);
-    String[] proContent =Data.productContent.toArray(new String[Data.productContent.size()]);
+    String[] proContent = Data.productContent.toArray(new String[Data.productContent.size()]);
     String[] product = Data.productList.toArray(new String[Data.productList.size()]);
  
     @Override
@@ -20,8 +20,8 @@ public class ProductList extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product_list);
 
-        CustomList adapter = new
-                CustomList(ProductList.this,proID, proContent, product);
+        CustomList.CustomList adapter = new
+                CustomList.CustomList(ProductList.this,proID, proContent, product);
         list=(ListView)findViewById(R.id.list);
                 list.setAdapter(adapter);
                 list.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -75,7 +75,6 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 	// Google Map
 	private GoogleMap googleMap;
 	private Spinner current;
-	private Button go;
 	Double lat;
 	Double lon;
 	GoogleApiClient mGoogleApiClient;
@@ -133,7 +132,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		et_provider=(EditText)findViewById(R.id.provider);
 		lv_provider=(ListView)findViewById(R.id.lv_provider);
 		btn_request=(Button)findViewById(R.id.requestloa);
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		et_provider.setTypeface(tf);
 		btn_request.setTypeface(tf);
 		initilizeMap();
@@ -145,7 +144,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		}
 		else if(Data.getPro){
 			Data.getPro=false;
-			text=Data.sprovider+" is located at "+Data.sproviderad+". Tap google marker to view information.";
+			text= Data.sprovider+" is located at "+ Data.sproviderad+". Tap google marker to view information.";
 			show(text);
 		}
 		tts=new TextToSpeech(getApplicationContext(),new TextToSpeech.OnInitListener() {
@@ -164,10 +163,10 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			public void onClick(View v) {
 				if(!et_provider.getText().toString().isEmpty()&&et_provider.getText().toString()!=null){
 					Intent i=new Intent(getApplicationContext(),CreateLOA.class);
-					i.putExtra("Provider_Name", Data.name1.get(0));
-					i.putExtra("Provider_Address", Data.address.get(0));
+					i.putExtra("Provider_Name", Data.sprovider);
+					i.putExtra("Provider_Address", Data.sproviderad);
 					i.putExtra("Provider_Contact", Data.tel.get(0).replace("NULL", "0"));
-					i.putExtra("Pcode", Data.pcode.get(0));
+					i.putExtra("Pcode", Data.code);
 					i.putExtra("Dname", "");
 					startActivity(i);
 				}
@@ -234,6 +233,8 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 				String lon=(((TextView) view.findViewById(R.id.lon)).getText().toString());
 				Data.sprovider=pro;
 				Data.sproviderad=add;
+				Data.code=code;
+				Log.e("Parameters",pro+tel+code);
 				//text=pro+" is located at "+add+". Tap google marker to view information.";
 				//show(text);
 				//updateResult(text);
@@ -254,8 +255,8 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			  @Override
 			  public View getView(int position, View convertView, ViewGroup parent) {
 				  View v= super.getView(position, convertView, parent);
-				  Typeface externalFont=Typeface.createFromAsset(getAssets(), "fonts/Boogaloo-Regular.ttf");
-				  ((TextView) v).setTypeface(externalFont);
+				  Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
+				  ((TextView) v).setTypeface(tf);
 				  ((TextView)v).setTextColor(Color.rgb(110,104,104));
 				  return  v;
 			  }
@@ -263,8 +264,8 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			  @Override
 			  public View getDropDownView(int position, View convertView, ViewGroup parent) {
 				  View v= super.getDropDownView(position, convertView, parent);
-				  Typeface externalFont=Typeface.createFromAsset(getAssets(), "fonts/Boogaloo-Regular.ttf");
-				  ((TextView) v).setTypeface(externalFont);
+				  Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
+				  ((TextView) v).setTypeface(tf);
 				  ((TextView)v).setTextColor(Color.rgb(110,104,104));
 				  return  v;
 			  }
@@ -371,7 +372,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 					double[] Lat = new double[Data.lat1.size()];
 					double[] Lon = new double[Data.lon1.size()];
 					MarkerOptions marker = new MarkerOptions().position(
-							new LatLng(Data.lat,Data.lon))
+							new LatLng(Data.lat, Data.lon))
 							.title("I'm Here!");
 					marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
 					//googleMap.addMarker(marker);
@@ -394,7 +395,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 						googleMap.animateCamera(CameraUpdateFactory
 								.newCameraPosition(cameraPosition));
 					}
-					System.out.println("Size====="+Data.lat1.size());
+					System.out.println("Size====="+ Data.lat1.size());
 
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -476,7 +477,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		return true;
 	}
 	private void showProvider(){
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.map_dialog);
@@ -514,12 +515,12 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		time.setText(""+duration);
 		text=""+tv_provider.getText().toString()+" is "+distance+" away from your current location. It takes "+duration+" to travel to get there!";
 		//updateResult(text);
-		pname=Data.name1.get(index);
-		paddress=Data.address.get(index);
-		pcontact=Data.tel.get(index).replace("NULL", "0");
+		pname= Data.name1.get(index);
+		paddress= Data.address.get(index);
+		pcontact= Data.tel.get(index).replace("NULL", "0");
 		prcode=code;
 		dpname="";
-		et_provider.setText(Data.name1.get(index));
+		//et_provider.setText(""+Data.name1.get(index).toString());
 		dialog.show();
 		btn_yes.setOnClickListener(new OnClickListener() {
 			@Override
@@ -549,7 +550,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		});
 	}
 	private void show(String text){
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.instruction);
@@ -613,7 +614,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			// Creating service handler class instance
 			ServiceHandler sh = new ServiceHandler();
 			// Making a request to url and getting response
-			String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+loc.replace(" ","+")+"&area=&Certno="+Data.cert, ServiceHandler.GET);
+			String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+loc.replace(" ","+")+"&area=&Certno="+ Data.cert, ServiceHandler.GET);
 
 			Log.d("Response: ", "> " + jsonStr);
 
@@ -687,7 +688,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			// Creating service handler class instance
 			ServiceHandler sh = new ServiceHandler();
 			// Making a request to url and getting response
-			String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+Data.City.replace(" ","+")+"&area=&Certno="+Data.cert, ServiceHandler.GET);
+			String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.City.replace(" ","+")+"&area=&Certno="+ Data.cert, ServiceHandler.GET);
 
 			Log.d("Response: ", "> " + jsonStr);
 
@@ -828,7 +829,6 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			lv_provider.setAdapter(Provideradapter);
 			lv_provider.setVisibility(View.VISIBLE);
 			current.setVisibility(View.GONE);
-			go.setVisibility(View.GONE);
 		}
 
 	}

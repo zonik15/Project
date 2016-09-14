@@ -122,7 +122,7 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
         current=(Spinner)findViewById(R.id.current);
         et_provider=(EditText)findViewById(R.id.provider);
         lv_provider=(ListView)findViewById(R.id.lv_provider);
-        Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+        Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
         et_provider.setTypeface(tf);
         go.setTypeface(tf);
         initilizeMap();
@@ -228,8 +228,8 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
                 View v= super.getView(position, convertView, parent);
-                Typeface externalFont=Typeface.createFromAsset(getAssets(), "fonts/Boogaloo-Regular.ttf");
-                ((TextView) v).setTypeface(externalFont);
+                Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
+                ((TextView) v).setTypeface(tf);
                 ((TextView)v).setTextColor(Color.rgb(110,104,104));
                 return  v;
             }
@@ -237,8 +237,8 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
             @Override
             public View getDropDownView(int position, View convertView, ViewGroup parent) {
                 View v= super.getDropDownView(position, convertView, parent);
-                Typeface externalFont=Typeface.createFromAsset(getAssets(), "fonts/Boogaloo-Regular.ttf");
-                ((TextView) v).setTypeface(externalFont);
+                Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
+                ((TextView) v).setTypeface(tf);
                 ((TextView)v).setTextColor(Color.rgb(110,104,104));
                 return  v;
             }
@@ -368,8 +368,8 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
                     // Enable / Disable zooming functionality
                     googleMap.getUiSettings().setZoomGesturesEnabled(true);
                     googleMap.setOnMarkerClickListener(this);
-                    double latitude =Data.doctorLat;
-                    double longitude =Data.doctorLon;
+                    double latitude = Data.doctorLat;
+                    double longitude = Data.doctorLon;
                     //Toast.makeText(getApplicationContext(), ""+Data.doctorLat.toString(), Toast.LENGTH_LONG).show();
 
                     // Adding a marker
@@ -426,7 +426,7 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
     @Override
     public boolean onMarkerClick(final Marker arg0) {
         // TODO Auto-generated method stub
-        directionUrl="https://maps.googleapis.com/maps/api/directions/json?origin="+Data.lat+",+"+Data.lon+"&destination="+Data.doctorLat+",+"+Data.doctorLon+"&sensor=false&mode=driving&alternatives=true&key=AIzaSyAh2tjcjLNp2FS4bmxMi0h-FXFvRUeXRho";
+        directionUrl="https://maps.googleapis.com/maps/api/directions/json?origin="+ Data.lat+",+"+ Data.lon+"&destination="+ Data.doctorLat+",+"+ Data.doctorLon+"&sensor=false&mode=driving&alternatives=true&key=AIzaSyAh2tjcjLNp2FS4bmxMi0h-FXFvRUeXRho";
         new getDirection().execute();
         return true;
     }
@@ -547,7 +547,7 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
 
     }
     private void showProvider(){
-        Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+        Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.map_dialog);
@@ -630,7 +630,7 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
             // Making a request to url and getting response
-            String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+loc.replace(" ","+")+"&area=&Certno="+Data.cert, ServiceHandler.GET);
+            String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+loc.replace(" ","+")+"&area=&Certno="+ Data.cert, ServiceHandler.GET);
 
             Log.d("Response: ", "> " + jsonStr);
 
@@ -703,7 +703,7 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
             // Making a request to url and getting response
-            String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+Data.City.replace(" ","+")+"&area=&Certno="+Data.cert, ServiceHandler.GET);
+            String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.City.replace(" ","+")+"&area=&Certno="+ Data.cert, ServiceHandler.GET);
 
             Log.d("Response: ", "> " + jsonStr);
 
@@ -784,7 +784,7 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
         protected Void doInBackground(Void... arg0) {
             // Creating service handler class instance
             ServiceHandler sh = new ServiceHandler();
-            String Providerurl="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchHospitals/?CertNo="+Data.cert+"&Type=OP&City=&Hospital=";
+            String Providerurl="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchHospitals/?CertNo="+ Data.cert+"&Type=OP&City=&Hospital=";
             // Making a request to url and getting response
             String jsonStr = sh.makeServiceCall(Providerurl, ServiceHandler.GET);
 

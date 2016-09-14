@@ -139,7 +139,7 @@ public class RegisterScreen extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.register_screen);
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		btn_submit=(Button)findViewById(R.id.btn_submit);
 		btn_cancel=(Button)findViewById(R.id.btn_cancel);
 		et_cert_no=(EditText)findViewById(R.id.et_cert_no);

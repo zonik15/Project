@@ -132,7 +132,7 @@ public class LoginScreen extends Activity {
 		LocationManager lm = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);
 		boolean gps_enabled = false;
 		boolean network_enabled = false;
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		et_username=(EditText)findViewById(R.id.et_username);
 		et_password=(EditText)findViewById(R.id.et_password);
 		btn_login=(Button)findViewById(R.id.btn_login);
@@ -437,7 +437,7 @@ public class LoginScreen extends Activity {
 
 		protected void onPostExecute(String stream)
 		{
-			new LoadImage().execute("https://philcare.com.ph/gateway/upload/profile/"+Data.cert+".jpg");
+			new LoadImage().execute("https://philcare.com.ph/gateway/upload/profile/"+ Data.cert+".jpg");
 		}
 	}
 
@@ -704,7 +704,7 @@ public class LoginScreen extends Activity {
 	}
 	private void getXMLMemberinfo()
 	{
-		String mem_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Members.svc/MembersInfo/?CertNo="+Data.cert;
+		String mem_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Members.svc/MembersInfo/?CertNo="+ Data.cert;
 		list_xml_link2.clear();
 		System.out.println("==========url"+convertToUrlMember(mem_link));
 		list_xml_link2.add(convertToUrlMember(mem_link));

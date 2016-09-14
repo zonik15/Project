@@ -32,7 +32,7 @@ public class ProductBuy extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product_buy);
      final Bundle product=getIntent().getExtras();
-     Typeface tf=Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+     Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
      tv_PromotionalCode=(TextView)findViewById(R.id.tv_code);
      tv_BA=(TextView)findViewById(R.id.tv_BA);
      tv_Fname=(TextView)findViewById(R.id.tv_fname);

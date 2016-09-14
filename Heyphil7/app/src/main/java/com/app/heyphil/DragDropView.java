@@ -124,7 +124,7 @@ public class DragDropView extends FrameLayout {
 							CircularImageView user=(CircularImageView)dialog.findViewById(R.id.circularImageView);
 							TextView myaccount=(TextView)dialog.findViewById(R.id.myaccount);
 							user.setImageBitmap(Data.bitmap);
-							myaccount.setOnClickListener(new View.OnClickListener() {
+							myaccount.setOnClickListener(new OnClickListener() {
 								@Override
 								public void onClick(View view) {
 									MyAccount();

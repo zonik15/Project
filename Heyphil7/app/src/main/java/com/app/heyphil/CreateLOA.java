@@ -33,6 +33,8 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.ibm.watson.developer_cloud.text_to_speech.v1.model.Voice;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,6 +43,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 
 public class CreateLOA extends Activity{
@@ -104,6 +107,7 @@ public class CreateLOA extends Activity{
 	String Dname;
 	String message;
 	AlertDialog Dialog;
+	private StreamPlayer player = new StreamPlayer();
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -119,7 +123,7 @@ public class CreateLOA extends Activity{
 		Dialog.getWindow().getAttributes().windowAnimations = R.style.dialog_animation;
 		Dialog.show();*/
 		Bundle extra=getIntent().getExtras();
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		doctorList = new ArrayList<HashMap<String, String>>();
 		complaintsList = new ArrayList<HashMap<String, String>>();
 		provider_name=(TextView)findViewById(R.id.providername);
@@ -148,7 +152,7 @@ public class CreateLOA extends Activity{
 		if(Data.cloa){
 			complaint.setText(Data.Complaint);
 			doctor.setText(Data.doctorName);
-			dcode=Data.doctorCode;
+			dcode= Data.doctorCode;
 			Data.cloa=false;
 		}
 		new GetComplaints().execute();
@@ -189,6 +193,7 @@ public class CreateLOA extends Activity{
 					}
 					cancel.setVisibility(View.GONE);
 					submit.setVisibility(View.GONE);
+					player.stopPlayer();
 					//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
 				}
 				else{
@@ -199,6 +204,7 @@ public class CreateLOA extends Activity{
 		cancel.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				player.stopPlayer();
 				//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
 				finish();
 			}
@@ -218,6 +224,7 @@ public class CreateLOA extends Activity{
 				submit.setVisibility(View.VISIBLE);
 				InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 				inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+				player.stopPlayer();
 				//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
 				text="Please verify or check if your indicated physician and chief complaint is correct! You may now click submit to process your LOA as soon as possible. ";
 				updateResult(text);
@@ -286,15 +293,16 @@ public class CreateLOA extends Activity{
 					doctor.setFocusable(true);
 					InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 					inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-					//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
-					text="Type name of Doctor or Specialization registered in "+provider_name.getText().toString()+" and select your refering Physician.";
-					if(doctor.getText().toString().isEmpty()||doctor.getText().toString()=="null"){
-						updateResult(text);
-					}
-					https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization
+					//https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization
 					Providerurl= "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization";
 					System.out.println("++++++++"+Providerurl);
 					new GetDoctors().execute();
+					//player.stopPlayer();
+					//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
+					//text="Type name of Doctor or Specialization registered in "+provider_name.getText().toString()+" and select your refering Physician.";
+					//if(doctor.getText().toString().isEmpty()||doctor.getText().toString()=="null"){
+					//	updateResult(text);
+					//}
 				}
 				return false;
 			}
@@ -334,11 +342,12 @@ public class CreateLOA extends Activity{
 				doctor.setFocusable(true);
 				InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 				inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+				player.stopPlayer();
 				//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
-				text="Type name of Doctor or Specialization registered in "+provider_name.getText().toString()+" and select your refering Physician.";
+				/*text="Type name of Doctor or Specialization registered in "+provider_name.getText().toString()+" and select your refering Physician.";
 				if(doctor.getText().toString().isEmpty()||doctor.getText().toString()=="null"){
 					updateResult(text);
-				}
+				}*/
 				https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization
 				Providerurl= "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization";
 				System.out.println("++++++++"+Providerurl);
@@ -352,7 +361,7 @@ public class CreateLOA extends Activity{
 				// TODO Auto-generated method stub
 				Data.ProviderName=provider_name.getText().toString();
 				Data.DoctorName=doctor.getText().toString();
-				LOAurl= "https://apps.philcare.com.ph/PhilcareWatsonTest/AuthorizationNo.svc/GenerateAuthorizationNo/?CertNo="+Data.cert+"&ProviderCode="+pcode+"&ADoctorCode="+dcode+"&RDoctorCode="+dcode+"&ChiefComplaint="+complaint.getText().toString().replace(" ", "+");
+				LOAurl= "https://apps.philcare.com.ph/PhilcareWatsonTest/AuthorizationNo.svc/GenerateAuthorizationNo/?CertNo="+ Data.cert+"&ProviderCode="+pcode+"&ADoctorCode="+dcode+"&RDoctorCode="+dcode+"&ChiefComplaint="+complaint.getText().toString().replace(" ", "+");
 				System.out.println("++++++++"+LOAurl);
 				new GetLOA().execute();
 				
@@ -369,24 +378,23 @@ public class CreateLOA extends Activity{
 	}
 	public void updateResult(final String result)
 	{
-		String username = Data.ttsUsername;
-		String password = Data.ttsPassword;
+		new SynthesisTask().execute(result);
+
+	}
+	private class SynthesisTask extends AsyncTask<String, Void, String> {
+
+		@Override
+		protected String doInBackground(String... params) {
+			System.out.println("CHECKING RESULT FOR TTS == "+params[0]);
+			com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech service = new com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech();
+			service.setUsernameAndPassword(Data.ttsUsername, Data.ttsPassword);
+			List<Voice> voices = service.getVoices().execute();
 
 
-		String serviceURL = "https://stream.watsonplatform.net/text-to-speech/api";
-		//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
-		com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().initWithContext(this.getHost(serviceURL));
-		com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().setCredentials(username, password);
-		com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().setVoice("en-US_MichaelVoice");
-
-		CreateLOA.this.runOnUiThread(new Runnable() {
-			@Override
-			public void run() {
-				com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().synthesize(result);
-				//mAdapter.notifyDataSetChanged();
-
-			}
-		});
+			System.out.println(voices);
+			player.playStream(service.synthesize(params[0],Voice.EN_MICHAEL).execute());
+			return "Did syntesize";
+		}
 	}
 	/**
 	 * Async task class to get json by making HTTP call
@@ -633,9 +641,11 @@ public class CreateLOA extends Activity{
 			dialog.show();
 	 	}
 	}
-	/*@Override
+	@Override
 	public void onBackPressed() {
 		// TODO Auto-generated method stub
-		//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
-	}*/
+		player.stopPlayer();
+		// /com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
+		finish();
+	}
 }

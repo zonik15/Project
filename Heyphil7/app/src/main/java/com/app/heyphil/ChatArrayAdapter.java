@@ -44,11 +44,11 @@ public class ChatArrayAdapter extends ArrayAdapter<ChatMessage> {
 			TextView textView = (TextView) convertView.findViewById(R.id.singleMessage);
 			CircularImageView imageView = (CircularImageView) convertView.findViewById(R.id.circularImageView);
 			textView.setText(getItem(position).getContent());
-			if(!Data.Bitmap&&Data.sex.equals("FEMALE"))
+			if(!Data.Bitmap&& Data.sex.equals("FEMALE"))
 			{
 				imageView.setImageResource(R.drawable.femele_icon);
 			}
-			else if(!Data.Bitmap&&Data.sex.equals("MALE"))
+			else if(!Data.Bitmap&& Data.sex.equals("MALE"))
 			{
 				imageView.setImageResource(R.drawable.male_icon);
 			}

@@ -1,20 +1,12 @@
 package com.app.heyphil;
 
-import java.lang.reflect.Member;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
 import android.webkit.WebSettings.PluginState;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 public class HeyphilScreen extends Activity {
@@ -30,8 +22,8 @@ public class HeyphilScreen extends Activity {
 		
 		tv_member_name=(TextView)findViewById(R.id.tv_membername);
 		tv_cert_no=(TextView)findViewById(R.id.tv_certno);
-		String membername=Data.Fname+" "+Data.Lname;
-		String certno=""+Data.cert;
+		String membername= Data.Fname+" "+ Data.Lname;
+		String certno=""+ Data.cert;
 		tv_member_name.setText(membername);
 		tv_cert_no.setText(certno);
 		
@@ -41,7 +33,7 @@ public class HeyphilScreen extends Activity {
 	}
 	@SuppressWarnings("deprecation")
 	private void loadwebview(){
-		String certno=Data.cert;
+		String certno= Data.cert;
 		link="https://heyphil.mybluemix.net/cert="+certno;
 		wv_heyphil.getSettings().setAppCacheMaxSize(5 * 1024 * 1024); // 5MB
 		wv_heyphil.getSettings().setAppCachePath(getApplicationContext().getCacheDir().getAbsolutePath());

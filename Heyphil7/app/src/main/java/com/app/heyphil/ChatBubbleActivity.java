@@ -194,14 +194,13 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	public static final String APP_KEY = "1gd4a33d7e99d5a400be6a2a0e7381d531f555636bg0g2g39ea0ceb";
 
 	private StreamPlayer player = new StreamPlayer();
-	private com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech textService;
+	private TextToSpeech textService;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_chat);
-
 		textService = initTextToSpeechService();
 		/*
 		com.ibm.mqa.config.Configuration configuration = new com.ibm.mqa.config.Configuration.Builder(this)
@@ -216,10 +215,10 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		new onMedInfoAsync().execute();
 		new GetSpecialization().execute();
 		new GetDependents().execute();
-		DependentNames=Data.depnames;
+		DependentNames= Data.depnames;
 		buildGoogleApiClient();
 		mGoogleApiClient.connect();
-		doctor_link ="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo="+Data.cert+"&Province=&Area=&DoctorName=&Specialization=";
+		doctor_link ="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo="+ Data.cert+"&Province=&Area=&DoctorName=&Specialization=";
 		mListView = (ListView) findViewById(R.id.listView);
 		mButtonSend = (CircularImageView) findViewById(R.id.btn_send);
 		mEditTextMessage = (EditText) findViewById(R.id.et_message);
@@ -291,19 +290,19 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			}
 		});
 		initialConversation();
-		System.out.println("GENDER"+Data.sex+"AVATAR"+Data.Bitmap);
+		System.out.println("GENDER"+ Data.sex+"AVATAR"+ Data.Bitmap);
 		Display display = ((WindowManager) this.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
 		LinearLayout llContainerMain = (LinearLayout) findViewById(R.id.llMainContainer);
 		DragDropView dragDropView = new DragDropView(context);
 		dragDropView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-		CircularImageView ivTest = new CircularImageView (context);
+		CircularImageView ivTest = new CircularImageView(context);
 		ivTest.setBorderWidth(2);
-		if(!Data.Bitmap&&Data.sex.equals("FEMALE"))
+		if(!Data.Bitmap&& Data.sex.equals("FEMALE"))
 		{
 			ivTest.setImageDrawable(context.getResources().getDrawable(R.drawable.femele_icon));
 			Data.Bitmap=false;
 		}
-		if(!Data.Bitmap&&Data.sex.equals("MALE"))
+		if(!Data.Bitmap&& Data.sex.equals("MALE"))
 		{
 			ivTest.setImageDrawable(context.getResources().getDrawable(R.drawable.male_icon));
 			Data.Bitmap=false;
@@ -653,11 +652,11 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		}
 	}
 	private void startDialog(){
-		System.out.println("CERTIFICATE NOT IS ============ "+Data.cert);
-		String heypilAPI = "http://philcare.com.ph/heyphil-api/api/dialogs/view.json?certificate_no="+Data.cert+"&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTUwMTE2NDMxM30.eh3l3rK0jNDCr1-Pv0GpDj3kYMjtu9q_2M6XKSI00Bs";
+		System.out.println("CERTIFICATE NOT IS ============ "+ Data.cert);
+		String heypilAPI = "http://philcare.com.ph/heyphil-api/api/dialogs/view.json?certificate_no="+ Data.cert+"&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTUwMTE2NDMxM30.eh3l3rK0jNDCr1-Pv0GpDj3kYMjtu9q_2M6XKSI00Bs";
 		//HeyPhilApi heyPhil = new HeyPhilApi(ChatBubbleActivity.this);
 		//AsyncTask callAPI = heyPhil.execute(heypilAPI);
-		String url = "https://philcare.com.ph/api/heyphil/api.php/dialogs?filter=certificate_no,eq,"+Data.cert;
+		String url = "https://philcare.com.ph/api/heyphil/api.php/dialogs?filter=certificate_no,eq,"+ Data.cert;
 		WebAPI api = new WebAPI(ChatBubbleActivity.this);
 		api.setDialog(url);
 	}
@@ -816,7 +815,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		dialog.show();
 	}
 	public void MyAccount(){
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.my_account);
@@ -919,7 +918,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		dialog.show();
 	}
 	public void MyDependent(){
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.custom_dependent);
@@ -938,7 +937,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		dialog.show();
 	}
 	public void MyCardInformation(){
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.membership_card_information);
@@ -981,7 +980,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		dialog.show();
 	}
 	public void MyBenefits(){
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.my_benefits);
@@ -1035,7 +1034,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	}
 	public void MyUtilization()
 	{
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.custom_utilization);
@@ -1055,7 +1054,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 
 	}
 	public void MyMedicalinfo(){
-		Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.my_medicalinfo);
@@ -1108,7 +1107,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 
 		Window window = custom_dialog.getWindow();
 		window.setLayout(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT);
-		Typeface tf=Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		TextView tv_doctor=(TextView)custom_dialog.findViewById(R.id.tv_doctor);
 		et_doctor=(EditText)custom_dialog.findViewById(R.id.et_doctor);
 		btn_search=(Button)custom_dialog.findViewById(R.id.btn_search);
@@ -1130,17 +1129,17 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 				do {
 					if(et_doctor.getText().toString().toLowerCase().contains(Data.specializationList.get(i).toString().toLowerCase())) {
 
-						doctor_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo=" + Data.cert + "&Province=&Area=&DoctorName=&Specialization="+Data.specializationList.get(i).toString();
+						doctor_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo=" + Data.cert + "&Province=&Area=&DoctorName=&Specialization="+ Data.specializationList.get(i).toString();
 						search=true;
 						DoctorList.clear();
 						new GetDoctor().execute();
 						lv_doctor.setVisibility(View.GONE);
-						i=Data.specializationList.size();
+						i= Data.specializationList.size();
 					}
 					else
 					{
 						i++;
-						if(i==Data.specializationList.size()){
+						if(i== Data.specializationList.size()){
 
 							doctor_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo=" + Data.cert + "&Province=&Area=&DoctorName=" + et_doctor.getText().toString() + "&Specialization=";
 							search=true;
@@ -1150,7 +1149,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 						}
 					}
 				}
-				while (i<Data.specializationList.size());
+				while (i< Data.specializationList.size());
 			}
 		});
 		et_doctor.addTextChangedListener(new TextWatcher() {
@@ -1245,7 +1244,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 
 		Window window = custom_dialog.getWindow();
 		window.setLayout(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT);
-		Typeface tf=Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		TextView tv_dental=(TextView)custom_dialog.findViewById(R.id.tv_dentist);
 		et_dentist=(EditText)custom_dialog.findViewById(R.id.et_dentist);
 		lv_dentist=(ListView)custom_dialog.findViewById(R.id.lv_dentist);
@@ -1303,7 +1302,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 
 		Window window = custom_dialog.getWindow();
 		window.setLayout(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT);
-		Typeface tf=Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		TextView tv_dental=(TextView)custom_dialog.findViewById(R.id.tv_dentist);
 		et_dentist=(EditText)custom_dialog.findViewById(R.id.et_dentist);
 		lv_dentist=(ListView)custom_dialog.findViewById(R.id.lv_dentist);
@@ -1373,15 +1372,15 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		Data.address.clear();
 		Data.pcode.clear();
 		if(mEditTextMessage.getText().toString().toLowerCase().contains("luzon")){
-			provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location=&area=LUZON&Certno="+Data.cert;
+			provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location=&area=LUZON&Certno="+ Data.cert;
 			new GetProviders().execute();
 		}
 		else if(mEditTextMessage.getText().toString().toLowerCase().contains("visayas")){
-			provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location=&area=VISAYAS&Certno="+Data.cert;
+			provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location=&area=VISAYAS&Certno="+ Data.cert;
 			new GetProviders().execute();
 		}
 		else if(mEditTextMessage.getText().toString().toLowerCase().contains("mindanao")){
-			provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location=&area=MINDANAO&Certno="+Data.cert;
+			provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location=&area=MINDANAO&Certno="+ Data.cert;
 			new GetProviders().execute();
 		}
 		else{
@@ -1399,7 +1398,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 
 		Window window = custom_dialog.getWindow();
 		window.setLayout(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT);
-		Typeface tf=Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		TextView tv_loahistory=(TextView)custom_dialog.findViewById(R.id.tv_loahistory);
 		ListView lv_loahistory=(ListView)custom_dialog.findViewById(R.id.lv_loahistory);
 		Button btn_none=(Button)custom_dialog.findViewById(R.id.none);
@@ -1493,42 +1492,43 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	public void bySpecialization(){
 		int i=0;
 		do{
-			if(mEditTextMessage.getText().toString().toLowerCase().contains(Data.specializationList.get(i).toLowerCase().substring(0,Data.specializationList.get(i).toLowerCase().replace("medicine","").length()-3))){
+			if(mEditTextMessage.getText().toString().toLowerCase().contains(Data.specializationList.get(i).toLowerCase().substring(0, Data.specializationList.get(i).toLowerCase().replace("medicine","").length()-3))){
 				//chatArrayAdapter.add(new ChatMessage(true, Data.specializationList.get(i)));
-				result=Data.specializationList.get(i);
+				result= Data.specializationList.get(i);
+				dStatus=false;
 				byCity();
-				i=Data.specializationList.size();
+				i= Data.specializationList.size();
 			}
 			else{
-				System.out.println(Data.specializationList.get(i).toLowerCase().substring(0,Data.specializationList.get(i).toLowerCase().length()-3));
+				System.out.println(Data.specializationList.get(i).toLowerCase().substring(0, Data.specializationList.get(i).toLowerCase().length()-3));
 				System.out.println(i);
 				i++;
-				if(i==Data.specializationList.size()){
+				if(i== Data.specializationList.size()){
 					result = "";
 					byCity();
 				}
 			}
 		}
-		while(i<Data.specializationList.size());
+		while(i< Data.specializationList.size());
 	}
 	public void byCity(){
 		int ii=0;
 		do{
 			if(mEditTextMessage.getText().toString().toLowerCase().contains(Data.mylist.get(ii).toLowerCase())){
-				Data.loc=Data.mylist.get(ii);
-				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+Data.loc+"&area=&Certno="+Data.cert;
+				Data.loc= Data.mylist.get(ii);
+				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.loc+"&area=&Certno="+ Data.cert;
 				/* new onLoginAsync().execute();
 				 Intent n=new Intent(getApplicationContext(),MainActivity.class);
 			     startActivity(n);
 				 i=Data.mylist.size();*/
 				if(!result.trim().isEmpty()&&result!=null && Data.loc!=null&&!Data.loc.isEmpty()) {
 					System.out.println("result=========="+(!result.trim().isEmpty()&&result!=null && Data.loc!=null&&!Data.loc.isEmpty()));
-					updateResult("Select Doctor under "+result+" in "+Data.loc+" to locate in google map.");
+					updateResult("Select Doctor under "+result+" in "+ Data.loc+" to locate in google map.");
 					load();
 					result = "";
 				}
 				else if(Data.loc!=null&&!Data.loc.isEmpty()) {
-					updateResult("Select Doctor in "+Data.loc+" to locate in google map.");
+					updateResult("Select Doctor in "+ Data.loc+" to locate in google map.");
 					loadD();
 
 				}
@@ -1540,42 +1540,51 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 					Data.address.clear();
 					Data.pcode.clear();
 					stat = true;
-					Data.City=Data.loc;
+					Data.City= Data.loc;
 					updateResult("Select Health Provider in " + Data.loc + " to locate in google map.");
 					new GetProviders().execute();
 				}
 
-				ii=Data.mylist.size();
+				ii= Data.mylist.size();
 			}
 			else{
 				System.out.println(Data.mylist.get(ii));
 				System.out.println(ii);
 				ii++;
-				if(ii==Data.mylist.size()&&dStatus==false)
+				if(ii== Data.mylist.size()&&dStatus==false)
 				{
 					Data.loc="Select Location";
+					System.out.print("replce"+ Data.loc.replace("Select Location","Sample"));
 					updateResult("Select Doctor under "+result+" to locate in google map.");
 					load();
 
 				}
 			}
 		}
-		while(ii<Data.mylist.size());
+		while(ii< Data.mylist.size());
 	}
 	public void load(){
 		DoctorList.clear();
-		Data.City=Data.loc;
-		//Data.loc = "";
-		doctor_link ="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo="+Data.cert+"&Province="+Data.loc+"&Area=&DoctorName=&Specialization="+result;
-		dStatus=true;
-		new GetDoctor().execute();
+		Data.City= Data.loc;
+		if(Data.loc.equals("Select Location")){
+			Data.loc="";
+			doctor_link ="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo="+ Data.cert+"&Province="+ Data.loc+"&Area=&DoctorName=&Specialization="+result;
+			dStatus=true;
+			new GetDoctor().execute();
+		}
+		else {
+			doctor_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo=" + Data.cert + "&Province=" + Data.loc+ "&Area=&DoctorName=&Specialization=" + result;
+			dStatus = true;
+			Data.loc = "";
+			new GetDoctor().execute();
+		}
 	}
 	public void loadD(){
 		DoctorList.clear();
-		Data.City=Data.loc;
-		Data.loc = "";
-		doctor_link ="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo="+Data.cert+"&Province="+Data.loc+"&Area=&DoctorName=&Specialization=";
+		Data.City= Data.loc;
+		doctor_link ="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo="+ Data.cert+"&Province="+ Data.loc+"&Area=&DoctorName=&Specialization=";
 		dStatus=true;
+		Data.loc = "";
 		new GetDoctor().execute();
 	}
 
@@ -1584,9 +1593,9 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		int ii=0;
 		do{
 			if(mEditTextMessage.getText().toString().toLowerCase().contains(Data.mylist.get(ii).toLowerCase())){
-				Data.loc=Data.mylist.get(ii);
-				Data.City=Data.mylist.get(ii);
-				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+Data.loc+"&area=&Certno="+Data.cert;
+				Data.loc= Data.mylist.get(ii);
+				Data.City= Data.mylist.get(ii);
+				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.loc+"&area=&Certno="+ Data.cert;
 				/* new onLoginAsync().execute();
 				 Intent n=new Intent(getApplicationContext(),MainActivity.class);
 			     startActivity(n);
@@ -1599,15 +1608,15 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 				Data.pcode.clear();
 				stat=true;
 				new GetProviders().execute();
-				ii=Data.mylist.size();
+				ii= Data.mylist.size();
 			}
 			else{
 				System.out.println(Data.mylist.get(ii));
 				System.out.println(ii);
 				ii++;
-				if(ii==Data.mylist.size()){
-					Data.City=Data.currentCity;
-					provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+Data.currentCity+"&area=&Certno="+Data.cert;
+				if(ii== Data.mylist.size()){
+					Data.City= Data.currentCity;
+					provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.currentCity+"&area=&Certno="+ Data.cert;
 					Data.lat1.clear();
 					Data.lon1.clear();
 					Data.name1.clear();
@@ -1620,7 +1629,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 
 			}
 		}
-		while(ii<Data.mylist.size());
+		while(ii< Data.mylist.size());
 		mEditTextMessage.setText("");
 	}
 	@Override
@@ -1633,7 +1642,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		if (mLastLocation != null) {
 			Data.lat=mLastLocation.getLatitude();
 			Data.lon=mLastLocation.getLongitude();
-			System.out.println("LONGLAT====="+Data.lat+""+Data.lon);
+			System.out.println("LONGLAT====="+ Data.lat+""+ Data.lon);
 			Geocoder geocoder;
 			List<Address> addresses;
 			geocoder = new Geocoder(this, Locale.getDefault());
@@ -1645,7 +1654,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 				//String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
 				Data.currentCity = addresses.get(0).getLocality();
 				System.out.println(Data.currentCity);
-				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+Data.currentCity+"&area=&Certno="+Data.cert;
+				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.currentCity+"&area=&Certno="+ Data.cert;
 				new GetProviders().execute();
 				new GetCity().execute();
 			} catch (IOException e) {
@@ -1763,7 +1772,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			// Dismiss the progress dialog
 			if (pDialog.isShowing())
 				pDialog.dismiss();
-			System.out.println("City====="+Data.mylist.toString());
+			System.out.println("City====="+ Data.mylist.toString());
 		}
 	}
 	/**
@@ -1787,7 +1796,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			// Creating service handler class instance
 			ServiceHandler sh = new ServiceHandler();
 			// Making a request to url and getting response
-			String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchFamily/?CertNo="+Data.cert, ServiceHandler.GET);
+			String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchFamily/?CertNo="+ Data.cert, ServiceHandler.GET);
 
 			Log.d("Response: ", "> " + jsonStr);
 
@@ -1842,7 +1851,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			// Creating service handler class instance
 			ServiceHandler sh = new ServiceHandler();
 			// Making a request to url and getting response
-			String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchFamily/?CertNo="+Data.cert, ServiceHandler.GET);
+			String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchFamily/?CertNo="+ Data.cert, ServiceHandler.GET);
 
 			Log.d("Response: ", "> " + jsonStr);
 
@@ -1873,7 +1882,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		protected void onPostExecute(Void result) {
 			super.onPostExecute(result);
 			// Dismiss the progress dialog
-			System.out.println("SEX"+Data.sex);
+			System.out.println("SEX"+ Data.sex);
 		}
 	}
 	/**
@@ -1891,7 +1900,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			// Creating service handler class instance
 			ServiceHandler sh = new ServiceHandler();
 			// Making a request to url and getting response
-			String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/GetUtilization/?PolicyNo=pc00400-005&CertNo="+Data.cert, ServiceHandler.GET);
+			String jsonStr = sh.makeServiceCall("https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/GetUtilization/?PolicyNo=pc00400-005&CertNo="+ Data.cert, ServiceHandler.GET);
 
 			Log.d("Response: ", "> " + jsonStr);
 
@@ -2077,7 +2086,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			if (pDialog.isShowing())
 				pDialog.dismiss();
 
-			Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/Boogaloo-Regular.ttf");
+			Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 			final Dialog dialog = new Dialog(context);
 			dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 			dialog.setContentView(R.layout.alert_dialog);
@@ -2135,7 +2144,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		protected Void doInBackground(Void... arg0) {
 			// Creating service handler class instance
 			ServiceHandler sh = new ServiceHandler();
-			String dentalurl="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/Dental/?Certno="+Data.cert;
+			String dentalurl="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/Dental/?Certno="+ Data.cert;
 			// Making a request to url and getting response
 			String jsonStr = sh.makeServiceCall(dentalurl, ServiceHandler.GET);
 
@@ -2361,7 +2370,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	}
 	private void getXMLMedInfo()
 	{
-		String medinfo_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Members.svc/MedicalInfo/?Certno="+Data.cert;
+		String medinfo_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Members.svc/MedicalInfo/?Certno="+ Data.cert;
 		list_xml_link3.clear();
 		System.out.println("==========url"+convertToUrlMedInfo(medinfo_link));
 		list_xml_link3.add(convertToUrlMedInfo(medinfo_link));
@@ -2715,7 +2724,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		@Override
 		protected void onPostExecute(Void result) {
 			super.onPostExecute(result);
-			System.out.println("============inside parser123"+Data.PriceList);
+			System.out.println("============inside parser123"+ Data.PriceList);
 		}
 	}
 	public void logout(){

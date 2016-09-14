@@ -10,11 +10,6 @@ import android.util.Log;
 import android.widget.EditText;
 import android.widget.TextView;
 
-//import com.squareup.okhttp.Credentials;
-//import com.squareup.okhttp.OkHttpClient;
-//import com.squareup.okhttp.Request;
-//import com.squareup.okhttp.Response;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -25,6 +20,11 @@ import okhttp3.Credentials;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+
+//import com.squareup.okhttp.Credentials;
+//import com.squareup.okhttp.OkHttpClient;
+//import com.squareup.okhttp.Request;
+//import com.squareup.okhttp.Response;
 
 /*import okhttp3.Credentials;
 import okhttp3.OkHttpClient;
@@ -335,7 +335,7 @@ public class HttpStuff extends AsyncTask<String, Integer, String> {
 
                 try{
                     Data.getCity=true;
-                    Data.City=Data.currentCity;
+                    Data.City= Data.currentCity;
                     chatBubbleActivity.byCities();
                     replyText = "0";
                 }catch(NullPointerException e){
@@ -355,7 +355,7 @@ public class HttpStuff extends AsyncTask<String, Integer, String> {
                 //chatBubbleActivity.updateResult("Here are the providers nearby your current location. You can choose any location or specific provider you are looking for. Tap or click the google marker to view information an to proceed to create or request LOA. Thank you!");
                 Data.avatar="Agent";
                 Data.getCity=true;
-                Data.City=Data.currentCity;
+                Data.City= Data.currentCity;
                 chatBubbleActivity.callMain();
                 replyText = "0";
                 result = "0";
@@ -401,7 +401,7 @@ public class HttpStuff extends AsyncTask<String, Integer, String> {
             }else if(nlcTopic.contains(INTENT_ADDRESS)){
                 replyText = Data.home_address;
             }else if(nlcTopic.contains(INTENT_MY_NAME)){
-                replyText = "Your name is "+Data.first_name;
+                replyText = "Your name is "+ Data.first_name;
             }else if(nlcTopic.contains(INTENT_ACTION_LOGOUT)){
                 chatBubbleActivity.logout();
                 replyText = "0";
