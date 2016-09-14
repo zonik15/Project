@@ -19,7 +19,9 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.text.Editable;
+import android.text.SpannableStringBuilder;
 import android.text.TextWatcher;
+import android.text.style.StyleSpan;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -68,6 +70,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+
+import static android.graphics.Typeface.BOLD;
+import static android.graphics.Typeface.ITALIC;
+import static android.text.Spanned.SPAN_EXCLUSIVE_EXCLUSIVE;
+
+
+import com.google.maps.android.ui.IconGenerator;
 
 public class MainActivity<ListData> extends Activity implements ConnectionCallbacks, OnConnectionFailedListener, OnMarkerClickListener {
 	private TextToSpeech tts;
@@ -123,6 +132,8 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 	boolean stat;
 	String Providerurl;
 	Context context;
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -371,10 +382,10 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 					googleMap.setOnMarkerClickListener(this);
 					double[] Lat = new double[Data.lat1.size()];
 					double[] Lon = new double[Data.lon1.size()];
-					MarkerOptions marker = new MarkerOptions().position(
-							new LatLng(Data.lat, Data.lon))
-							.title("I'm Here!");
-					marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
+					//MarkerOptions marker = new MarkerOptions().position(
+					//		new LatLng(Data.lat, Data.lon))
+					//		.title("I'm Here!");
+					//marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
 					//googleMap.addMarker(marker);
 					//Toast.makeText(getApplicationContext(), ""+Data.lat1.toString(), Toast.LENGTH_LONG).show();
 					for (int i = 0; i < Data.lat1.size(); i++)
@@ -382,12 +393,24 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 					    Lat[i] = Double.parseDouble(Data.lat1.get(i).replace("NULL", "0"));
 					    Lon[i] = Double.parseDouble(Data.lon1.get(i).replace("NULL", "0"));//store each element as a double in the array
 						// Adding a marker
+
+						IconGenerator iconFactory = new IconGenerator(getBaseContext());
+						//addIcon(iconFactory, "Default", new LatLng(-33.8696, 151.2094));
+
+						iconFactory.setColor(Color.WHITE);
+
+
+						addIcon(iconFactory, Data.name1.get(i), new LatLng(Lat[i],Lon[i]),""+i);
+
+						/*
 						MarkerOptions marker1 = new MarkerOptions().position(
 								new LatLng(Lat[i],Lon[i]))
 								.title(""+i)
 								.snippet(Data.pcode.get(i));
 						marker1.icon(BitmapDescriptorFactory.fromResource(R.drawable.gpin));
+
 						googleMap.addMarker(marker1);
+						*/
 						CameraPosition cameraPosition = new CameraPosition.Builder()
 								.target(new LatLng(Lat[0],
 										Lon[0])).zoom(14).build();
@@ -405,42 +428,28 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		}
 	}
 
-	public class GetAddressTask extends AsyncTask<LatLng, Void, Integer>{
-		private LatLng loc;
-		String addressText;
-		@Override
-		protected Integer doInBackground(LatLng... params) {
-			int mFinalFlag=0;
-			loc=params[0];
-			String filterAddress = "";
+	private void addIcon(IconGenerator iconFactory, CharSequence text, LatLng position,String i) {
+		MarkerOptions markerOptions = new MarkerOptions().
+				icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon(text))).
+				position(position).
+				snippet(i).
+				anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
 
-			Geocoder geoCoder = new Geocoder(MainActivity.this, Locale.getDefault());
-			try {
-
-					addressText ="";
-
-
-			} catch (Exception e2) {
-				e2.printStackTrace();
-			}
-			return mFinalFlag;
-		}
-
-
-		@Override
-		protected void onPostExecute(Integer result) {
-			googleMap.addMarker(
-					new MarkerOptions()
-							.position(loc)
-							.draggable(true)
-							.icon(BitmapDescriptorFactory
-									.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
-							.title(addressText))
-					.showInfoWindow();
-
-			super.onPostExecute(result);
-		}
+		googleMap.addMarker(markerOptions);
 	}
+
+	private CharSequence makeCharSequence() {
+		String prefix = "Mixing ";
+		String suffix = "different fonts";
+		String sequence = prefix + suffix;
+		SpannableStringBuilder ssb = new SpannableStringBuilder(sequence);
+		ssb.setSpan(new StyleSpan(ITALIC), 0, prefix.length(), SPAN_EXCLUSIVE_EXCLUSIVE);
+		ssb.setSpan(new StyleSpan(BOLD), prefix.length(), sequence.length(), SPAN_EXCLUSIVE_EXCLUSIVE);
+		return ssb;
+	}
+
+
+
 	@Override
 	public void onConnectionFailed(ConnectionResult arg0) {
 		// TODO Auto-generated method stub
@@ -469,11 +478,10 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 	public boolean onMarkerClick(final Marker arg0) {
 		// TODO Auto-generated method stub
 		//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
-		index=Integer.parseInt(arg0.getTitle());
+		index=Integer.parseInt(arg0.getSnippet());
 		code=arg0.getSnippet();
-		//directionUrl="https://maps.googleapis.com/maps/api/directions/json?origin="+Data.lat+",+"+Data.lon+"&destination="+Data.lat1.get(index)+",+"+Data.lon1.get(index)+"&sensor=false&mode=driving&alternatives=true&key=AIzaSyAh2tjcjLNp2FS4bmxMi0h-FXFvRUeXRho";
-		//new getDirection().execute();
-		showProvider();
+		directionUrl="https://maps.googleapis.com/maps/api/directions/json?origin="+Data.lat+",+"+Data.lon+"&destination="+Data.lat1.get(index)+",+"+Data.lon1.get(index)+"&sensor=false&mode=driving&alternatives=true&key=AIzaSyAh2tjcjLNp2FS4bmxMi0h-FXFvRUeXRho";
+		new getDirection().execute();
 		return true;
 	}
 	private void showProvider(){
