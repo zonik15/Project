@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -76,23 +76,21 @@
 
         <TextView
             android:id="@+id/tv_btn_forgot_password"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
             android:ems="10"
             android:text="@string/string_text_button_forgot_password"
             android:textColor="@color/white"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:textSize="18sp" />
 
         <LinearLayout
             android:id="@+id/layout_main1"
-            android:layout_width="185dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:layout_marginTop="15dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="15dp">
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/tv_new_user"
@@ -118,13 +116,13 @@
         </LinearLayout>
         <TextView
             android:id="@+id/tv_note"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="If you are an existing PhilCare Go!Mobile user, no registration is required. You may directly proceed to access the app by using your PhilCare Go!Mobile account."
             android:background="@drawable/custombutton"
             android:textAlignment="center"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:textColor="@color/white"/>
     </LinearLayout>
 
-</RelativeLayout>
+</ScrollView>
