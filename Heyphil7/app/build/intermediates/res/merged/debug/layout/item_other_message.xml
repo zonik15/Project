@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/singleMessageContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/singleMessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dip"
+                            android:background="@drawable/shadow"
+                            android:paddingLeft="40dip"
+                            android:paddingTop="10dip"
+                            android:paddingRight="10dip"
+                            android:text="Hello bubbles!"
+                            android:paddingBottom="15dp"
+                            android:textColor="#6d6767" />
+                        <ImageView
+                            android:id="@+id/usericon"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

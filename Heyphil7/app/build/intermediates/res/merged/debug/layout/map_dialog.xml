@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg">
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/exit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="-5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exit"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PROVIDER NAME"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textColor="#008444" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:id="@+id/textView2"
+        android:textColor="#008444"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makati City Philippines"
+        android:id="@+id/textView3"
+        android:textColor="#6d6767"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact:"
+        android:textColor="#008444"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09123456789"
+        android:id="@+id/textView5"
+        android:textColor="#6d6767"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel Distance:"
+        android:textColor="#008444"
+        android:id="@+id/tv_distance"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KM"
+        android:id="@+id/distance"
+        android:textColor="#6d6767"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/tv_distance"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel Duration:"
+        android:textColor="#008444"
+        android:id="@+id/tv_time"
+        android:layout_below="@+id/tv_distance"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HR"
+        android:id="@+id/time"
+        android:textColor="#6d6767"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/distance"
+        android:layout_toRightOf="@+id/tv_time"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Do you want to proceed with this provider?"
+        android:id="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#6d6767"
+        android:layout_below="@+id/tv_time"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="NO"
+        android:id="@+id/button"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/custombutton"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="YES"
+        android:id="@+id/button2"
+        android:textColor="@color/white"
+        android:background="@drawable/custombutton"
+        android:layout_below="@+id/textView6"
+        android:layout_toLeftOf="@+id/exit"
+        android:layout_toStartOf="@+id/exit" />
+</RelativeLayout>

@@ -1,0 +1,1114 @@
+[
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_utilization.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\custom_utilization.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\product.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\single_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\single_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_dependent.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\my_dependent.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_utilization.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\custom_utilization.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_feedback_description_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_feedback_description_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_dialog_generic.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_dialog_generic.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test_map.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\test_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product_detail.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\product_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\accelerometer.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\accelerometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_screenshot_element.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_screenshot_element.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_feedback_rating_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_feedback_rating_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_feedback_rating_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_feedback_rating_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_testcycles_list.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycles_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_error_box.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_error_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_tutorial_step_1.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_tutorial_step_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\product.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_single.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\list_single.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_editor.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_editor.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\membership_card_information.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\membership_card_information.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\heyphil_hints_activity.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\heyphil_hints_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_main_page.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_main_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dependent.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\custom_dependent.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_expected_result_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_expected_result_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\doctor_list.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\doctor_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_dialog_type_chooser.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_dialog_type_chooser.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_action_performed_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_action_performed_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\membership_card_information.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\membership_card_information.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_loahistory.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\custom_loahistory.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_report_main.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_report_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_report_settings.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_report_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\create_loa.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\create_loa.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_loahistory.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_loahistory.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chat.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_screenshot_loader.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_screenshot_loader.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_report_preview_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_report_preview_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_account.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\provider_list.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\provider_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\map_dialog.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\map_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_quick.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_quick.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login_screen.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\login_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sliding_fragment_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\sliding_fragment_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alert_dialog.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\alert_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_testcycles_header.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycles_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_utilization.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\my_utilization.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\instruction.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\instruction.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_report_preview_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_report_preview_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_feedback_description_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_feedback_description_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_video_player.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_video_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_testcycles_header.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycles_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_tutorial_step_template.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_tutorial_step_template.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register_screen.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\register_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_footer.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_footer.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_normal.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_production_feedback.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_production_feedback.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_user.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_card.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\list_item_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_mine_message.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\item_mine_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dialogtc.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\custom_dialogtc.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_doctor.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\custom_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\heyphil_screen.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\heyphil_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_philcare_products.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\activity_philcare_products.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\listview.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_tooltip.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\custom_tooltip.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login_screen.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\login_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\conversation.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\conversation.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_loading.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_loading.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_screenshot_element.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_screenshot_element.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_severity_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_severity_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product_list.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\product_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dependent.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\custom_dependent.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_bmi.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_bmi.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_chooser_dialog.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\layout\\mr_media_route_chooser_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pdfview.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\pdfview.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product_detail.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\product_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_medicalinfo.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_medicalinfo.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_loading.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_loading.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_testcycle.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycle.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\conversation.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\conversation.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_add_screenshot.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_add_screenshot.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sliding_fragment_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\sliding_fragment_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\help_dialog.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\help_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_actual_result_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_actual_result_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_expected_result_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_expected_result_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product_buy.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\product_buy.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\map_dialog.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\map_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_benefits.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\my_benefits.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_feedback_attach_screenshot_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_feedback_attach_screenshot_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_report_main.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_report_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_new.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_new.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test_activity.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\test_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_benefits.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_benefits.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_report_container.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_report_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chat_singlemessage.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\activity_chat_singlemessage.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_tutorial_step_1.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_tutorial_step_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_user.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_quick.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_quick.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_account.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\my_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_feedback_attach_screenshot_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_feedback_attach_screenshot_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_dependent.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_dependent.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_rating_bar.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_rating_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_tutorial.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_tutorial.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_testcycles.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycles.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_production_feedback.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_production_feedback.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_editor.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_editor.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\create_loa.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\create_loa.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_other_message.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\item_other_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_testcycles_input.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycles_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_philcare_products.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\activity_philcare_products.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_bmi.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\my_bmi.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_action_performed_step.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_action_performed_step.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pdfview.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\pdfview.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_loahistory.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\my_loahistory.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_report_container.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_report_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\accelerometer.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\accelerometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_main_page.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_main_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_testcycles_list.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycles_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_other_message.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\item_other_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_title_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_title_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_container.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_feedback.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_feedback.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\doctor_list.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\doctor_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_testcycles_input.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycles_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_report_settings.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_report_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chat_singlemessage.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\activity_chat_singlemessage.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product_list.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\product_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_actual_result_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_actual_result_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_doctor.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\custom_doctor.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_testcycles.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycles.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_title_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_title_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_calories.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\my_calories.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\heyphil_screen.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\heyphil_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\listview.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_video_player.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_video_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_severity_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_severity_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_action_performed_fragment.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_action_performed_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_feedback.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_feedback.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_container.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_medicalinfo.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\my_medicalinfo.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\register_screen.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\register_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_calories.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_calories.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_tooltip.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\custom_tooltip.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product_buy.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\product_buy.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test_activity.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\test_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_normal.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alert_dialog.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\alert_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_footer.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_footer.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_action_performed_step.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_action_performed_step.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\help_dialog.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\help_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\provider_list.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\provider_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test_map.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\test_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_dialog_type_chooser.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_dialog_type_chooser.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_chooser_dialog.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\layout\\mr_media_route_chooser_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_tutorial.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_tutorial.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_card.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\list_item_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_login_error_box.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_login_error_box.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\heyphil_hints_activity.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\heyphil_hints_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_chat.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dialogtc.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\custom_dialogtc.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_new.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_new.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_list_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\layout\\mr_media_route_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_tutorial_step_template.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_tutorial_step_template.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_single.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\list_single.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_utilization.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_utilization.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_rating_bar.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_rating_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\custom_loahistory.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\custom_loahistory.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_testcycle.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycle.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.0.1\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\single_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\single_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_list_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\layout\\mr_media_route_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_dialog_generic.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_dialog_generic.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_screenshot_loader.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_screenshot_loader.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_controller_material_dialog_b.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\layout\\mr_media_route_controller_material_dialog_b.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_mine_message.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\item_mine_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_add_screenshot.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_add_screenshot.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_media_route_controller_material_dialog_b.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\layout\\mr_media_route_controller_material_dialog_b.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\instruction.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\src\\main\\res\\layout\\instruction.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\ABDalisay\\Desktop\\M'HANNA\\8-30-16\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_simple.xml"
+    }
+]

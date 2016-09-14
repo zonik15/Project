@@ -1,0 +1,35 @@
+<com.applause.android.ui.StepView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/applause_problem_action_performed_edittext"
+        style="@style/applause_problem_action_performed_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/applause_problem_action_performed_label"
+        android:paddingLeft="12dp"
+        android:paddingRight="48dp"
+        tools:text="Neque porro quisquam est " />
+
+    <TextView
+        android:id="@+id/applause_problem_action_performed_position"
+        style="@style/applause_problem_action_performed_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|top"
+        android:paddingTop="11.5dp"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/applause_problem_action_performed_add_after"
+        style="@style/applause_problem_action_performed_add_after"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:gravity="center"
+        android:paddingBottom="9dp"
+        tools:visibility="visible" />
+
+</com.applause.android.ui.StepView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/applause_login_body_background"
+        android:gravity="center_vertical|left"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <include layout="@layout/applause_testcycles_header" />
+
+        <TextView
+            style="@style/applause_login_subheader2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="@dimen/applause_login_standard_padding"
+            android:layout_marginRight="@dimen/applause_login_standard_padding"
+            android:background="@color/applause_login_body_background"
+            android:gravity="center_vertical|left"
+            android:text="@string/applause_test_cycles_manual" />
+
+
+        <EditText
+            android:id="@+id/applause_test_cycles_manual_edit"
+            style="@style/applause_login_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/applause_login_standard_padding"
+            android:layout_marginRight="@dimen/applause_login_standard_padding"
+            android:fontFamily="sans-serif"
+            android:hint="@string/applause_test_cycle_hint"
+            android:inputType="number">
+
+            <requestFocus />
+
+        </EditText>
+
+        <Button
+            android:id="@+id/applause_test_cycles_select_cycle_btn"
+            style="@style/applause_login_button"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/applause_test_cycles_set" />
+    </LinearLayout>
+</ScrollView>

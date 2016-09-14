@@ -1,0 +1,25 @@
+<com.applause.android.ui.ApplauseRatingBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/applause_rating_bar"
+    style="@style/applause_rating_bar">
+
+    <ImageView
+        android:id="@+id/applause_rating_1"
+        style="@style/applause_rating_bar_star" />
+
+    <ImageView
+        android:id="@+id/applause_rating_2"
+        style="@style/applause_rating_bar_star" />
+
+    <ImageView
+        android:id="@+id/applause_rating_3"
+        style="@style/applause_rating_bar_star" />
+
+    <ImageView
+        android:id="@+id/applause_rating_4"
+        style="@style/applause_rating_bar_star" />
+
+    <ImageView
+        android:id="@+id/applause_rating_5"
+        style="@style/applause_rating_bar_star" />
+
+</com.applause.android.ui.ApplauseRatingBar>

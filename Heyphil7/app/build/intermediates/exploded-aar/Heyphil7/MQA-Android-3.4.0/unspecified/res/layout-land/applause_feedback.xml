@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/applause_falcon_light"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/applause_feedback_header" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/applause_feedback_description_fragment"
+            android:name="com.applause.android.ui.FeedbackDescriptionFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            tools:layout="@layout/applause_feedback_description_fragment" />
+
+        <View
+            style="@style/applause_feedback_separator"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/applause_feedback_rating_fragment"
+                android:name="com.applause.android.ui.FeedbackRatingFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/applause_feedback_rating_fragment" />
+
+            <View style="@style/applause_feedback_separator" />
+
+            <fragment
+                android:id="@+id/applause_feedback_attach_screenshot_fragment"
+                android:name="com.applause.android.ui.FeedbackAttachScreenshotFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/applause_feedback_attach_screenshot_fragment" />
+
+            <View style="@style/applause_feedback_separator" />
+
+            <fragment
+                android:id="@+id/applause_feedback_preview_fragment"
+                android:name="com.applause.android.ui.ProblemAttachmentsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:layout="@layout/applause_report_preview_fragment" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

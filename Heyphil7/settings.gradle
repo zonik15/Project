@@ -1,0 +1,1 @@
+include ':app', ':speech-android-wrapper', ':itextpdf-5.3.2', ':itextpdf-5.3.2-sources', ':itextpdf-5.3.2-javadoc', ':speech', ':MQA-Android-3.4.0'

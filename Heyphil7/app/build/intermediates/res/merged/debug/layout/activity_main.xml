@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+        android:id="@+id/belowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+		<LinearLayout
+			android:id="@+id/lheader"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#008444"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/title"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:text="HEYPHIL"
+				android:textSize="24sp"
+				android:gravity="center"
+				android:textColor="@color/white"/>
+
+			<!--<ImageView
+				android:id="@+id/imageView1"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:layout_gravity="center_horizontal"
+				android:contentDescription="@null"
+				android:paddingBottom="5dp"
+				android:paddingLeft="10dp"
+				android:paddingTop="5dp"
+				android:scaleType="centerInside"
+				android:src="@drawable/heyphil_title" />-->
+		</LinearLayout>
+		<EditText
+		    android:id="@+id/provider"
+			android:layout_below="@+id/lheader"
+		    android:layout_width="match_parent"
+		    android:layout_marginTop="5dp"
+			android:layout_marginLeft="40dp"
+			android:layout_marginRight="40dp"
+			android:padding="10dp"
+		    android:layout_height="50dp"
+			android:hint="Select Provider"
+			android:background="@drawable/shadow"
+		    android:textSize="20sp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true" />
+		<ListView 
+		    android:id="@+id/lv_provider"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			android:layout_marginLeft="40dp"
+			android:layout_marginRight="40dp"
+		    android:layout_below="@+id/provider"
+		   	android:visibility="gone"
+		   	android:background="#B3ffffff"></ListView>
+
+        <Spinner
+            android:id="@+id/current"
+            android:layout_below="@+id/provider"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+			android:layout_marginTop="5dp"
+			android:text="Choose City"
+			android:paddingLeft="10dp"
+			android:background="@drawable/shadow"
+            android:textSize="20sp"
+			android:layout_alignLeft="@+id/provider"
+			android:layout_alignStart="@+id/provider"
+			android:layout_alignRight="@+id/provider"
+			android:layout_alignEnd="@+id/provider" />
+		<Button
+			android:id="@+id/requestloa"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/current"
+			android:text="Request LOA"
+			android:layout_marginTop="5dp"
+			android:layout_alignLeft="@+id/provider"
+			android:layout_alignStart="@+id/provider"
+			android:layout_alignRight="@+id/provider"
+			android:layout_alignEnd="@+id/provider"
+			android:background="@drawable/shadow"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

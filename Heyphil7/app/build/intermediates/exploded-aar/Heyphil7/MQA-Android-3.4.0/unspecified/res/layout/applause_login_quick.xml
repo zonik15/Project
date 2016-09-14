@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/applause_login_header2"
+        style="@style/applause_login_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/applause_action_bar_height"
+        android:background="@color/applause_login_header_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/applause_login_title" />
+
+    <TextView
+        android:id="@+id/applause_login_header3"
+        style="@style/applause_login_subheader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/applause_login_body_background"
+        android:paddingBottom="18dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="18dp"
+        android:text="@string/applause_login_quick_subtitle" />
+
+    <ListView
+        android:id="@+id/applause_login_users_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/applause_login_body_background"
+        android:cacheColorHint="@color/applause_transparent"
+        android:divider="@color/applause_login_body_background"
+        android:listSelector="@android:color/transparent"
+        android:drawSelectorOnTop="true"
+        tools:listitem="@layout/applause_user" />
+
+</LinearLayout>
+
+        

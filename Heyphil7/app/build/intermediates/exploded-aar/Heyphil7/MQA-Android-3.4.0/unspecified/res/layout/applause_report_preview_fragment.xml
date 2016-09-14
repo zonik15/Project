@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    style="@style/applause_feedback_screenshots_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/applause_problem_new">
+
+    <TextView
+        style="@style/applause_report_attachments_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="9dp"
+        android:paddingTop="11dp"
+        android:text="@string/applause_report_attachments_label" />
+
+
+    <com.applause.android.ui.HorizontalList
+        android:id="@+id/applause_report_attachments_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/applause_screenshot_height"
+        android:scrollbars="none"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            style="@style/applause_report_attachments_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/applause_report_attachments_notice" />
+
+        <TextView
+            android:id="@+id/applause_report_test_cycle_name"
+            style="@style/applause_report_attachments_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:text="TestCycle"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

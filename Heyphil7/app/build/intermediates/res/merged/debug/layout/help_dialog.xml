@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg">
+ <TextView
+     android:id="@+id/tv_philcare"
+     android:layout_marginTop="5dp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textColor="#008444"
+     android:textAppearance="@style/TextAppearance.AppCompat.Large"
+     android:text="\u25A1 Everything About PhilCare"/>
+ <TextView
+     android:id="@+id/tv_philcare1"
+     android:layout_below="@+id/tv_philcare"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="\t\t History\n\t\t Organization\n\t\t Health Card Products\n\t\t Affiliated Providers\n\t\t Affiliated Dental Clinics\n\t\t Affiliated Doctors"/>
+ <TextView
+    android:id="@+id/tv_member"
+    android:layout_below="@+id/tv_philcare1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:textColor="#008444"
+     android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:text="\u25A1 Registered Member"/>
+ <TextView
+     android:id="@+id/tv_member1"
+     android:layout_below="@+id/tv_member"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="\t\t Personal Information\n\t\t Benefit/Package Plan\n\t\t Annual Physical Examination\n\t\t Utilization\n\t\t Request/Create LOA\n\t\t"/>
+
+</RelativeLayout>

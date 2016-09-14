@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="itextpdf-5.3.2-sources.itextpdf-5.3.2-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/itextpdf-5.3.2-sources/itextpdf-5.3.2-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

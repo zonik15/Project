@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/applause_login_header"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical|left"
+    android:paddingLeft="@dimen/applause_login_standard_padding"
+    android:text="@string/applause_test_cycles_title" />

@@ -1,0 +1,15 @@
+<EditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/applause_report_message_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/applause_creme_light"
+    android:gravity="top|left"
+    android:hint="@string/applause_problem_hint"
+    android:inputType="text|textMultiLine|textShortMessage|textCapSentences"
+    android:padding="16dp"
+    android:textColor="@color/applause_report_problem_value_color"
+    android:textColorHint="@color/applause_report_problem_value_hint_color"
+    android:textCursorDrawable="@drawable/applause_color_cursor"
+    android:textSize="@dimen/applause_feedback_description_text_size" />

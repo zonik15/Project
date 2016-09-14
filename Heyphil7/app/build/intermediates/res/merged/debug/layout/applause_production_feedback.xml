@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/applause_production_feedback_dialog_title"
+        style="@style/applause_production_feedback_title"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="@dimen/applause_production_feedback_standard_padding"
+        android:text="@string/applause_production_feedback_dialog_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/applause_production_feedback_background"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/applause_production_feedback_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="@dimen/applause_production_feedback_standard_padding"
+            android:layout_marginRight="@dimen/applause_production_feedback_standard_padding"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:text="@string/applause_production_feedback_dialog_subtitle" />
+
+
+        <EditText
+            android:id="@+id/applause_production_feedback_dialog_hint"
+            style="@style/applause_production_feedback_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="200dp"
+            android:layout_marginLeft="@dimen/applause_production_feedback_standard_padding"
+            android:layout_marginRight="@dimen/applause_production_feedback_standard_padding">
+
+            <requestFocus />
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/applause_production_feedback_background"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/applause_production_feedback_dialog_negative_button"
+            style="@style/applause_production_feedback_negative_action"
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="@string/applause_production_feedback_dialog_negative_button" />
+
+        <Button
+            android:id="@+id/applause_production_feedback_dialog_positive_button"
+            style="@style/applause_production_feedback_positive_action"
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="@string/applause_production_feedback_dialog_positive_button" />
+
+    </LinearLayout>
+</LinearLayout>

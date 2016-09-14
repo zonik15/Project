@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/applause_report_edit_underline_start">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="@dimen/applause_report_edit_underline_size"
+                android:color="@color/applause_report_problem_edit_bar_normal"
+                android:dashGap="@dimen/applause_report_edit_underline_dash_gap"
+                android:dashWidth="@dimen/applause_report_edit_underline_dash_width" />
+        </shape>
+    </item>
+
+    <item android:bottom="1dp">
+        <shape>
+            <solid android:color="@color/applause_report_problem_background" />
+        </shape>
+    </item>
+</layer-list>

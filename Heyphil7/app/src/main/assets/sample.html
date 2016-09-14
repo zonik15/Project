@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <style type="text/css">
+        html,
+        body {
+        height: 100%;
+        }
+
+        body {
+        background-image: url(file:///android_res/drawable/loa.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position:relative;
+        }
+        label {
+        display: inline-block;
+        }
+    </style>
+    <script type="text/javascript">
+        function replace(id, newContent)
+        {
+            document.getElementById(id).innerHTML = newContent;
+        }
+        </script>
+</head>
+<body>
+<div style="padding-top:235px"><label id=provider style="padding-left:130px; width:600px">Provider Name</label><label id=dateissued style="float:right; margin-right:70px">Date Issued</label></div>
+<div style="padding-top:5px"><label id=unit style="padding-left:130px"></label><label id=validuntil style="float:right; margin-right:70px">Valid Until</label></div>
+<div style="padding-top:5px"><label id=company style="padding-left:130px"></label><label id=effectivedate style="float:right; margin-right:70px">Effectivity Date</label></div>
+<div style="padding-top:5px"><label id=patient style="padding-left:130px">Patient Name</label><label id=age style="float:center; margin-left:200px">Age</label><label id=sex style="padding-left:50px">Sex</label><label id=expireddate style="float:right; margin-right:70px;">Expired Date</label></div>
+<div style="padding-top:5px"><label id=agreement style="padding-left:130px">Agreement No</label><label id=cert style="float:center; margin-left:150px">Cert No</label><label id=coordinator style="float:right; margin-right:70px">OP/Hospital Coordinator</label></div>
+<div style="padding-top:5px"><label id=reffering style="padding-left:130px">Reffering Physician</label><label id=attending style="float:right; margin-right:70px">Attending Physician</label></div>
+<div style="padding-top:105px"><label id=complaint style="padding-left:130px">Chief Complaint</label></div>
+<div style="padding-top:360px"><label id=loacode style="padding-left:620px">Approval Code</label></div>
+<div style="padding-top:691px"><label id=room style="padding-left:710px"></label></div>
+<div style="padding-top:5px"><label id=schedule style="padding-left:710px"></label></div>
+<div style="padding-top:5px"><label id=contact style="padding-left:710px"></label></div>
+</body>
+</html>

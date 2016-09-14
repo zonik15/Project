@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:background="@drawable/shadow">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/circularImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher"
+        app:civ_border="true"
+        app:civ_border_color="#008444"
+        app:civ_border_width="2dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="0" />
+
+   <TextView
+       android:layout_below="@id/circularImageView"
+       android:id="@+id/myaccount"
+       android:layout_width="match_parent"
+       android:gravity="center"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="25dp"
+       android:textSize="20sp"
+       android:text="My Account"
+       />
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textSize="20sp"
+        android:layout_below="@+id/myaccount"/>
+    <TextView
+        android:id="@+id/changepass"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textSize="20sp"
+        android:layout_below="@+id/setting"/>
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="20sp"
+        android:layout_below="@+id/changepass"/>
+
+</RelativeLayout>

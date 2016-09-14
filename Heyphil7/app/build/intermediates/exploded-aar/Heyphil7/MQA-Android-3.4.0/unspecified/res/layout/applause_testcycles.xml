@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/applause_test_cycles_layouts_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/applause_white">
+
+        <include layout="@layout/applause_testcycles_list" />
+
+        <include layout="@layout/applause_testcycles_input" />
+
+    </ViewFlipper>
+
+</LinearLayout>

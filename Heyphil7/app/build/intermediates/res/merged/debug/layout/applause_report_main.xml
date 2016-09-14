@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.applause.android.dialog.report.ReportView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/applause_report_main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/applause_report_background">
+
+
+    <!-- Header section-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/applause_action_bar_height"
+        android:background="@color/applause_report_actionbar_background"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/applause_report_action_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/applause_report_title"
+            android:textColor="@color/applause_report_actionbar_text_color"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/applause_report_action_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="19dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="19dp"
+                android:src="@drawable/applause_report_more" />
+
+            <TextView
+                android:id="@+id/applause_report_action_update_available"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|top"
+                android:background="@drawable/applause_report_update_icon"
+                android:fontFamily="@string/applause_font_family_medium"
+                android:gravity="center"
+                android:text="!"
+                android:textColor="@color/applause_falcon_light"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Action section-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/applause_report_dialog_bug"
+            style="@style/applause_report_action_bug_button"
+            android:layout_marginLeft="@dimen/applause_report_buttons_margin_outer"
+            android:layout_marginRight="@dimen/applause_report_buttons_margin_inner"
+            android:text="@string/applause_report_a_bug" />
+
+        <Button
+            android:id="@+id/applause_report_dialog_feedback"
+            style="@style/applause_report_action_feedback_button"
+            android:layout_marginLeft="@dimen/applause_report_buttons_margin_inner"
+            android:layout_marginRight="@dimen/applause_report_buttons_margin_outer"
+            android:text="@string/applause_give_feedback" />
+
+    </LinearLayout>
+
+    <!-- This layout is hidden because action is going to be added later-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/applause_report_video_capture_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="22dp"
+        android:paddingTop="22dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/applause_report_video_capture"
+            android:drawablePadding="15dp"
+            android:fontFamily="@string/applause_font_family_medium"
+            android:text="@string/applause_report_in_app_recording"
+            android:textColor="@color/applause_report_in_app_record_text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+</com.applause.android.dialog.report.ReportView>

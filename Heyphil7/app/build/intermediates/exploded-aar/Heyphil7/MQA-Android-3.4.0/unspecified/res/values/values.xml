@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <bool name="applause_default_circle_indicator_centered">true</bool>
+    <bool name="applause_default_circle_indicator_snap">false</bool>
+    <color name="applause_add_attachment_action_normal">@color/applause_falcon_blue</color>
+    <color name="applause_add_attachment_action_pressed">@color/applause_falcon_blue_tint_130</color>
+    <color name="applause_add_attachment_background">@color/applause_falcon_light</color>
+    <color name="applause_add_attachment_divider">@color/applause_falcon_light_tint_90</color>
+    <color name="applause_add_attachment_label">@color/applause_falcon_light_tint_60</color>
+    <color name="applause_add_attachment_title">@color/applause_falcon_dark_tint_90</color>
+    <color name="applause_black">#10181F</color>
+    <color name="applause_button_bg">@color/applause_falcon_blue</color>
+    <color name="applause_button_bg_disabled">@color/applause_sky_blue_light</color>
+    <color name="applause_button_bg_pressed">@color/applause_falcon_blue_tint_130</color>
+    <color name="applause_button_text">@color/applause_falcon_light</color>
+    <color name="applause_charcoal_15">#26171d20</color>
+    <color name="applause_charcoal_light">#FF1f272b</color>
+    <color name="applause_crame_pitch_black">#858686</color>
+    <color name="applause_creme_light">#3Ff9f7f4</color>
+    <color name="applause_creme_medium">#e0dfdc</color>
+    <color name="applause_darkGrey">#999</color>
+    <color name="applause_default_circle_indicator_fill_color">@color/applause_tutorial_indicator_fill_color</color>
+    <color name="applause_default_circle_indicator_page_color">#00000000</color>
+    <color name="applause_default_circle_indicator_stroke_color">@color/applause_tutorial_indicator_stroke_color</color>
+    <color name="applause_default_input_color">@color/applause_falcon_light</color>
+    <color name="applause_default_input_hint_color">@color/applause_falcon_dark_tint_60</color>
+    <color name="applause_dialog_action_normal">@color/applause_falcon_red</color>
+    <color name="applause_dialog_action_pressed">@color/applause_falcon_red_dark</color>
+    <color name="applause_dialog_body_text">@color/applause_falcon_dark_tint_90</color>
+    <color name="applause_dialog_dismiss_normal">@color/applause_falcon_dark_tint_60</color>
+    <color name="applause_dialog_dismiss_pressed">@color/applause_falcon_dark_tint_80</color>
+    <color name="applause_editor_bg">@color/applause_falcon_dark</color>
+    <color name="applause_editor_menu_button_background_normal">@color/applause_falcon_light</color>
+    <color name="applause_editor_menu_button_background_pressed">@color/applause_falcon_light_tint_80</color>
+    <color name="applause_editor_menu_button_selected_background_normal">@color/applause_falcon_red</color>
+    <color name="applause_editor_menu_button_selected_background_pressed">@color/applause_falcon_red_dark</color>
+    <color name="applause_editor_menu_label_background_normal">@color/applause_falcon_light</color>
+    <color name="applause_editor_menu_label_background_pressed">@color/applause_falcon_light</color>
+    <color name="applause_editor_menu_label_text">@color/applause_falcon_dark_tint_60</color>
+    <color name="applause_falcon_blue">#4291cc</color>
+    <color name="applause_falcon_blue_tint_130">#356e98</color>
+    <color name="applause_falcon_blue_tint_150">#2c5776</color>
+    <color name="applause_falcon_blue_tint_170">#233f53</color>
+    <color name="applause_falcon_blue_tint_30">#c6deef</color>
+    <color name="applause_falcon_blue_tint_50">#a0c8e5</color>
+    <color name="applause_falcon_blue_tint_70">#7ab2db</color>
+    <color name="applause_falcon_dark">#171d20</color>
+    <color name="applause_falcon_dark_75">#BF171d20</color>
+    <color name="applause_falcon_dark_85">#D9171d20</color>
+    <color name="applause_falcon_dark_tint_60">#747779</color>
+    <color name="applause_falcon_dark_tint_80">#454a4d</color>
+    <color name="applause_falcon_dark_tint_90">#2e3336</color>
+    <color name="applause_falcon_light">#FFFFFF</color>
+    <color name="applause_falcon_light_tint_60">#a2a5a6</color>
+    <color name="applause_falcon_light_tint_80">#d1d2d2</color>
+    <color name="applause_falcon_light_tint_90">#e8e9e9</color>
+    <color name="applause_falcon_light_tran_15">#26FFFFFF</color>
+    <color name="applause_falcon_light_tran_25">#3FFFFFFF</color>
+    <color name="applause_falcon_light_tran_75">#BFFFFFFF</color>
+    <color name="applause_falcon_orange">#e26635</color>
+    <color name="applause_falcon_red">#b9322e</color>
+    <color name="applause_falcon_red_dark">#a62622</color>
+    <color name="applause_falcon_yellow">#eab04b</color>
+    <color name="applause_input_cursor_color">@color/applause_falcon_blue</color>
+    <color name="applause_lightBlue">#6bbdf4</color>
+    <color name="applause_login_body_background">@color/applause_falcon_dark</color>
+    <color name="applause_login_button_background">@color/applause_falcon_blue</color>
+    <color name="applause_login_button_background_pressed">@color/applause_falcon_blue_tint_130
+    </color>
+    <color name="applause_login_divider_focused">@color/applause_falcon_blue</color>
+    <color name="applause_login_divider_unfocused">@color/applause_creme_light</color>
+    <color name="applause_login_error_box_background">@color/applause_falcon_red</color>
+    <color name="applause_login_error_box_text">@color/applause_falcon_light</color>
+    <color name="applause_login_footer_background">@color/applause_falcon_dark</color>
+    <color name="applause_login_footer_text">@color/applause_falcon_dark_tint_80</color>
+    <color name="applause_login_header">@color/applause_falcon_light</color>
+    <color name="applause_login_header_background">@color/applause_charcoal_light</color>
+    <color name="applause_login_input_label">@color/applause_default_input_hint_color</color>
+    <color name="applause_login_main_page_background">@color/applause_black</color>
+    <color name="applause_login_quick_list_pressed_item">@color/applause_falcon_dark_tint_90</color>
+    <color name="applause_login_row_text">@color/applause_falcon_light</color>
+    <color name="applause_login_subheader">@color/applause_falcon_dark_tint_60</color>
+    <color name="applause_production_feedback_background">@color/applause_login_body_background</color>
+    <color name="applause_report_action_bar_background">@color/applause_falcon_dark</color>
+    <color name="applause_report_actionbar_background">@color/applause_falcon_dark</color>
+    <color name="applause_report_actionbar_text_color">@color/applause_falcon_light</color>
+    <color name="applause_report_background">@color/applause_falcon_dark_85</color>
+    <color name="applause_report_bug_bg_normal">@color/applause_falcon_red</color>
+    <color name="applause_report_bug_bg_pressed">@color/applause_falcon_red_dark</color>
+    <color name="applause_report_bug_text_normal">@color/applause_falcon_light</color>
+    <color name="applause_report_bug_text_pressed">@color/applause_falcon_light</color>
+    <color name="applause_report_feedback_bg_normal">@color/applause_falcon_light</color>
+    <color name="applause_report_feedback_bg_pressed">@color/applause_falcon_light_tint_90</color>
+    <color name="applause_report_feedback_text_normal">@color/applause_falcon_dark_tint_80</color>
+    <color name="applause_report_feedback_text_pressed">@color/applause_falcon_dark</color>
+    <color name="applause_report_in_app_record_text_color">@color/applause_falcon_light</color>
+    <color name="applause_report_problem_add_step_color">@color/applause_falcon_light_tint_80</color>
+    <color name="applause_report_problem_attachment_background">@color/applause_falcon_light_tint_90</color>
+    <color name="applause_report_problem_background">@color/applause_falcon_light</color>
+    <color name="applause_report_problem_edit_bar_focused">@color/applause_falcon_blue</color>
+    <color name="applause_report_problem_edit_bar_normal">@color/applause_creme_medium</color>
+    <color name="applause_report_problem_label_color">@color/applause_falcon_light_tint_60</color>
+    <color name="applause_report_problem_label_color_focused">@color/applause_falcon_blue</color>
+    <color name="applause_report_problem_value_color">@color/applause_falcon_dark</color>
+    <color name="applause_report_problem_value_hint_color">@color/applause_falcon_light_tint_60</color>
+    <color name="applause_report_settings_background">@color/applause_falcon_light</color>
+    <color name="applause_report_settings_background_pressed">@color/applause_charcoal_15</color>
+    <color name="applause_report_settings_divider">@color/applause_falcon_light_tint_80</color>
+    <color name="applause_report_settings_label">@color/applause_falcon_light_tint_60</color>
+    <color name="applause_report_settings_sublabel">@color/applause_falcon_dark</color>
+    <color name="applause_report_severity_critical">@color/applause_falcon_red</color>
+    <color name="applause_report_severity_high">@color/applause_falcon_orange</color>
+    <color name="applause_report_severity_low">@color/applause_falcon_light_tint_80</color>
+    <color name="applause_report_severity_medium">@color/applause_falcon_yellow</color>
+    <color name="applause_report_severity_progress">@color/applause_falcon_light_tint_80</color>
+    <color name="applause_sky_blue_light">#4D7699b5</color>
+    <color name="applause_steel">#9ca5b9</color>
+    <color name="applause_transparent">#00000000</color>
+    <color name="applause_transparent_grey">#55e4e4e4</color>
+    <color name="applause_tutorial_bar_divider_background">@color/applause_falcon_light_tran_15
+    </color>
+    <color name="applause_tutorial_buttons_text">@color/applause_falcon_light</color>
+    <color name="applause_tutorial_first_step_background">@color/applause_charcoal_light</color>
+    <color name="applause_tutorial_header_text">@color/applause_falcon_light</color>
+    <color name="applause_tutorial_indicator_fill_color">@color/applause_falcon_light_tran_75
+    </color>
+    <color name="applause_tutorial_indicator_stroke_color">@color/applause_falcon_light_tran_25
+    </color>
+    <color name="applause_tutorial_next_steps_background">@color/applause_falcon_blue</color>
+    <color name="applause_tutorial_welcome_screen_background">@color/applause_transparent</color>
+    <color name="applause_white">#FFFFFF</color>
+    <dimen name="applause_action_bar_height">56dp</dimen>
+    <dimen name="applause_action_bar_more_width">42dp</dimen>
+    <dimen name="applause_add_attachment_background_corner_radius">5dp</dimen>
+    <dimen name="applause_add_attachment_padding">32dp</dimen>
+    <dimen name="applause_button_corner_radius">2dp</dimen>
+    <dimen name="applause_default_circle_indicator_radius">5dp</dimen>
+    <dimen name="applause_default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="applause_dialog_horizontal_margin">20dp</dimen>
+    <dimen name="applause_dialog_vertical_margin">20dp</dimen>
+    <dimen name="applause_editor_label_background_radius">3dp</dimen>
+    <dimen name="applause_fab_menu_item_distance">7dp</dimen>
+    <dimen name="applause_fab_size_mini">40dp</dimen>
+    <dimen name="applause_fab_size_normal">56dp</dimen>
+    <dimen name="applause_feedback_description_text_size">16sp</dimen>
+    <dimen name="applause_feedback_large_padding">16dp</dimen>
+    <dimen name="applause_feedback_small_padding">8dp</dimen>
+    <dimen name="applause_labels_text_size">14sp</dimen>
+    <dimen name="applause_login_footer_height">50dp</dimen>
+    <dimen name="applause_login_header_top_padding">77dp</dimen>
+    <dimen name="applause_login_side_padding">20dp</dimen>
+    <dimen name="applause_login_standard_padding">16dp</dimen>
+    <dimen name="applause_login_top_padding">22dp</dimen>
+    <dimen name="applause_production_feedback_standard_padding">@dimen/applause_login_standard_padding</dimen>
+    <dimen name="applause_report_buttons_height">36dp</dimen>
+    <dimen name="applause_report_buttons_margin_inner">8dp</dimen>
+    <dimen name="applause_report_buttons_margin_outer">20dp</dimen>
+    <dimen name="applause_report_buttons_width">136dp</dimen>
+    <dimen name="applause_report_capture_video_stroke_size">0.33dp</dimen>
+    <dimen name="applause_report_capture_video_stroke_size_negative">-0.33dp</dimen>
+    <dimen name="applause_report_default_padding">16dp</dimen>
+    <dimen name="applause_report_edit_underline_dash_gap">3dp</dimen>
+    <dimen name="applause_report_edit_underline_dash_width">3dp</dimen>
+    <dimen name="applause_report_edit_underline_size">1dp</dimen>
+    <dimen name="applause_report_edit_underline_start">-3dp</dimen>
+    <dimen name="applause_report_seekbar_height">2dp</dimen>
+    <dimen name="applause_report_seekbar_thumb_radius">12dp</dimen>
+    <dimen name="applause_report_settings_avatar_size">50dp</dimen>
+    <dimen name="applause_screenshot_height">86.5dp</dimen>
+    <dimen name="applause_tutorial_bottom_bar_height">60dp</dimen>
+    <dimen name="applause_tutorial_template_image_bottom_padding">36dp</dimen>
+    <dimen name="applause_tutorial_template_image_top_padding">46dp</dimen>
+    <dimen name="applause_tutorial_template_side_padding">64dp</dimen>
+    <dimen name="applause_tutorial_template_subheader_bottom_padding">36dp</dimen>
+    <dimen name="applause_tutorial_template_top_padding">48dp</dimen>
+    <dimen name="applause_tutorial_webview_side_margin">30dp</dimen>
+    <dimen name="applause_tutorial_webview_top_margin">24dp</dimen>
+    <integer name="applause_default_circle_indicator_orientation">0</integer>
+    <integer name="applause_default_rating">0</integer>
+    <integer name="applause_fab_menu_animation_item_speed">50</integer>
+    <integer name="applause_login_copyright_visibility">0</integer>
+    <string name="applause_action_attach">Attach</string>
+    <string name="applause_action_discard">Discard</string>
+    <string name="applause_action_send">Send</string>
+    <string name="applause_action_wifi_only">Upload only via WiFi</string>
+    <string name="applause_adding_from_gallery_error">Remote media attachments not supported</string>
+    <string name="applause_default_variant" translatable="false">QA</string>
+    <string name="applause_delete_screenshot_negative">Cancel</string>
+    <string name="applause_delete_screenshot_positive">Delete</string>
+    <string name="applause_delete_screenshot_title">Are you sure you want to delete this screenshot?</string>
+    <string name="applause_delete_video_title">Are you sure you want to delete this video?</string>
+    <string name="applause_disabled_build_body">If you feel this is incorrect, please contact the application\'s administrator.</string>
+    <string name="applause_disabled_build_kill_button">Exit Application</string>
+    <string name="applause_disabled_build_title">This build is no longer active.</string>
+    <string name="applause_edit_screenshot">Edit screenshot</string>
+    <string name="applause_editor_blur_label">Blur</string>
+    <string name="applause_editor_brush_label">Brush</string>
+    <string name="applause_editor_discard">Discard</string>
+    <string name="applause_editor_reset_label">Reset changes</string>
+    <string name="applause_editor_save">Save</string>
+    <string name="applause_feedback_header_title">Give feedback</string>
+    <string name="applause_feedback_hint">Enter feedback</string>
+    <string name="applause_feedback_include_screenshot">Include screenshot attachment</string>
+    <string formatted="false" name="applause_feedback_rating_label">Rating: %s</string>
+    <string name="applause_feedback_toast_no_message">Please enter comment</string>
+    <string name="applause_feedback_toast_no_rating">Please add the rating.</string>
+    <string name="applause_font_family_medium" translatable="false">sans-serif-medium</string>
+    <string name="applause_give_feedback">Give Feedback</string>
+    <string name="applause_library_name">IBM Mobile Quality Assurance client library %s</string>
+    <string name="applause_library_version" translatable="false">3.4.0</string>
+    <string name="applause_login_anon_login_button">Anonymous Login</string>
+    <string name="applause_login_app_version">v%1$s (%2$d)</string>
+    <string name="applause_login_beta_subtitle">Please enter the email address used to register for this program.</string>
+    <string name="applause_login_beta_title">IBM Mobile Quality Assurance</string>
+    <string name="applause_login_beta_welcome">Welcome to</string>
+    <string name="applause_login_choose_from_list" ns1:ignore="UnusedResources">Select your name from the list.</string>
+    <string name="applause_login_copyright">© Copyright IBM Corp. 2001, 2016</string>
+    <string name="applause_login_error_API_EXCEPTION">Cannot log in to SDK Server. Please check your connectivity.</string>
+    <string name="applause_login_error_APPLICATION_INACTIVE">Account Inactive. Please contact your IT Helpdesk</string>
+    <string name="applause_login_error_BAD_APPLICATION">Application unavailable, please contact your Product Manager.</string>
+    <string name="applause_login_error_BAD_CREDENTIALS">Check credentials and retry.</string>
+    <string name="applause_login_error_BAD_ENVIRONMENT">Device not recognized. Please contact your IT Helpdesk</string>
+    <string name="applause_login_error_TOO_MANY_DEVICES">Number of allowed devices exceeded. Please contact your Product Manager.</string>
+    <string name="applause_login_error_box_title">ERROR:</string>
+    <string name="applause_login_login_button">Login</string>
+    <string name="applause_login_password_hint">Password</string>
+    <string name="applause_login_quick_subtitle">Please select your account</string>
+    <string name="applause_login_sdk_version">SDK version: %1$s (%2$d)</string>
+    <string name="applause_login_title">IBM Mobile Quality Assurance</string>
+    <string name="applause_login_username_hint">E-mail</string>
+    <string name="applause_missing_permission">Please add the SYSTEM_ALERT_WINDOW permission to Manifest</string>
+    <string name="applause_notification_text_report">Tap to report problem</string>
+    <string name="applause_notification_text_report_with_feedback">Tap to report problem or give feedback</string>
+    <string name="applause_notification_text_stop_video">Tap to stop video recording</string>
+    <string name="applause_notification_upload">Uploading ...</string>
+    <string name="applause_notification_video_cancel_action">Cancel</string>
+    <string name="applause_notification_video_save_action">Save</string>
+    <string name="applause_problem_action_performed_hint_more">Add step</string>
+    <string name="applause_problem_action_performed_label">Actions performed (optional)</string>
+    <string name="applause_problem_actual_result_hint">Actual result (optional)</string>
+    <string name="applause_problem_actual_result_label">Actual result (optional)</string>
+    <string name="applause_problem_add_after">+</string>
+    <string name="applause_problem_add_from_camera">USE CAMERA</string>
+    <string name="applause_problem_add_from_gallery">BROWSE GALLERY</string>
+    <string name="applause_problem_add_screenshot">TAKE SCREENSHOT</string>
+    <string name="applause_problem_attachment_type_dialog_title">Add attachment</string>
+    <string name="applause_problem_attachment_type_dialog_video_notice">Videos can be large. Recommended to use WiFi.</string>
+    <string name="applause_problem_backward_compatibility_template">1) TITLE: %1$s, 2) ACTION PERFORMED: %2$s, 3) EXPECTED RESULT: %3$s, 4) ACTUAL RESULT: %4$s, 5) SEVERITY: %5$s.</string>
+    <string name="applause_problem_bug_title_hint">Title</string>
+    <string name="applause_problem_bug_title_label">Title</string>
+    <string name="applause_problem_expected_result_hint">Expected result (optional)</string>
+    <string name="applause_problem_expected_result_label">Expected result (optional)</string>
+    <string name="applause_problem_header_title">Report a bug</string>
+    <string name="applause_problem_hint">Describe the problem</string>
+    <string name="applause_problem_severity_label">Severity:</string>
+    <string name="applause_problem_take_video">START IN-APP VIDEO CAPTURE</string>
+    <string name="applause_problem_toast_no_message">Please enter the title for your bug</string>
+    <string name="applause_production_feedback_dialog_hint">Write your feedback here</string>
+    <string name="applause_production_feedback_dialog_negative_button">Cancel</string>
+    <string name="applause_production_feedback_dialog_positive_button">Send</string>
+    <string name="applause_production_feedback_dialog_subtitle">Please provide feedback</string>
+    <string name="applause_production_feedback_dialog_title">Feedback</string>
+    <string name="applause_report_a_bug">Report a Bug</string>
+    <string name="applause_report_attachments_label">ATTACHMENTS</string>
+    <string name="applause_report_attachments_notice">Report will include device logs</string>
+    <string name="applause_report_attachments_test_cycle_label">Test Cycle: %s</string>
+    <string name="applause_report_in_app_recording">START IN-APP VIDEO CAPTURE</string>
+    <string name="applause_report_title">Create new report</string>
+    <string name="applause_select_picture">Select picture</string>
+    <string name="applause_select_test_cycle_desc">Select your Test Cycle from the list</string>
+    <string name="applause_settings_accounts_label">Switch Accounts</string>
+    <string name="applause_settings_available_version">Available: %1$s (%2$d)</string>
+    <string name="applause_settings_current_version">Current version:\n%1$s (%2$d)</string>
+    <string name="applause_settings_login_label">Logged as</string>
+    <string name="applause_settings_title">Settings</string>
+    <string name="applause_settings_tutorial_label">Show Tutorial</string>
+    <string name="applause_settings_update_label">Update version</string>
+    <string name="applause_settings_wifi_label">Use cellular data for video attachments</string>
+    <string name="applause_severity_critical">Critical</string>
+    <string name="applause_severity_high">High</string>
+    <string name="applause_severity_low">Low</string>
+    <string name="applause_severity_medium">Medium</string>
+    <string name="applause_shake_for_next_screenshot">Use top notification bar to add a new screenshot</string>
+    <string name="applause_test_cycle_hint">Test Cycle ID</string>
+    <string name="applause_test_cycles_empty_not_allowed">Test Cycle ID cannot be empty</string>
+    <string name="applause_test_cycles_manual">Please provide your Test Cycle ID.</string>
+    <string name="applause_test_cycles_set">Set Test Cycle</string>
+    <string name="applause_test_cycles_title">Test Cycles</string>
+    <string name="applause_toast_application_blocked">Your application has expired and can not be run at this time.</string>
+    <string name="applause_toast_cant_identify">Cannot connect to server %s please check connectivity</string>
+    <string name="applause_toast_recommended_update">Your version (%s) is outdated. When you report an issue tap on the settings icon to update!</string>
+    <string name="applause_tutorial_done">DONE</string>
+    <string name="applause_tutorial_message_loading_error">There was a problem downloading the app welcome message. But you can still see our in app tutorial by swiping right.</string>
+    <string name="applause_tutorial_next">NEXT</string>
+    <string name="applause_tutorial_skip">SKIP</string>
+    <string name="applause_tutorial_step1_subtitle">Simple <b>shake</b> your device.</string>
+    <string name="applause_tutorial_step1_title">How to report\nbugs or feedback?</string>
+    <string name="applause_tutorial_step2_subtitle">Record in-app footage</string>
+    <string name="applause_tutorial_step2_title">Add new report\nor finish existing draft.</string>
+    <string name="applause_tutorial_step3_subtitle">Attach image and video files</string>
+    <string name="applause_tutorial_step3_title">Describe the issue\nin detail</string>
+    <string name="applause_tutorial_step4_subtitle"> </string>
+    <string name="applause_tutorial_step4_title">..or provide insightful\nfeedback.</string>
+    <string name="applause_video_display_name">mqa</string>
+    <string name="applause_video_recording_cancelled">Screen recording cancelled</string>
+    <string name="applause_video_recording_ended">Screen recording just ended</string>
+    <string name="applause_video_recording_failed_to_start">Could not start screen recording</string>
+    <string name="applause_video_recording_has_started">Screen recording has started</string>
+    <string name="applause_wrong_manifest">%s could not be started. Please check logs for more details.</string>
+    <style name="applause_action_bar" parent="@android:style/Widget.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+        <item name="android:titleTextStyle">@style/applause_action_bar_title</item>
+        <item name="android:height">@dimen/applause_action_bar_height</item>
+    </style>
+    <style name="applause_action_bar_items" parent="@android:style/Widget.Holo.ActionButton">
+        <item name="android:minHeight">@dimen/applause_action_bar_height</item>
+    </style>
+    <style name="applause_action_bar_more" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/applause_report_actionbar_more</item>
+        <item name="android:minHeight">@dimen/applause_action_bar_height</item>
+        <item name="android:minWidth">@dimen/applause_action_bar_more_width</item>
+    </style>
+    <style name="applause_action_bar_title" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/applause_white</item>
+        <item name="android:fontFamily">@string/applause_font_family_medium</item>
+    </style>
+    <style name="applause_add_attachment_action">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/applause_add_attachment_action_background</item>
+        <item name="android:textColor">@color/applause_add_attachment_action</item>
+        <item name="android:paddingLeft">@dimen/applause_add_attachment_padding</item>
+        <item name="android:paddingRight">@dimen/applause_add_attachment_padding</item>
+        <item name="android:fontFamily">@string/applause_font_family_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="applause_add_attachment_cancel" parent="applause_add_attachment_action">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/applause_dialog_dismiss</item>
+    </style>
+    <style name="applause_add_attachment_label">
+        <item name="android:background">@drawable/applause_add_attachment_action_background</item>
+        <item name="android:textColor">@color/applause_add_attachment_label</item>
+        <item name="android:paddingLeft">@dimen/applause_add_attachment_padding</item>
+        <item name="android:paddingRight">@dimen/applause_add_attachment_padding</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="applause_button">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:textColor">@color/applause_button_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    <style name="applause_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="applause_dialog_action" parent="applause_dialog_dismiss">
+        <item name="android:textColor">@color/applause_dialog_action</item>
+    </style>
+    <style name="applause_dialog_body">
+        <item name="android:textColor">@color/applause_dialog_body_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="applause_dialog_container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:background">@drawable/applause_add_attachment_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="applause_dialog_dismiss">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/applause_dialog_dismiss</item>
+    </style>
+    <style name="applause_dialog_title">
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/applause_add_attachment_title</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@string/applause_font_family_medium</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">20dp</item>
+    </style>
+    <style name="applause_editor_actionbar" parent="@style/applause_action_bar">
+        <item name="android:background">@android:color/black</item>
+    </style>
+    <style name="applause_editor_fab_menu_label" parent="applause_label">
+        <item name="android:textColor">@color/applause_editor_menu_label_text</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    <style name="applause_editor_theme" parent="@style/applause_theme">
+        <item name="android:actionBarStyle">@style/applause_editor_actionbar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="applause_feedback_actionbar" parent="@style/applause_action_bar">
+        <item name="android:background">@color/applause_report_action_bar_background</item>
+    </style>
+    <style name="applause_feedback_attach_container" parent="applause_feedback_container">
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingTop">6dp</item>
+    </style>
+    <style name="applause_feedback_container">
+        <item name="android:paddingLeft">@dimen/applause_feedback_large_padding</item>
+        <item name="android:paddingRight">@dimen/applause_feedback_large_padding</item>
+    </style>
+    <style name="applause_feedback_label_dark">
+        <item name="android:textColor">@color/applause_falcon_dark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="applause_feedback_rating_container" parent="applause_feedback_container">
+        <item name="android:paddingTop">@dimen/applause_feedback_large_padding</item>
+        <item name="android:paddingBottom">@dimen/applause_feedback_large_padding</item>
+    </style>
+    <style name="applause_feedback_rating_label" parent="applause_feedback_label_dark">
+        <item name="android:paddingTop">@dimen/applause_feedback_small_padding</item>
+    </style>
+    <style name="applause_feedback_screenshots_container" parent="applause_feedback_container">
+        <item name="android:background">@color/applause_report_problem_attachment_background</item>
+    </style>
+    <style name="applause_feedback_separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/applause_creme_medium</item>
+    </style>
+    <style name="applause_feedback_theme" parent="@style/applause_theme">
+        <item name="android:actionBarStyle">@style/applause_feedback_actionbar</item>
+    </style>
+    <style name="applause_input">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/applause_default_input_color</item>
+        <item name="android:textColorHint">@color/applause_default_input_hint_color</item>
+        <item name="android:textCursorDrawable">@drawable/applause_color_cursor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingBottom">9sp</item>
+        <item name="android:paddingTop">6sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="applause_label"/>
+    <style name="applause_login_anonymous_button" parent="applause_login_button">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/applause_login_color_selector</item>
+    </style>
+    <style name="applause_login_button" parent="applause_button">
+        <!-- Roboto Medium-->
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@string/applause_font_family_medium</item>
+        <item name="android:background">@drawable/applause_button</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="applause_login_error_box" parent="applause_label">
+        <item name="android:textColor">@color/applause_login_error_box_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="applause_login_error_box_close" parent="applause_login_error_box"/>
+    <style name="applause_login_error_box_label" parent="applause_login_error_box">
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="applause_login_error_box_title" parent="applause_login_error_box"/>
+    <style name="applause_login_footer_" parent="applause_label">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/applause_login_footer_text</item>
+    </style>
+    <style name="applause_login_header" parnet="applause_label">
+        <item name="android:textColor">@color/applause_login_header</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">@dimen/applause_action_bar_height</item>
+        <item name="android:background">@color/applause_login_header_background</item>
+    </style>
+    <style name="applause_login_input" parent="applause_input">
+        <item name="android:background">@drawable/applause_login_input_background</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingBottom">9sp</item>
+        <item name="android:paddingTop">6sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="applause_login_input_label" parent="applause_label">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/applause_login_input_label</item>
+    </style>
+    <style name="applause_login_quick_auth_row" parent="applause_label">
+        <item name="android:textColor">@color/applause_login_row_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="applause_login_subheader1" parent="applause_login_header">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="applause_login_subheader2" parent="applause_login_header">
+        <item name="android:textColor">@color/applause_login_subheader</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="applause_problem_action_performed_add_after">
+        <item name="android:textColor">@color/applause_report_problem_add_step_color</item>
+        <item name="android:text">@string/applause_problem_add_after</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="applause_problem_action_performed_label" parent="applause_problem_label"/>
+    <style name="applause_problem_action_performed_position">
+        <item name="android:textColor">@color/applause_darkGrey</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="applause_problem_action_performed_value" parent="applause_problem_value">
+        <!--<item name="android:paddingBottom">3sp</item>-->
+        <!--<item name="android:paddingTop">6sp</item>-->
+        <item name="android:background">@drawable/applause_problem_actions_edittext_background
+        </item>
+    </style>
+    <style name="applause_problem_actionbar" parent="@style/applause_action_bar">
+        <item name="android:background">@color/applause_report_action_bar_background</item>
+    </style>
+    <style name="applause_problem_actual_result_label" parent="applause_problem_label"/>
+    <style name="applause_problem_actual_result_value" parent="applause_problem_value"/>
+    <style name="applause_problem_container">
+        <item name="android:background">@color/applause_report_problem_background</item>
+    </style>
+    <style name="applause_problem_expected_result_label" parent="applause_problem_label"/>
+    <style name="applause_problem_expected_result_value" parent="applause_problem_value"/>
+    <style name="applause_problem_label">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:textColor">@color/applause_report_problem_label_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="applause_problem_scrollview">
+        <item name="android:background">@color/applause_report_problem_attachment_background</item>
+    </style>
+    <style name="applause_problem_severity_label" parent="applause_problem_label"/>
+    <style name="applause_problem_severity_value" parent="applause_problem_label">
+        <item name="android:fontFamily">@string/applause_font_family_medium</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+    <style name="applause_problem_theme" parent="@style/applause_theme">
+        <item name="android:actionBarStyle">@style/applause_problem_actionbar</item>
+    </style>
+    <style name="applause_problem_title_label" parent="applause_problem_label"/>
+    <style name="applause_problem_title_value" parent="applause_problem_value"/>
+    <style name="applause_problem_value" parent="applause_input">
+        <item name="android:textColor">@color/applause_report_problem_value_color</item>
+        <item name="android:textColorHint">@color/applause_report_problem_value_hint_color</item>
+        <item name="android:background">@drawable/applause_problem_edittext_background</item>
+        <item name="android:inputType">textCapSentences|textMultiLine</item>
+        <item name="android:textCursorDrawable">@drawable/applause_color_cursor</item>
+    </style>
+    <style name="applause_production_feedback_input" parent="applause_login_input">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:inputType">textCapSentences|textMultiLine</item>
+    </style>
+    <style name="applause_production_feedback_negative_action" parent="applause_login_button"/>
+    <style name="applause_production_feedback_positive_action" parent="applause_login_button"/>
+    <style name="applause_production_feedback_subtitle" parent="applause_login_subheader2"/>
+    <style name="applause_production_feedback_title" parent="applause_login_header"/>
+    <style name="applause_rating_bar">
+        <item name="android:minHeight">45dip</item>
+        <item name="android:maxHeight">45dip</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="applause_rating_bar_star">
+        <item name="android:src">@drawable/applause_star</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="applause_report_action_bar">
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:textColor">@color/applause_white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="applause_report_action_bar_item" parent="applause_report_action_bar">
+        <item name="android:background">@drawable/applause_report_actionbar_button_background</item>
+    </style>
+    <style name="applause_report_action_bug_button" parent="applause_report_action_buttons">
+        <item name="android:background">@drawable/applause_report_bug</item>
+        <item name="android:textColor">@color/applause_report_bug</item>
+        <item name="android:fontFamily">@string/applause_font_family_medium</item>
+    </style>
+    <style name="applause_report_action_buttons" parent="applause_button">
+        <item name="android:textColor">@color/applause_white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">@dimen/applause_report_buttons_width</item>
+        <item name="android:layout_height">@dimen/applause_report_buttons_height</item>
+
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+    <style name="applause_report_action_feedback_button" parent="applause_report_action_buttons">
+        <item name="android:background">@drawable/applause_report_feedback</item>
+        <item name="android:textColor">@color/applause_report_feedback</item>
+    </style>
+    <style name="applause_report_attachments_label" parent="applause_label">
+        <item name="android:textColor">@color/applause_crame_pitch_black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="applause_report_settings_divider">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/applause_report_settings_divider</item>
+    </style>
+    <style name="applause_report_settings_label">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/applause_report_settings_label</item>
+    </style>
+    <style name="applause_report_settings_section">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:paddingTop">18dp</item>
+
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/applause_report_settings_item_background</item>
+    </style>
+    <style name="applause_report_settings_sublabel">
+        <item name="android:textColor">@color/applause_report_settings_sublabel</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="applause_theme" parent="@android:style/Theme.Holo">
+        <item name="android:actionButtonStyle">@style/applause_action_bar_items</item>
+        <item name="android:actionOverflowButtonStyle">@style/applause_action_bar_more</item>
+    </style>
+    <style name="applause_tutorial_bottom_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.9</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/applause_tutorial_buttons_text</item>
+        <item name="android:background">@drawable/applause_tutorial_button_background</item>
+    </style>
+    <style name="applause_tutorial_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/applause_tutorial_bar_divider_background</item>
+    </style>
+    <style name="applause_tutorial_header">
+        <item name="android:textColor">@color/applause_tutorial_header_text</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="applause_tutorial_subheader" parent="applause_tutorial_header">
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

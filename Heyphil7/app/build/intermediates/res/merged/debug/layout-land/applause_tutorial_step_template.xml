@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/applause_tutorial_template_side_padding"
+    android:paddingRight="@dimen/applause_tutorial_template_side_padding"
+
+    tools:background="@color/applause_tutorial_next_steps_background">
+
+    <FrameLayout
+        android:id="@+id/applause_tutorial_step_image_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/applause_tutorial_template_image_bottom_padding"
+        android:paddingTop="@dimen/applause_tutorial_template_image_top_padding">
+
+        <ImageView
+            android:id="@+id/applause_tutorial_step_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/applause_tutorial_step1" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/applause_tutorial_step_title"
+            style="@style/applause_tutorial_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="@string/applause_tutorial_step1_title" />
+
+        <TextView
+            android:id="@+id/applause_tutorial_step_subtitle"
+            style="@style/applause_tutorial_subheader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/applause_tutorial_step1_subtitle" />
+
+    </LinearLayout>
+
+</LinearLayout>

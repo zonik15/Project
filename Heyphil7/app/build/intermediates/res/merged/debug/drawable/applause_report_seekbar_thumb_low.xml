@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <solid android:color="@color/applause_report_severity_low" />
+
+    <size
+        android:width="@dimen/applause_report_seekbar_thumb_radius"
+        android:height="@dimen/applause_report_seekbar_thumb_radius" />
+
+</shape>

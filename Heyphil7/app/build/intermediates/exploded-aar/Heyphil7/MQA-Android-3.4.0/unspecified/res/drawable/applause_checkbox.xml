@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+
+    <item android:drawable="@drawable/applause_checbox_off_focused" android:state_checked="false" android:state_focused="true" />
+    <item android:drawable="@drawable/applause_checbox_off_pressed" android:state_checked="false" android:state_pressed="true" />
+    <item android:drawable="@drawable/applause_checbox_off_normal" android:state_checked="false" />
+
+    <item android:drawable="@drawable/applause_checbox_on_focused" android:state_checked="true" android:state_focused="true" />
+    <item android:drawable="@drawable/applause_checbox_on_pressed" android:state_checked="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/applause_checbox_on_normal" android:state_checked="true" />
+
+
+</selector>

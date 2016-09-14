@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.applause.android.ui.TestCycleAdapterRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:background="@color/applause_login_body_background">
+
+    <TextView
+        android:id="@+id/applause_test_cycle_name"
+        style="@style/applause_login_quick_auth_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:duplicateParentState="true"
+        android:focusable="false"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/applause_login_standard_padding"
+        tools:text="Test Cycle text" />
+</com.applause.android.ui.TestCycleAdapterRow>

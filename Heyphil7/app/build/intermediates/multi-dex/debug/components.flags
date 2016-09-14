@@ -1,0 +1,132 @@
+-injars 'C:\Users\ABDalisay\Desktop\M'HANNA\8-30-16\Heyphil7\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'C:\Users\ABDalisay\Desktop\M'HANNA\8-30-16\Heyphil7\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'D:\adt-bundle-windows-x86-20130917\sdk\build-tools\24.0.0\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
+-dontwarn **
+-printconfiguration 'C:\Users\ABDalisay\Desktop\M'HANNA\8-30-16\Heyphil7\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.app.heyphil.LoginScreen {
+    <init>();
+}
+
+-keep class com.app.heyphil.HeyphilScreen {
+    <init>();
+}
+
+-keep class com.app.heyphil.RegisterScreen {
+    <init>();
+}
+
+-keep class com.app.heyphil.MainActivity {
+    <init>();
+}
+
+-keep class com.app.heyphil.Product {
+    <init>();
+}
+
+-keep class com.app.heyphil.TestMap {
+    <init>();
+}
+
+-keep class com.app.heyphil.ChatBubbleActivity {
+    <init>();
+}
+
+-keep class com.app.heyphil.MapActivity {
+    <init>();
+}
+
+-keep class com.app.heyphil.CreateLOA {
+    <init>();
+}
+
+-keep class com.app.heyphil.PdfCreator {
+    <init>();
+}
+
+-keep class com.app.heyphil.PhilcareProducts {
+    <init>();
+}
+
+-keep class com.app.heyphil.ProductList {
+    <init>();
+}
+
+-keep class com.app.heyphil.ProductBuy {
+    <init>();
+}
+
+-keep class com.app.heyphil.Pdf_Download {
+    <init>();
+}
+
+-keep class com.ibm.mqa.ui.ProblemActivity {
+    <init>();
+}
+
+-keep class com.ibm.mqa.ui.FeedbackActivity {
+    <init>();
+}
+
+-keep class com.ibm.mqa.ui.ScreenshotEditorActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep class com.apphance.android.ui.ProblemActivity {
+    <init>();
+}
+
+-keep class com.apphance.android.ui.FeedbackActivity {
+    <init>();
+}
+
+-keep class com.apphance.android.ui.ScreenshotEditorActivity {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.fd.** {
+    <fields>;
+    <methods>;
+}

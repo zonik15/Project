@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/applause_editor_bg">
+
+    <com.applause.android.ui.overlay.OverlayView
+        android:id="@+id/applause_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ext.com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/applause_editor_actions_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="25dp"
+        android:paddingRight="25dp">
+
+        <ext.com.github.clans.fab.FloatingActionButton
+            android:id="@+id/applause_editor_reset_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/applause_editor_reset_icon" />
+
+        <ext.com.github.clans.fab.FloatingActionButton
+            android:id="@+id/applause_editor_blur_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/applause_editor_blur_icon" />
+
+        <ext.com.github.clans.fab.FloatingActionButton
+            android:id="@+id/applause_editor_brush_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/applause_editor_brush_icon" />
+
+    </ext.com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/applause_feedback_rating_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/applause_rating_bar" />
+
+    <TextView
+        android:visibility="gone"
+        style="@style/applause_feedback_rating_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/applause_feedback_rating_label" />
+
+</LinearLayout>

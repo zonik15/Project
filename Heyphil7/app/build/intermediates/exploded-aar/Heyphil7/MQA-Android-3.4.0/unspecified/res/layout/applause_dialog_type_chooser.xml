@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/applause_dialog_container">
+
+    <TextView
+        android:id="@+id/applause_generic_dialog_title"
+        style="@style/applause_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applause_problem_attachment_type_dialog_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/applause_report_add_screenshot"
+                style="@style/applause_add_attachment_action"
+                android:text="@string/applause_problem_add_screenshot" />
+
+            <Button
+                android:id="@+id/applause_report_add_from_gallery"
+                style="@style/applause_add_attachment_action"
+                android:text="@string/applause_problem_add_from_gallery" />
+
+            <Button
+                android:id="@+id/applause_report_add_from_camera"
+                style="@style/applause_add_attachment_action"
+                android:text="@string/applause_problem_add_from_camera" />
+
+            <Button
+                android:id="@+id/applause_report_take_video"
+                style="@style/applause_add_attachment_action"
+                android:text="@string/applause_problem_take_video" />
+
+            <TextView
+                android:id="@+id/applause_report_take_video_notice"
+                style="@style/applause_add_attachment_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="@string/applause_problem_attachment_type_dialog_video_notice" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/applause_generic_dialog_negative_btn"
+        style="@style/applause_add_attachment_cancel"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/applause_delete_screenshot_negative"
+        android:textAllCaps="true"
+        android:textSize="14sp" />
+
+</LinearLayout>
+

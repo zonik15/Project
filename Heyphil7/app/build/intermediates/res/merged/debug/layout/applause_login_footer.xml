@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/applause_login_footer_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/applause_login_footer_height"
+    android:background="@color/applause_login_footer_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:layout_gravity="bottom">
+
+    <TextView
+        android:id="@+id/applause_login_footer_version"
+        style="@style/applause_login_footer_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:text="Application version: 3.2.2-RC" />
+
+    <TextView
+        style="@style/applause_login_footer_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/applause_login_copyright"
+        android:visibility="@integer/applause_login_copyright_visibility" />
+
+</LinearLayout>

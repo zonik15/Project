@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shadow">
+
+    <TextView
+        android:id="@+id/tv_loahistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#008444"
+        android:text="\t\tLOA History"
+        android:textSize="20sp"/>
+    <ListView
+        android:id="@+id/lv_loahistory"
+        android:layout_below="@+id/tv_loahistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#6d6767"
+        android:layout_above="@+id/none"></ListView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/custombutton"
+        android:text="None"
+        android:id="@+id/none"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

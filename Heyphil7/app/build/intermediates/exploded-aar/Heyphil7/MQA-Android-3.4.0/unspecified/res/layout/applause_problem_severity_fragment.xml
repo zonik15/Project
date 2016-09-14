@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/applause_problem_new">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/applause_report_default_padding"
+        android:paddingRight="@dimen/applause_report_default_padding">
+
+        <TextView
+            style="@style/applause_problem_severity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/applause_problem_severity_label" />
+
+        <TextView
+            android:id="@+id/applause_problem_severity_textview"
+            style="@style/applause_problem_severity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="High" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/applause_problem_severity_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:maxHeight="@dimen/applause_report_seekbar_height"
+        android:minHeight="@dimen/applause_report_seekbar_height"
+        android:paddingBottom="20dp"
+        android:paddingLeft="@dimen/applause_report_default_padding"
+        android:paddingRight="@dimen/applause_report_default_padding"
+        android:paddingTop="10dp"
+        android:progressDrawable="@drawable/applause_report_seekbar_medium"
+        android:thumb="@drawable/applause_report_seekbar_thumb_critical" />
+
+</LinearLayout>

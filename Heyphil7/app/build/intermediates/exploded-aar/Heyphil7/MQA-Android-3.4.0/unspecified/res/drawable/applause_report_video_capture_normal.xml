@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/applause_transparent" />
+        </shape>
+    </item>
+
+    <item
+        android:left="@dimen/applause_report_capture_video_stroke_size_negative"
+        android:right="@dimen/applause_report_capture_video_stroke_size_negative">
+        <shape android:shape="rectangle">
+
+            <stroke
+                android:width="@dimen/applause_report_capture_video_stroke_size"
+                android:color="@color/applause_falcon_light_tran_15" />
+        </shape>
+    </item>
+
+
+</layer-list>

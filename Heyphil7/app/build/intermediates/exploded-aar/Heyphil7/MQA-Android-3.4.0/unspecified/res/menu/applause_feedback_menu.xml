@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/applause_send_report"
+        android:icon="@drawable/applause_report_actionbar_send"
+        android:menuCategory="container"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"
+        android:title="@string/applause_action_send" />
+
+    <item
+        android:id="@+id/applause_discard_report"
+        android:title="@string/applause_action_discard"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/applause_wifi_only_report"
+        android:title="@string/applause_action_wifi_only"
+        android:checkable="true"
+        android:showAsAction="never" />
+</menu>

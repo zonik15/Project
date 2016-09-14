@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/applause_problem_scroll_view"
+    style="@style/applause_problem_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/applause_problem_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/applause_problem_title_fragment"
+                android:name="com.applause.android.ui.ProblemTitleFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/applause_problem_title_fragment" />
+
+            <fragment
+                android:id="@+id/applause_problem_action_performed_fragment"
+                android:name="com.applause.android.ui.ProblemActionPerformedFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/applause_problem_action_performed_fragment" />
+
+            <fragment
+                android:id="@+id/applause_problem_expected_result_fragment"
+                android:name="com.applause.android.ui.ProblemExpectedResultFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/applause_problem_expected_result_fragment" />
+
+            <fragment
+                android:id="@+id/applause_problem_actual_result_fragment"
+                android:name="com.applause.android.ui.ProblemActualResultFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/applause_problem_actual_result_fragment" />
+
+            <fragment
+                android:id="@+id/applause_problem_severity_fragment"
+                android:name="com.applause.android.ui.ProblemSeverityFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/applause_problem_severity_fragment" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/applause_report_divider_shadow" />
+
+        <fragment
+            android:id="@+id/applause_problem_preview_fragment"
+            android:name="com.applause.android.ui.ProblemAttachmentsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/applause_report_preview_fragment" />
+
+    </LinearLayout>
+
+</ScrollView>

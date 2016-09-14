@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/applause_testcycles_header" />
+
+    <TextView
+        style="@style/applause_login_subheader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/applause_login_body_background"
+        android:gravity="center_vertical|left"
+        android:padding="16dp"
+        android:text="@string/applause_select_test_cycle_desc" />
+
+    <ListView
+        android:id="@+id/applause_testcycles_users_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/applause_login_body_background"
+        android:cacheColorHint="@color/applause_transparent"
+        android:divider="@color/applause_login_body_background"
+        tools:listitem="@layout/applause_testcycle" />
+
+</LinearLayout>

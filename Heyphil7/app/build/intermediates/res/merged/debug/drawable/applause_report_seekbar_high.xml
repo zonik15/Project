@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@android:id/background"
+        android:drawable="@color/applause_report_severity_progress" />
+
+    <item android:id="@android:id/progress">
+        <scale
+            android:drawable="@color/applause_report_severity_high"
+            android:scaleWidth="100%" />
+    </item>
+
+</layer-list>

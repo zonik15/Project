@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/applause_report_default_padding"
+    android:paddingRight="@dimen/applause_report_default_padding">
+
+    <com.applause.android.ui.MagicLabel
+        android:id="@+id/applause_problem_actual_result_label"
+        style="@style/applause_problem_actual_result_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/applause_problem_actual_result_label"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/applause_problem_actual_result_edittext"
+        style="@style/applause_problem_actual_result_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/applause_problem_actual_result_hint" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/applause_dialog_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/applause_add_attachment_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/applause_generic_dialog_title"
+            style="@style/applause_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Title text" />
+
+        <TextView
+            android:id="@+id/applause_generic_dialog_body"
+            style="@style/applause_dialog_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="16dp"
+            tools:text="Body Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus nunc massa. In ultrices, mi sed pharetra aliquam, elit eros blandit turpis, sed accumsan neque nibh vitae eros. Cras vitae volutpat urna. Cras tortor libero, vulputate molestie vestibulum non, semper ut dolor. Class aptent taciti sociosqu ad litora torquent per." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/applause_generic_dialog_negative_btn"
+                style="@style/applause_dialog_dismiss"
+                tools:text="Negative button" />
+
+            <Button
+                android:id="@+id/applause_generic_dialog_positive_btn"
+                style="@style/applause_dialog_action"
+                android:text="@string/applause_delete_screenshot_positive"
+                tools:text="Positive button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
