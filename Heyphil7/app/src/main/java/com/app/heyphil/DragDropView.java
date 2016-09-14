@@ -117,22 +117,25 @@ public class DragDropView extends FrameLayout {
 					v.setLayoutParams(dragParam);
 					if(m_downXValue==currentX){
 						System.out.println(""+m_downXValue+""+currentX);
-							final Dialog dialog = new Dialog(getContext());
-							dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-							dialog.setContentView(R.layout.menu_layout);
-							dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
-							CircularImageView user=(CircularImageView)dialog.findViewById(R.id.circularImageView);
-							TextView myaccount=(TextView)dialog.findViewById(R.id.myaccount);
-							user.setImageBitmap(Data.bitmap);
-							myaccount.setOnClickListener(new OnClickListener() {
-								@Override
-								public void onClick(View view) {
-									MyAccount();
-								}
-							});
-							dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-							dialog.show();
-
+						final Dialog dialog = new Dialog(getContext());
+						dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+						dialog.setContentView(R.layout.menu_layout);
+						dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+						Typeface tf = Typeface.create("Helvetica", Typeface.BOLD);
+						CircularImageView user=(CircularImageView)dialog.findViewById(R.id.circularImageView);
+						TextView myaccount=(TextView)dialog.findViewById(R.id.myaccount);
+						TextView setting=(TextView)dialog.findViewById(R.id.setting);
+						TextView logout=(TextView)dialog.findViewById(R.id.logout);
+						myaccount.setTypeface(tf);setting.setTypeface(tf);logout.setTypeface(tf);
+						user.setImageBitmap(Data.bitmap);
+						myaccount.setOnClickListener(new View.OnClickListener() {
+							@Override
+							public void onClick(View view) {
+								MyAccount();
+							}
+						});
+						dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+						dialog.show();
 					}
 					break;
 				}
