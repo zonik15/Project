@@ -6,31 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f8a52cb-544e-4fea-b548-a8256dae9c33" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ChatArrayAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ChatArrayAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ChatBubbleActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ChatBubbleActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/CreateLOA.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/CreateLOA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/Data.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/Data.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/DragDropView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/DragDropView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/HeyPhilApi.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/HeyPhilApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/HeyphilScreen.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/HeyphilScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/HttpStuff.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/HttpStuff.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/LoginScreen.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/LoginScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/MapActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/MapActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/PhilcareProducts.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/PhilcareProducts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ProductBuy.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ProductBuy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ProductList.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ProductList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/RegisterScreen.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/RegisterScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ServiceHandler.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ServiceHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/TestMap.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/TestMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/WebAPI.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/WebAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/speech/speech.iml" afterPath="$PROJECT_DIR$/speech/speech.iml" />
-    </list>
+    <list default="true" id="7f8a52cb-544e-4fea-b548-a8256dae9c33" name="Default" comment="" />
     <ignored path="Heyphil7.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,7 +123,7 @@
       <file leaf-file-name="ChatBubbleActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ChatBubbleActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.45617172">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -4252,7 +4228,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/heyphil/ChatBubbleActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.45617172">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
