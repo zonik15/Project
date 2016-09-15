@@ -39,10 +39,18 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/send_message_layout"
         android:divider="@null"/>
+    <TextView
+        android:layout_width="84dp"
+        android:layout_height="27.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/send_message_layout"
+        android:background="@drawable/philcarelogo"/>
 
     <LinearLayout
         android:id="@+id/send_message_layout"
