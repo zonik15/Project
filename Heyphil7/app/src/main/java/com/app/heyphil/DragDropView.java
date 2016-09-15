@@ -2,6 +2,7 @@ package com.app.heyphil;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -10,9 +11,9 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -28,6 +29,7 @@ public class DragDropView extends FrameLayout {
 	 * @param context
 	 */
 	float m_downXValue;
+	Context context;
 	public DragDropView(Context context) {
 		super(context);
 	}
@@ -117,25 +119,32 @@ public class DragDropView extends FrameLayout {
 					v.setLayoutParams(dragParam);
 					if(m_downXValue==currentX){
 						System.out.println(""+m_downXValue+""+currentX);
-						final Dialog dialog = new Dialog(getContext());
-						dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-						dialog.setContentView(R.layout.menu_layout);
-						dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
-						Typeface tf = Typeface.create("Helvetica", Typeface.BOLD);
-						CircularImageView user=(CircularImageView)dialog.findViewById(R.id.circularImageView);
-						TextView myaccount=(TextView)dialog.findViewById(R.id.myaccount);
-						TextView setting=(TextView)dialog.findViewById(R.id.setting);
-						TextView logout=(TextView)dialog.findViewById(R.id.logout);
-						myaccount.setTypeface(tf);setting.setTypeface(tf);logout.setTypeface(tf);
-						user.setImageBitmap(Data.bitmap);
-						myaccount.setOnClickListener(new View.OnClickListener() {
-							@Override
-							public void onClick(View view) {
-								MyAccount();
-							}
-						});
-						dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-						dialog.show();
+							final Dialog dialog = new Dialog(getContext());
+							dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+							dialog.setContentView(R.layout.menu_layout);
+							//dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+							Typeface tf = Typeface.create("Helvetica", Typeface.BOLD);
+							CircularImageView user=(CircularImageView)dialog.findViewById(R.id.circularImageView);
+							TextView myaccount=(TextView)dialog.findViewById(R.id.myaccount);
+							TextView setting=(TextView)dialog.findViewById(R.id.setting);
+							final TextView logout=(TextView)dialog.findViewById(R.id.logout);
+							myaccount.setTypeface(tf);setting.setTypeface(tf);logout.setTypeface(tf);
+							user.setImageBitmap(Data.bitmap);
+							myaccount.setOnClickListener(new OnClickListener() {
+								@Override
+								public void onClick(View view) {
+									MyAccount();
+								}
+							});
+							logout.setOnClickListener(new OnClickListener() {
+								@Override
+								public void onClick(View v) {
+									logout();
+								}
+							});
+							dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+							dialog.show();
+
 					}
 					break;
 				}
@@ -161,6 +170,8 @@ public class DragDropView extends FrameLayout {
 		dialog.setContentView(R.layout.my_account);
 		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		final RelativeLayout rln=(RelativeLayout)dialog.findViewById(R.id.first);
+		final RelativeLayout rledit=(RelativeLayout)dialog.findViewById(R.id.editinfo);
+		final LinearLayout lld=(LinearLayout)dialog.findViewById(R.id.ll_dependent);
 		final RelativeLayout rlb=(RelativeLayout)dialog.findViewById(R.id.second);
 		TextView tv_lastname=(TextView)dialog.findViewById(R.id.tv_lastname);
 		TextView lastname=(TextView)dialog.findViewById(R.id.lastname);
@@ -176,10 +187,10 @@ public class DragDropView extends FrameLayout {
 		TextView bday=(TextView)dialog.findViewById(R.id.bday);
 		TextView tv_dependents=(TextView)dialog.findViewById(R.id.tv_dependents);
 		TextView dependents=(TextView)dialog.findViewById(R.id.dependents);
-		TextView tv_homeaddress=(TextView)dialog.findViewById(R.id.tv_homeaddress);
-		TextView homeaddress=(TextView)dialog.findViewById(R.id.homeaddress);
-		TextView tv_mobile=(TextView)dialog.findViewById(R.id.tv_mobile);
-		TextView mobile=(TextView)dialog.findViewById(R.id.mobile);
+		final TextView tv_homeaddress=(TextView)dialog.findViewById(R.id.tv_homeaddress);
+		final TextView homeaddress=(TextView)dialog.findViewById(R.id.homeaddress);
+		final TextView tv_mobile=(TextView)dialog.findViewById(R.id.tv_mobile);
+		final TextView mobile=(TextView)dialog.findViewById(R.id.mobile);
 		TextView tv_certificate=(TextView)dialog.findViewById(R.id.tv_certicate);
 		TextView certificate=(TextView)dialog.findViewById(R.id.certificate);
 		TextView tv_membertype=(TextView)dialog.findViewById(R.id.tv_membertype);
@@ -200,8 +211,10 @@ public class DragDropView extends FrameLayout {
 		TextView ape=(TextView)dialog.findViewById(R.id.ape);
 		TextView tv_back=(TextView)dialog.findViewById(R.id.tv_back);
 		TextView tv_next=(TextView)dialog.findViewById(R.id.tv_next);
+		TextView tv_edit=(TextView)dialog.findViewById(R.id.edit);
 		tv_next.setTypeface(tf);
 		tv_back.setTypeface(tf);
+		tv_edit.setTypeface(tf);
 		tv_lastname.setTypeface(tf);
 		lastname.setTypeface(tf);
 		tv_firstname.setTypeface(tf);
@@ -256,11 +269,22 @@ public class DragDropView extends FrameLayout {
 		agreementno.setText(Data.agreement_no);
 		riders.setText(Data.riders);
 		ape.setText(Data.ape);
+		tv_edit.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				rledit.setVisibility(VISIBLE);
+				tv_homeaddress.setVisibility(GONE);
+				homeaddress.setVisibility(GONE);
+				tv_mobile.setVisibility(GONE);
+				mobile.setVisibility(GONE);
+			}
+		});
 		tv_next.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View view) {
 				rln.setVisibility(View.GONE);
+				lld.setVisibility(GONE);
 				rlb.setVisibility(View.VISIBLE);
 			}
 		});
@@ -268,11 +292,16 @@ public class DragDropView extends FrameLayout {
 			@Override
 			public void onClick(View view) {
 				rln.setVisibility(View.VISIBLE);
+				lld.setVisibility(VISIBLE);
 				rlb.setVisibility(View.GONE);
 			}
 		});
 		dialog.show();
 	}
-
+	private void logout(){
+		Data.logout=true;
+		Intent i= new Intent(getContext(), LoginScreen.class);
+		getContext().startActivity(i);
+	}
 
 }

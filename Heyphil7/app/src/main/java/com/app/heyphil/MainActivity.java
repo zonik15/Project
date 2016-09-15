@@ -13,7 +13,6 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
-import android.location.Geocoder;
 import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -59,6 +58,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.maps.android.ui.IconGenerator;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -74,9 +74,6 @@ import java.util.Locale;
 import static android.graphics.Typeface.BOLD;
 import static android.graphics.Typeface.ITALIC;
 import static android.text.Spanned.SPAN_EXCLUSIVE_EXCLUSIVE;
-
-
-import com.google.maps.android.ui.IconGenerator;
 
 public class MainActivity<ListData> extends Activity implements ConnectionCallbacks, OnConnectionFailedListener, OnMarkerClickListener {
 	private TextToSpeech tts;
@@ -174,11 +171,11 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			public void onClick(View v) {
 				if(!et_provider.getText().toString().isEmpty()&&et_provider.getText().toString()!=null){
 					Intent i=new Intent(getApplicationContext(),CreateLOA.class);
-					i.putExtra("Provider_Name", Data.sprovider);
-					i.putExtra("Provider_Address", Data.sproviderad);
+					i.putExtra("Provider_Name", Data.name1.get(0));
+					i.putExtra("Provider_Address", Data.address.get(0));
 					i.putExtra("Provider_Contact", Data.tel.get(0).replace("NULL", "0"));
-					i.putExtra("Pcode", Data.code);
-					i.putExtra("Dname", "");
+					i.putExtra("Pcode", Data.pcode.get(0));
+					i.putExtra("Dname", " ");
 					startActivity(i);
 				}
 				else{

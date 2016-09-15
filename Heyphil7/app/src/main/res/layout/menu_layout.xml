@@ -18,17 +18,17 @@
         app:civ_shadow="true"
         app:civ_shadow_radius="0" />
 
-    <TextView
-        android:layout_below="@id/circularImageView"
-        android:id="@+id/myaccount"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:textSize="20sp"
-        android:text="MY ACCOUNT"
-        android:textColor="#008444"
-        />
+   <TextView
+       android:layout_below="@id/circularImageView"
+       android:id="@+id/myaccount"
+       android:layout_width="match_parent"
+       android:gravity="center"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="25dp"
+       android:textSize="20sp"
+       android:text="MY ACCOUNT"
+       android:textColor="#008444"
+       />
     <TextView
         android:id="@+id/setting"
         android:layout_width="match_parent"

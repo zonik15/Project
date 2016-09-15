@@ -227,7 +227,7 @@ public class CreateLOA extends Activity{
 				player.stopPlayer();
 				//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
 				text="Please verify or check if your indicated physician and chief complaint is correct! You may now click submit to process your LOA as soon as possible. ";
-				updateResult(text);
+				//updateResult(text);
 			}
 		});
 		lv_doctor.setOnItemLongClickListener(new OnItemLongClickListener() {
@@ -268,7 +268,7 @@ public class CreateLOA extends Activity{
 			public void onFocusChange(View v, boolean hasFocus) {
 				if(hasFocus) {
 					text = "Select or Type your Chief Complaint regarding with Health problems.";
-					updateResult(text);
+					//updateResult(text);
 				}
 			}
 		});
