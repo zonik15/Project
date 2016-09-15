@@ -50,7 +50,7 @@
 			android:layout_marginLeft="40dp"
 			android:layout_marginRight="40dp"
 			android:padding="10dp"
-		    android:layout_height="50dp"
+		    android:layout_height="40dp"
 			android:hint="Select Provider"
 			android:background="@drawable/shadow"
 		    android:textSize="20sp"
@@ -72,12 +72,12 @@
             android:id="@+id/current"
             android:layout_below="@+id/provider"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
 			android:layout_marginTop="5dp"
 			android:text="Choose City"
 			android:paddingLeft="10dp"
 			android:background="@drawable/shadow"
-            android:textSize="20sp"
+            android:textSize="25sp"
 			android:layout_alignLeft="@+id/provider"
 			android:layout_alignStart="@+id/provider"
 			android:layout_alignRight="@+id/provider"
@@ -85,15 +85,15 @@
 		<Button
 			android:id="@+id/requestloa"
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
+			android:layout_height="40dp"
 			android:layout_below="@+id/current"
-			android:text="Request LOA"
+			android:text="Letter of Authorization"
 			android:layout_marginTop="5dp"
 			android:layout_alignLeft="@+id/provider"
 			android:layout_alignStart="@+id/provider"
 			android:layout_alignRight="@+id/provider"
 			android:layout_alignEnd="@+id/provider"
-			android:background="@drawable/shadow"/>
+			android:background="@drawable/custombutton"/>
 
     </RelativeLayout>
 

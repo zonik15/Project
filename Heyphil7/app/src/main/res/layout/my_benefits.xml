@@ -125,7 +125,7 @@
             android:textColor="#6d6767"/>
         <TextView
             android:id="@+id/tv_benefitlimit"
-            android:layout_below="@+id/tv_hospital"
+            android:layout_below="@+id/hospital"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Benefit Limit:"

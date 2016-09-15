@@ -852,6 +852,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		TextView expiration=(TextView)dialog.findViewById(R.id.expiration);
 		TextView tv_back=(TextView)dialog.findViewById(R.id.tv_back);
 		TextView tv_next=(TextView)dialog.findViewById(R.id.tv_next);
+		TextView tv_edit=(TextView)dialog.findViewById(R.id.edit);
 		tv_next.setTypeface(tf);
 		tv_back.setTypeface(tf);
 		tv_lastname.setTypeface(tf);
@@ -882,6 +883,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		effective.setTypeface(tf);
 		tv_expiration.setTypeface(tf);
 		expiration.setTypeface(tf);
+		tv_edit.setVisibility(View.GONE);
 		tv_dependents.setVisibility(View.GONE);
 		dependents.setVisibility(View.GONE);
 		tv_next.setVisibility(View.GONE);

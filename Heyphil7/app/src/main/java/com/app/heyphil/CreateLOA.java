@@ -279,6 +279,8 @@ public class CreateLOA extends Activity{
 				cdoctor.setVisibility(View.GONE);
 				doctor.setVisibility(View.GONE);
 				lv_doctor.setVisibility(View.GONE);
+				cancel.setVisibility(View.GONE);
+				submit.setVisibility(View.GONE);
 			}
 		});
 		complaint.setOnEditorActionListener(new TextView.OnEditorActionListener() {
