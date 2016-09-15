@@ -11,6 +11,7 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -212,6 +213,10 @@ public class DragDropView extends FrameLayout {
 		TextView tv_back=(TextView)dialog.findViewById(R.id.tv_back);
 		TextView tv_next=(TextView)dialog.findViewById(R.id.tv_next);
 		TextView tv_edit=(TextView)dialog.findViewById(R.id.edit);
+		Button save=(Button) dialog.findViewById(R.id.save);
+		Button cancel=(Button) dialog.findViewById(R.id.cancel);
+		save.setTypeface(tf);
+		cancel.setTypeface(tf);
 		tv_next.setTypeface(tf);
 		tv_back.setTypeface(tf);
 		tv_edit.setTypeface(tf);
@@ -269,6 +274,17 @@ public class DragDropView extends FrameLayout {
 		agreementno.setText(Data.agreement_no);
 		riders.setText(Data.riders);
 		ape.setText(Data.ape);
+		lld.setVisibility(GONE);
+		cancel.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				lld.setVisibility(GONE);
+				tv_homeaddress.setVisibility(VISIBLE);
+				homeaddress.setVisibility(VISIBLE);
+				tv_mobile.setVisibility(VISIBLE);
+				mobile.setVisibility(VISIBLE);
+			}
+		});
 		tv_edit.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
