@@ -318,6 +318,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="fill_parent"
@@ -333,13 +334,17 @@
             <Button
                 android:layout_below="@+id/ll_mobileheader"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:layout_marginRight="20dp"
+                android:background="@drawable/custombutton"
+                android:textColor="@color/white"
                 android:layout_alignParentRight="true"
                 android:text="Save"/>
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/custombutton"
+                android:textColor="@color/white"
                 android:text="Cancel"
                 android:layout_below="@+id/ll_mobileheader"
                 android:layout_marginLeft="20dp"
