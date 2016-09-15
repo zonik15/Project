@@ -274,11 +274,11 @@ public class DragDropView extends FrameLayout {
 		agreementno.setText(Data.agreement_no);
 		riders.setText(Data.riders);
 		ape.setText(Data.ape);
-		lld.setVisibility(GONE);
+		rledit.setVisibility(GONE);
 		cancel.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				lld.setVisibility(GONE);
+				rledit.setVisibility(GONE);
 				tv_homeaddress.setVisibility(VISIBLE);
 				homeaddress.setVisibility(VISIBLE);
 				tv_mobile.setVisibility(VISIBLE);

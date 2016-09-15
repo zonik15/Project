@@ -823,6 +823,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		final RelativeLayout rln=(RelativeLayout)dialog.findViewById(R.id.first);
 		final RelativeLayout rlb=(RelativeLayout)dialog.findViewById(R.id.second);
 		final LinearLayout lld=(LinearLayout)dialog.findViewById(R.id.ll_dependent);
+		final RelativeLayout rledit=(RelativeLayout)dialog.findViewById(R.id.editinfo);
 		TextView tv_lastname=(TextView)dialog.findViewById(R.id.tv_lastname);
 		TextView lastname=(TextView)dialog.findViewById(R.id.lastname);
 		TextView tv_firstname=(TextView)dialog.findViewById(R.id.tv_firstname);
@@ -884,7 +885,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		effective.setTypeface(tf);
 		tv_expiration.setTypeface(tf);
 		expiration.setTypeface(tf);
-		lld.setVisibility(View.GONE);
+		rledit.setVisibility(View.GONE);
 		tv_edit.setVisibility(View.GONE);
 		tv_dependents.setVisibility(View.GONE);
 		dependents.setVisibility(View.GONE);
