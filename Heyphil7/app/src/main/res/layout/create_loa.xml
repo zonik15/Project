@@ -3,43 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white" >
-     <LinearLayout
-         	android:id="@+id/header"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-         android:background="#008444"
-         android:orientation="horizontal">
-         <TextView
-             android:id="@+id/title"
-             android:layout_width="match_parent"
-             android:layout_height="50dp"
-             android:text="HEYPHIL"
-             android:textSize="24sp"
-             android:gravity="center"
-             android:textColor="@color/white"/>
-
-           <!-- <ImageView
-                android:id="@+id/imageView1"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:contentDescription="@null"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="5dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/heyphil_title" />-->
-        </LinearLayout>
-
-   <!-- <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:scaleType="centerInside"
-        android:src="@drawable/loa_title"
-        android:layout_below="@+id/header"
-        android:layout_centerHorizontal="true" />-->
+        android:background="#008444"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="HEYPHIL"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <!-- <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="wrap_content"
+             android:layout_height="60dp"
+             android:layout_gravity="center_horizontal"
+             android:contentDescription="@null"
+             android:paddingBottom="5dp"
+             android:paddingLeft="10dp"
+             android:paddingTop="5dp"
+             android:scaleType="centerInside"
+             android:src="@drawable/heyphil_title" />-->
+    </LinearLayout>
+
+    <!-- <ImageView
+         android:id="@+id/imageView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:scaleType="centerInside"
+         android:src="@drawable/loa_title"
+         android:layout_below="@+id/header"
+         android:layout_centerHorizontal="true" />-->
     <TextView
         android:id="@+id/loa"
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
         android:layout_below="@+id/loa"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-      <TextView
+    <TextView
         android:id="@+id/provideradd"
         android:layout_below="@+id/providername"
         android:layout_width="wrap_content"
@@ -70,9 +70,9 @@
         android:text="Provider Name"
         android:textColor="#000000"
         android:textSize="10sp"
-          android:visibility="gone"
+        android:visibility="gone"
         />
-        <TextView
+    <TextView
         android:id="@+id/providercontact"
         android:layout_below="@+id/provideradd"
         android:layout_width="wrap_content"
@@ -80,55 +80,55 @@
         android:text="Provider Name"
         android:textColor="#000000"
         android:textSize="10sp"
-            android:visibility="gone"
+        android:visibility="gone"
         />
-    	<TextView
+    <TextView
         android:id="@+id/tv_complaint"
         android:layout_below="@+id/provideradd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chief Complaint:"
-            android:textColor="@color/display_text_color"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:textSize="15sp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-       <EditText
-           android:id="@+id/et_complaint"
-           android:layout_below="@+id/tv_complaint"
-           android:layout_width="wrap_content"
-           android:layout_height="50dp"
-           android:layout_marginLeft="20dp"
-           android:layout_marginRight="20dp"
-           android:gravity="center"
-           android:hint="Type Chief Complaint"
-           android:textColor="#6d6767"
-           android:background="@drawable/shadow"
-           android:textSize="20sp"
-           android:singleLine="true"
-           android:layout_alignParentRight="true"
-           android:layout_alignParentEnd="true"
-           android:layout_alignParentLeft="true"
-           android:layout_alignParentStart="true" />
-          <LinearLayout
-       android:id="@+id/complaint"
-       android:layout_below="@+id/et_complaint"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content">
-       <ListView
-           android:id="@+id/lv_complaint"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_marginLeft="20dp"
-           android:layout_marginRight="20dp"
-           android:textColor="#FF0000"
-           android:background="@color/white"
-           android:visibility="gone"
-           ></ListView>
-   </LinearLayout>
+        android:textColor="@color/display_text_color"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/et_complaint"
+        android:layout_below="@+id/tv_complaint"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:hint="Type Chief Complaint"
+        android:textColor="#6d6767"
+        android:background="@drawable/shadow"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:id="@+id/complaint"
+        android:layout_below="@+id/et_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/lv_complaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#FF0000"
+            android:background="@color/white"
+            android:visibility="gone"
+            ></ListView>
+    </LinearLayout>
     <TextView
         android:id="@+id/tv_doctor"
         android:layout_width="wrap_content"
@@ -177,30 +177,30 @@
             ></ListView>
     </LinearLayout>
 
-       <Button
-           android:id="@+id/btnsubmit"
-           android:layout_width="150dp"
-           android:layout_height="50dp"
-           android:layout_marginBottom="10dp"
-           android:textSize="20sp"
-           android:text="Submit"
-           android:textColor="@color/white"
-           android:background="@drawable/custombutton"
-           android:layout_alignParentBottom="true"
-           android:layout_alignRight="@+id/et_complaint"
-           android:layout_alignEnd="@+id/et_complaint" />
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:background="@drawable/custombutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/et_complaint"
+        android:layout_alignEnd="@+id/et_complaint" />
 
-       <Button
-           android:id="@+id/btncancel"
-           android:layout_width="150dp"
-           android:layout_height="50dp"
-           android:layout_marginBottom="10dp"
-           android:textSize="20sp"
-           android:text="Cancel"
-           android:textColor="@color/white"
-           android:background="@drawable/custombutton"
-           android:layout_alignTop="@+id/btnsubmit"
-           android:layout_alignLeft="@+id/et_complaint"
-           android:layout_alignStart="@+id/et_complaint" />
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:background="@drawable/custombutton"
+        android:layout_alignTop="@+id/btnsubmit"
+        android:layout_alignLeft="@+id/et_complaint"
+        android:layout_alignStart="@+id/et_complaint" />
 
 </RelativeLayout>

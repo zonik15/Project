@@ -59,6 +59,7 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.maps.android.ui.IconGenerator;
+import com.ibm.watson.developer_cloud.text_to_speech.v1.model.Voice;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -129,8 +130,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 	boolean stat;
 	String Providerurl;
 	Context context;
-
-
+	private StreamPlayer player = new StreamPlayer();
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -146,14 +146,18 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		initilizeMap();
 		new GetCity().execute();
 		if(Data.getCity) {
+			player.stopPlayer();
 			Data.getCity=false;
 			text = "Here are the providers in " + Data.City + ". Tap or click the google marker to view information an to proceed to create or request LOA. Thank you!";
 			show(text);
+			updateResult(text);
 		}
 		else if(Data.getPro){
+			player.stopPlayer();
 			Data.getPro=false;
 			text= Data.sprovider+" is located at "+ Data.sproviderad+". Tap google marker to view information.";
 			show(text);
+			updateResult(text);
 		}
 		tts=new TextToSpeech(getApplicationContext(),new TextToSpeech.OnInitListener() {
 
@@ -188,10 +192,11 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				player.stopPlayer();
 				text="Select provider to locate in google map.";
 				show(text);
 				Data.getPro=true;
-				//updateResult(text);
+				updateResult(text);
 				new GetProviders().execute();
 				//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
 				//new GetCity().execute();
@@ -475,6 +480,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 	public boolean onMarkerClick(final Marker arg0) {
 		// TODO Auto-generated method stub
 		//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
+		player.stopPlayer();
 		index=Integer.parseInt(arg0.getSnippet());
 		code=arg0.getSnippet();
 		directionUrl="https://maps.googleapis.com/maps/api/directions/json?origin="+Data.lat+",+"+Data.lon+"&destination="+Data.lat1.get(index)+",+"+Data.lon1.get(index)+"&sensor=false&mode=driving&alternatives=true&key=AIzaSyAh2tjcjLNp2FS4bmxMi0h-FXFvRUeXRho";
@@ -482,6 +488,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		return true;
 	}
 	private void showProvider(){
+		player.stopPlayer();
 		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(this);
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -519,7 +526,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		distances.setText(""+distance);
 		time.setText(""+duration);
 		text=""+tv_provider.getText().toString()+" is "+distance+" away from your current location. It takes "+duration+" to travel to get there!";
-		//updateResult(text);
+		updateResult(text);
 		pname= Data.name1.get(index);
 		paddress= Data.address.get(index);
 		pcontact= Data.tel.get(index).replace("NULL", "0");
@@ -530,6 +537,8 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		btn_yes.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View view) {
+				new SynthesisTask().cancel(true);
+				player.stopPlayer();
 				//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
 				Intent i=new Intent(getApplicationContext(),CreateLOA.class);
 				i.putExtra("Provider_Name", Data.name1.get(index));
@@ -544,6 +553,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		btn_no.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View view) {
+				player.stopPlayer();
 				dialog.dismiss();
 			}
 		});
@@ -578,26 +588,23 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 	}
 	public void updateResult(final String result)
 	{
-		//String username = "674e4f93-d26f-4ba6-bacc-086167126d90";
-		//String password = "BBtH4uf1stvO";
-		String username = Data.ttsUsername;
-		String password = Data.ttsPassword;
+		new SynthesisTask().execute(result);
 
-		String serviceURL = "https://stream.watsonplatform.net/text-to-speech/api";
-		//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
+	}
+	private class SynthesisTask extends AsyncTask<String, Void, String> {
 
-		com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().initWithContext(this.getHost(serviceURL));
-		com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().setCredentials(username, password);
-		com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().setVoice("en-US_MichaelVoice");
+		@Override
+		protected String doInBackground(String... params) {
+			System.out.println("CHECKING RESULT FOR TTS == "+params[0]);
+			com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech service = new com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech();
+			service.setUsernameAndPassword(Data.ttsUsername, Data.ttsPassword);
+			List<Voice> voices = service.getVoices().execute();
 
-		MainActivity.this.runOnUiThread(new Runnable() {
-			@Override
-			public void run() {
-				com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().synthesize(result);
-				//mAdapter.notifyDataSetChanged();
 
-			}
-		});
+			System.out.println(voices);
+			player.playStream(service.synthesize(params[0],Voice.EN_MICHAEL).execute());
+			return "Did syntesize";
+		}
 	}
 	/**
 	 * Async task class to get json by making HTTP call

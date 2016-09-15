@@ -165,7 +165,7 @@ public class DragDropView extends FrameLayout {
 
 	};
 	private void MyAccount(){
-		Typeface tf = Typeface.createFromAsset(getContext().getAssets(),"fonts/Boogaloo-Regular.ttf");
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(getContext());
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.my_account);

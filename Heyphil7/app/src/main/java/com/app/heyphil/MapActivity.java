@@ -70,7 +70,6 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
     // Google Map
     private GoogleMap googleMap;
     private Spinner current;
-    private Button go;
     Double lat;
     Double lon;
     GoogleApiClient mGoogleApiClient;
@@ -124,7 +123,6 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
         lv_provider=(ListView)findViewById(R.id.lv_provider);
         Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
         et_provider.setTypeface(tf);
-        go.setTypeface(tf);
         initilizeMap();
         tts=new TextToSpeech(getApplicationContext(),new TextToSpeech.OnInitListener() {
 
@@ -210,17 +208,6 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
                 Intent i=new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
                 finish();
-            }
-        });
-        go.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent i=new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(i);
-                finish();
-                //Toast.makeText(getApplicationContext(), Data.lat1.toString(), Toast.LENGTH_LONG).show();
             }
         });
         ArrayAdapter<String> location = new ArrayAdapter<String>(this,
@@ -760,7 +747,6 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
             lv_provider.setAdapter(Provideradapter);
             lv_provider.setVisibility(View.VISIBLE);
             current.setVisibility(View.GONE);
-            go.setVisibility(View.GONE);
 
         }
     }

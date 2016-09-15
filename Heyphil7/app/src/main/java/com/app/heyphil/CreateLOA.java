@@ -14,9 +14,11 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnFocusChangeListener;
+import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
@@ -43,7 +45,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
 
 public class CreateLOA extends Activity{
@@ -122,6 +123,7 @@ public class CreateLOA extends Activity{
 		Dialog = builder.create();
 		Dialog.getWindow().getAttributes().windowAnimations = R.style.dialog_animation;
 		Dialog.show();*/
+		new GetComplaints().execute();
 		Bundle extra=getIntent().getExtras();
 		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		doctorList = new ArrayList<HashMap<String, String>>();
@@ -154,8 +156,16 @@ public class CreateLOA extends Activity{
 			doctor.setText(Data.doctorName);
 			dcode= Data.doctorCode;
 			Data.cloa=false;
+			Providerurl= "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization";
+			System.out.println("++++++++"+Providerurl);
+			new GetDoctors().execute();
 		}
-		new GetComplaints().execute();
+		else {
+			Providerurl= "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization";
+			System.out.println("++++++++"+Providerurl);
+			new GetDoctors().execute();
+		}
+
 		tts=new TextToSpeech(getApplicationContext(),new TextToSpeech.OnInitListener() {
 
 			@Override
@@ -209,7 +219,24 @@ public class CreateLOA extends Activity{
 				finish();
 			}
 		});
-		
+		lv_doctor.setOnTouchListener(new View.OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+				InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+				inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+				return false;
+			}
+		});
+		lv_complaint.setOnTouchListener(new View.OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+				InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+				inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+				return false;
+			}
+		});
 	lv_doctor.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
@@ -227,7 +254,7 @@ public class CreateLOA extends Activity{
 				player.stopPlayer();
 				//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
 				text="Please verify or check if your indicated physician and chief complaint is correct! You may now click submit to process your LOA as soon as possible. ";
-				//updateResult(text);
+				updateResult(text);
 			}
 		});
 		lv_doctor.setOnItemLongClickListener(new OnItemLongClickListener() {
@@ -248,7 +275,12 @@ public class CreateLOA extends Activity{
 			@Override
 			public void onTextChanged(CharSequence s, int start, int before, int count) {
 				// TODO Auto-generated method stub
-				((Filterable) Doctoradapter).getFilter().filter(s);
+				try {
+					((Filterable) Doctoradapter).getFilter().filter(s);
+				}
+				catch(Exception e){
+
+				}
 			}
 			
 			@Override
@@ -268,7 +300,7 @@ public class CreateLOA extends Activity{
 			public void onFocusChange(View v, boolean hasFocus) {
 				if(hasFocus) {
 					text = "Select or Type your Chief Complaint regarding with Health problems.";
-					//updateResult(text);
+					updateResult(text);
 				}
 			}
 		});
@@ -296,15 +328,12 @@ public class CreateLOA extends Activity{
 					InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 					inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
 					//https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization
-					Providerurl= "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization";
-					System.out.println("++++++++"+Providerurl);
-					new GetDoctors().execute();
-					//player.stopPlayer();
+					player.stopPlayer();
 					//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
-					//text="Type name of Doctor or Specialization registered in "+provider_name.getText().toString()+" and select your refering Physician.";
-					//if(doctor.getText().toString().isEmpty()||doctor.getText().toString()=="null"){
-					//	updateResult(text);
-					//}
+					text="Type name of Doctor or Specialization registered in "+provider_name.getText().toString()+" and select your refering Physician.";
+					if(doctor.getText().toString().isEmpty()||doctor.getText().toString()=="null"){
+					updateResult(text);
+					}
 				}
 				return false;
 			}
@@ -314,7 +343,12 @@ public class CreateLOA extends Activity{
 			@Override
 			public void onTextChanged(CharSequence s, int start, int before, int count) {
 				// TODO Auto-generated method stub
-				((Filterable) Complaintadapter).getFilter().filter(s);
+				try {
+					((Filterable) Complaintadapter).getFilter().filter(s);
+				}
+				catch (Exception e){
+
+				}
 			}
 			
 			@Override
@@ -344,16 +378,17 @@ public class CreateLOA extends Activity{
 				doctor.setFocusable(true);
 				InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
 				inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-				player.stopPlayer();
-				//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
-				/*text="Type name of Doctor or Specialization registered in "+provider_name.getText().toString()+" and select your refering Physician.";
-				if(doctor.getText().toString().isEmpty()||doctor.getText().toString()=="null"){
-					updateResult(text);
-				}*/
-				https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization
+				/*https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization
 				Providerurl= "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctorsPerHospital/?ProviderCode="+pcode+"&DoctorName="+Dname.substring(0,Dname.indexOf(" "))+"&Specialization";
 				System.out.println("++++++++"+Providerurl);
-				new GetDoctors().execute();
+				new GetDoctors().execute();*/
+				player.stopPlayer();
+				//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
+				text="Type name of Doctor or Specialization registered in "+provider_name.getText().toString()+" and select your refering Physician.";
+				if(doctor.getText().toString().isEmpty()||doctor.getText().toString()=="null"){
+					updateResult(text);
+				}
+
 			}
 		});
 		submit.setOnClickListener(new OnClickListener() {
@@ -390,10 +425,6 @@ public class CreateLOA extends Activity{
 			System.out.println("CHECKING RESULT FOR TTS == "+params[0]);
 			com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech service = new com.ibm.watson.developer_cloud.text_to_speech.v1.TextToSpeech();
 			service.setUsernameAndPassword(Data.ttsUsername, Data.ttsPassword);
-			List<Voice> voices = service.getVoices().execute();
-
-
-			System.out.println(voices);
 			player.playStream(service.synthesize(params[0],Voice.EN_MICHAEL).execute());
 			return "Did syntesize";
 		}
