@@ -25,10 +25,30 @@
        android:gravity="center"
        android:layout_height="wrap_content"
        android:layout_marginTop="25dp"
-       android:textSize="20sp"
+       android:textSize="15sp"
        android:text="MY ACCOUNT"
        android:textColor="#008444"
        />
+    <TextView
+        android:layout_below="@id/myaccount"
+        android:id="@+id/bmi"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="BMI CALCULATOR"
+        android:textColor="#008444"
+        />
+    <TextView
+        android:layout_below="@id/bmi"
+        android:id="@+id/calorie"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="CALORIE CALCULATOR"
+        android:textColor="#008444"
+        />
     <TextView
         android:id="@+id/setting"
         android:layout_width="match_parent"
@@ -36,8 +56,8 @@
         android:layout_height="wrap_content"
         android:text="SETTING"
         android:textColor="#008444"
-        android:textSize="20sp"
-        android:layout_below="@+id/myaccount"/>
+        android:textSize="15sp"
+        android:layout_below="@+id/calorie"/>
     <TextView
         android:id="@+id/logout"
         android:layout_width="match_parent"
@@ -45,7 +65,7 @@
         android:layout_height="wrap_content"
         android:text="LOGOUT"
         android:textColor="#008444"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_below="@+id/setting"/>
 
 </RelativeLayout>

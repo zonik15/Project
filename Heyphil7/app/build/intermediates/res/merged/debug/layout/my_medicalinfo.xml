@@ -4,16 +4,26 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@drawable/shadow">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/myacc"
-        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#008444">
+        <TextView
+            android:id="@+id/tv_medical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LATEST APE"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:gravity="center"/>
+    </LinearLayout>
     <RelativeLayout
         android:id="@+id/first"
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
         <TextView
             android:id="@+id/tv_dateofavailment"
             android:layout_width="wrap_content"
@@ -29,8 +39,7 @@
             android:layout_height="wrap_content"
             android:text="January 1, 2016"
             android:textColor="#6d6767"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/tv_dateofavailment"
+            android:layout_alignTop="@+id/tv_dateofavailment"
             android:layout_centerHorizontal="true" />
 
         <TextView

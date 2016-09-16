@@ -127,9 +127,11 @@ public class DragDropView extends FrameLayout {
 							Typeface tf = Typeface.create("Helvetica", Typeface.BOLD);
 							CircularImageView user=(CircularImageView)dialog.findViewById(R.id.circularImageView);
 							TextView myaccount=(TextView)dialog.findViewById(R.id.myaccount);
+							final TextView bmi=(TextView)dialog.findViewById(R.id.bmi);
+							TextView calorie=(TextView)dialog.findViewById(R.id.calorie);
 							TextView setting=(TextView)dialog.findViewById(R.id.setting);
 							final TextView logout=(TextView)dialog.findViewById(R.id.logout);
-							myaccount.setTypeface(tf);setting.setTypeface(tf);logout.setTypeface(tf);
+							myaccount.setTypeface(tf);bmi.setTypeface(tf);calorie.setTypeface(tf);setting.setTypeface(tf);logout.setTypeface(tf);
 							user.setImageBitmap(Data.bitmap);
 							myaccount.setOnClickListener(new OnClickListener() {
 								@Override
@@ -137,6 +139,18 @@ public class DragDropView extends FrameLayout {
 									MyAccount();
 								}
 							});
+							bmi.setOnClickListener(new OnClickListener() {
+								@Override
+								public void onClick(View v) {
+									bmi();
+								}
+							});
+						calorie.setOnClickListener(new OnClickListener() {
+							@Override
+							public void onClick(View v) {
+								calories();
+							}
+						});
 							logout.setOnClickListener(new OnClickListener() {
 								@Override
 								public void onClick(View v) {
@@ -262,7 +276,7 @@ public class DragDropView extends FrameLayout {
 		gender.setText(Data.sex);
 		civil.setText(Data.civil_status);
 		bday.setText(Data.birthday);
-		dependents.setText(Data.dependent.toString().replaceAll("\\[|\\]", "").replaceAll(",","\n"));
+		dependents.setText(Data.dependent.toString().replaceAll("\\[|\\]", "").replaceAll(" ","").replaceAll(",","\n"));
 		homeaddress.setText(Data.home_address);
 		mobile.setText(Data.mobile_number);
 		certificate.setText(Data.cert);
@@ -313,6 +327,24 @@ public class DragDropView extends FrameLayout {
 			}
 		});
 		dialog.show();
+	}
+	public void bmi(){
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
+		final Dialog dialog = new Dialog(getContext());
+		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		dialog.setContentView(R.layout.bmi_layout);
+		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+		dialog.show();
+
+	}
+	public void calories(){
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
+		final Dialog dialog = new Dialog(getContext());
+		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		dialog.setContentView(R.layout.calorie_layout);
+		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+		dialog.show();
+
 	}
 	private void logout(){
 		Data.logout=true;

@@ -22,7 +22,8 @@
         android:id="@+id/first"
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
         <TextView
             android:id="@+id/tv_dateofavailment"
             android:layout_width="wrap_content"
@@ -38,8 +39,7 @@
             android:layout_height="wrap_content"
             android:text="January 1, 2016"
             android:textColor="#6d6767"
-            android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/tv_dateofavailment"
+            android:layout_alignTop="@+id/tv_dateofavailment"
             android:layout_centerHorizontal="true" />
 
         <TextView

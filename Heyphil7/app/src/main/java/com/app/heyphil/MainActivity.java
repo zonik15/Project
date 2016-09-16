@@ -193,6 +193,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				player.stopPlayer();
+				btn_request.setVisibility(View.GONE);
 				text="Select provider to locate in google map.";
 				show(text);
 				Data.getPro=true;
@@ -232,6 +233,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 				// TODO Auto-generated method stub
+				btn_request.setVisibility(View.VISIBLE);
 				Data.lat1.clear();
 				Data.lon1.clear();
 				Data.name1.clear();

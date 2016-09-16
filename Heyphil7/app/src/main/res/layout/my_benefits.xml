@@ -22,7 +22,8 @@
         android:id="@+id/first"
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
         <TextView
             android:id="@+id/tv_benefitpackage"
             android:layout_width="wrap_content"
@@ -36,11 +37,12 @@
             android:id="@+id/benefitpackage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\t\t\t\t\tClassic Program"
+            android:text="Classic Program"
             android:textColor="#6d6767"
+            android:paddingLeft="40dp"
             android:layout_alignTop="@+id/tv_benefitpackage"
-            android:layout_toRightOf="@+id/tv_roomlimit"
-            android:layout_toEndOf="@+id/tv_roomlimit" />
+            android:layout_alignLeft="@+id/roomtype"
+            android:layout_alignStart="@+id/roomtype" />
 
         <TextView
             android:id="@+id/tv_plantype"
@@ -56,11 +58,12 @@
             android:id="@+id/plantype"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\t\t\t\t\tDiamond"
+            android:text="Diamond"
             android:textColor="#6d6767"
+            android:paddingLeft="40dp"
             android:layout_above="@+id/tv_roomtype"
-            android:layout_alignLeft="@+id/benefitpackage"
-            android:layout_alignStart="@+id/benefitpackage" />
+            android:layout_alignLeft="@+id/roomtype"
+            android:layout_alignStart="@+id/roomtype" />
         <TextView
             android:id="@+id/tv_roomtype"
             android:layout_below="@+id/tv_plantype"
@@ -75,11 +78,11 @@
             android:id="@+id/roomtype"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\t\t\t\t\tPrivate"
+            android:text="Private"
+            android:paddingLeft="40dp"
             android:textColor="#6d6767"
-            android:layout_above="@+id/tv_roomlimit"
-            android:layout_toRightOf="@+id/tv_roomlimit"
-            android:layout_toEndOf="@+id/tv_roomlimit" />
+            android:layout_alignTop="@+id/tv_roomtype"
+            android:layout_centerHorizontal="true" />
 
         <TextView
             android:id="@+id/tv_roomlimit"
@@ -99,7 +102,8 @@
             android:layout_alignBaseline="@+id/tv_roomlimit"
             android:layout_alignBottom="@+id/tv_roomlimit"
             android:layout_alignLeft="@+id/roomtype"
-            android:text="\t\t\t\t\t2500"
+            android:text="2500"
+            android:paddingLeft="40dp"
             android:layout_marginTop="5dp"
             android:textColor="#6d6767"/>
         <TextView
@@ -120,7 +124,8 @@
             android:layout_alignBaseline="@+id/tv_hospital"
             android:layout_alignBottom="@+id/tv_hospital"
             android:layout_alignLeft="@+id/roomtype"
-            android:text="\t\t\t\t\tNOAHMC"
+            android:text="NOAHMC"
+            android:paddingLeft="40dp"
             android:layout_marginTop="5dp"
             android:textColor="#6d6767"/>
         <TextView
@@ -141,7 +146,8 @@
             android:layout_alignBaseline="@+id/tv_benefitlimit"
             android:layout_alignBottom="@+id/tv_benefitlimit"
             android:layout_alignLeft="@+id/roomtype"
-            android:text="\t\t\t\t\t250000"
+            android:text="250000"
+            android:paddingLeft="40dp"
             android:layout_marginTop="5dp"
             android:textColor="#6d6767"/>
         <TextView
@@ -162,7 +168,8 @@
             android:layout_alignBaseline="@+id/tv_preexisting"
             android:layout_alignBottom="@+id/tv_preexisting"
             android:layout_alignLeft="@+id/roomtype"
-            android:text="\t\t\t\t\tWAIVED"
+            android:text="WAIVED"
+            android:paddingLeft="40dp"
             android:layout_marginTop="5dp"
             android:textColor="#6d6767"/>
         <TextView
@@ -183,7 +190,8 @@
             android:layout_alignBaseline="@+id/tv_philhealth"
             android:layout_alignBottom="@+id/tv_philhealth"
             android:layout_alignLeft="@+id/roomtype"
-            android:text="\t\t\t\t\tREQUIRED"
+            android:text="REQUIRED"
+            android:paddingLeft="40dp"
             android:layout_marginTop="5dp"
             android:textColor="#6d6767"/>
         <TextView
@@ -204,8 +212,9 @@
             android:layout_alignBaseline="@+id/tv_additional"
             android:layout_alignBottom="@+id/tv_additional"
             android:layout_alignLeft="@+id/roomtype"
-            android:text="\t\t\t\t\tDENTAL NETWORK CO"
+            android:text="DENTAL NETWORK CO"
+            android:paddingLeft="40dp"
             android:layout_marginTop="5dp"
-            android:textColor="#6d6767"/>
+            android:textColor="#6d6767" />
     </RelativeLayout>
 </RelativeLayout>

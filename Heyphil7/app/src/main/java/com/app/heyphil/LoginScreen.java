@@ -128,6 +128,7 @@ public class LoginScreen extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler(this));
 		setContentView(R.layout.login_screen);
 		LocationManager lm = (LocationManager)context.getSystemService(Context.LOCATION_SERVICE);
 		boolean gps_enabled = false;

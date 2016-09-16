@@ -25,32 +25,47 @@
        android:gravity="center"
        android:layout_height="wrap_content"
        android:layout_marginTop="25dp"
-       android:textSize="20sp"
-       android:text="My Account"
+       android:textSize="15sp"
+       android:text="MY ACCOUNT"
+       android:textColor="#008444"
        />
+    <TextView
+        android:layout_below="@id/myaccount"
+        android:id="@+id/bmi"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="BMI CALCULATOR"
+        android:textColor="#008444"
+        />
+    <TextView
+        android:layout_below="@id/bmi"
+        android:id="@+id/calorie"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="CALORIE CALCULATOR"
+        android:textColor="#008444"
+        />
     <TextView
         android:id="@+id/setting"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:text="Setting"
-        android:textSize="20sp"
-        android:layout_below="@+id/myaccount"/>
-    <TextView
-        android:id="@+id/changepass"
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:text="Change Password"
-        android:textSize="20sp"
-        android:layout_below="@+id/setting"/>
+        android:text="SETTING"
+        android:textColor="#008444"
+        android:textSize="15sp"
+        android:layout_below="@+id/calorie"/>
     <TextView
         android:id="@+id/logout"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:text="Logout"
-        android:textSize="20sp"
-        android:layout_below="@+id/changepass"/>
+        android:text="LOGOUT"
+        android:textColor="#008444"
+        android:textSize="15sp"
+        android:layout_below="@+id/setting"/>
 
 </RelativeLayout>

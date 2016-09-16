@@ -200,6 +200,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
+		Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler(this));
 		setContentView(R.layout.activity_chat);
 		textService = initTextToSpeechService();
 		/*
@@ -239,7 +240,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
 				if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER))
 				{
-					String message = mEditTextMessage.getText().toString();
+					String message = mEditTextMessage.getText().toString().trim();
 					getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 					if (TextUtils.isEmpty(message)) {
 					}
@@ -297,6 +298,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		dragDropView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 		CircularImageView ivTest = new CircularImageView(context);
 		ivTest.setBorderWidth(2);
+		ivTest.bringToFront();
 		if(!Data.Bitmap&& Data.sex.equals("FEMALE"))
 		{
 			ivTest.setImageDrawable(context.getResources().getDrawable(R.drawable.femele_icon));
@@ -311,7 +313,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		{
 			ivTest.setImageBitmap(Data.bitmap);
 		}
-		dragDropView.AddDraggableView(ivTest,10,display.getHeight()-330, 100, 100);
+		dragDropView.AddDraggableView(ivTest,10,display.getHeight()-330, 125, 125);
 		llContainerMain.addView(dragDropView);
 	}
 
@@ -1210,7 +1212,6 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 				//lv_doctor.setVisibility(View.GONE);
 				AlertDialog.Builder dialog = new AlertDialog.Builder(ChatBubbleActivity.this);
 				dialog.setTitle("Proceed to");
-				dialog.setMessage(Data.LOA);
 				dialog.setPositiveButton("Create LOA", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int which) {
 						Data.cloa = true;
@@ -1621,7 +1622,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 				ii++;
 				if(ii== Data.mylist.size()){
 					Data.City= Data.currentCity;
-					provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.currentCity+"&area=&Certno="+ Data.cert;
+					provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.currentCity.replaceAll(" ","+")+"&area=&Certno="+ Data.cert;
 					Data.lat1.clear();
 					Data.lon1.clear();
 					Data.name1.clear();
@@ -1637,6 +1638,24 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		while(ii< Data.mylist.size());
 		mEditTextMessage.setText("");
 	}
+	public void bmi(){
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
+		final Dialog dialog = new Dialog(this);
+		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		dialog.setContentView(R.layout.bmi_layout);
+		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+		dialog.show();
+
+	}
+	public void calories(){
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
+		final Dialog dialog = new Dialog(this);
+		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		dialog.setContentView(R.layout.calorie_layout);
+		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+		dialog.show();
+
+	}
 	@Override
 	public void onConnected(Bundle bundle) { if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
 			|| ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)
@@ -1644,7 +1663,8 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		mLastLocation = LocationServices.FusedLocationApi.getLastLocation(
 				mGoogleApiClient);
 
-		if (mLastLocation != null) {
+		if (mLastLocation != null)
+		{
 			Data.lat=mLastLocation.getLatitude();
 			Data.lon=mLastLocation.getLongitude();
 			System.out.println("LONGLAT====="+ Data.lat+""+ Data.lon);
@@ -1658,8 +1678,8 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 
 				//String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
 				Data.currentCity = addresses.get(0).getLocality();
-				System.out.println(Data.currentCity);
-				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.currentCity+"&area=&Certno="+ Data.cert;
+				System.out.println("Current"+Data.currentCity);
+				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+Data.currentCity.replaceAll(" ","+")+"&area=&Certno="+ Data.cert;
 				new GetProviders().execute();
 				new GetCity().execute();
 			} catch (IOException e) {
@@ -1669,16 +1689,22 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			finally {
 			}
 		}
+		else{
+			Data.currentCity =Data.province;
+			System.out.println("Current"+Data.currentCity);
+			provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+Data.currentCity.replaceAll(" ","+")+"&area=&Certno="+ Data.cert;
+			new GetProviders().execute();
+			new GetCity().execute();
+		}
 	}
 
 	@Override
 	public void onConnectionSuspended(int i) {
-
+	Toast.makeText(getBaseContext(),"hello",Toast.LENGTH_SHORT).show();
 	}
 
 	@Override
 	public void onConnectionFailed(ConnectionResult connectionResult) {
-
 	}
 	private class GetSpecialization extends AsyncTask<Void, Void, Void> {
 		@Override

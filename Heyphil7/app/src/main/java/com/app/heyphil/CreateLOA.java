@@ -113,6 +113,7 @@ public class CreateLOA extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler(this));
 		setContentView(R.layout.create_loa);
 		/*LayoutInflater inflater = getLayoutInflater();
 		View alertLayout = inflater.inflate(R.layout.instruction, null);

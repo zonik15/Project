@@ -110,6 +110,7 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler(this));
         setContentView(R.layout.activity_main);
         Data.lat1.clear();
         Data.lon1.clear();
