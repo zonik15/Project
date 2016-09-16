@@ -512,12 +512,12 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_testcycle.xml"
     },
     {
-        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_tutorial_step_template.xml",
-        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_tutorial_step_template.xml"
-    },
-    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\conversation.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\conversation.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_tutorial_step_template.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_tutorial_step_template.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_add_screenshot.xml",

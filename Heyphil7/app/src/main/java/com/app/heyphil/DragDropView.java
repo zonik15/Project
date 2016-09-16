@@ -11,12 +11,16 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.mikhaellopez.circularimageview.CircularImageView;
 
@@ -328,21 +332,83 @@ public class DragDropView extends FrameLayout {
 		});
 		dialog.show();
 	}
-	public void bmi(){
-		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
-		final Dialog dialog = new Dialog(getContext());
-		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-		dialog.setContentView(R.layout.bmi_layout);
-		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-		dialog.show();
-
-	}
 	public void calories(){
 		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		final Dialog dialog = new Dialog(getContext());
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.calorie_layout);
 		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+		dialog.show();
+
+	}
+	public void bmi(){
+		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
+		final Dialog dialog = new Dialog(getContext());
+		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		dialog.setContentView(R.layout.bmi_layout);
+		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+		TextView tv_bmi=(TextView)dialog.findViewById(R.id.tv_bmi);
+		TextView tv_weight=(TextView)dialog.findViewById(R.id.tv_weight);
+		final EditText et_weight=(EditText) dialog.findViewById(R.id.et_weight);
+		Spinner sp_weight=(Spinner)dialog.findViewById(R.id.sp_weight);
+		TextView tv_height=(TextView)dialog.findViewById(R.id.tv_height);
+		final EditText et_height=(EditText) dialog.findViewById(R.id.et_height);
+		Spinner sp_height=(Spinner)dialog.findViewById(R.id.sp_height);
+		Button btn_calculate=(Button)dialog.findViewById(R.id.btn_calculate);
+		Button btn_reset=(Button)dialog.findViewById(R.id.btn_reset);
+		final TextView bmi_result=(TextView)dialog.findViewById(R.id.bmi_result);
+		final ImageView bmi_image=(ImageView)dialog.findViewById(R.id.bmi_image);
+		tv_bmi.setTypeface(tf);tv_height.setTypeface(tf);tv_weight.setTypeface(tf);bmi_result.setTypeface(tf);
+		et_height.setTypeface(tf);et_weight.setTypeface(tf);btn_calculate.setTypeface(tf);btn_reset.setTypeface(tf);
+		String[] weight = new String[] {"LBS", "KG"};
+		ArrayAdapter<String> adapterw = new ArrayAdapter<String>(getContext(),
+				android.R.layout.simple_spinner_item, weight);
+		adapterw.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		sp_weight.setAdapter(adapterw);
+		String[] height = new String[] {"IN", "M"};
+		ArrayAdapter<String> adapterh = new ArrayAdapter<String>(getContext(),
+				android.R.layout.simple_spinner_item, height);
+		adapterh.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		sp_weight.setAdapter(adapterh);
+		btn_calculate.setOnClickListener(new OnClickListener() {
+			Double bmi;
+			@Override
+			public void onClick(View v) {
+				if(!et_weight.getText().toString().trim().isEmpty()&&!et_height.getText().toString().trim().isEmpty()) {
+					bmi = (Double.parseDouble(et_weight.getText().toString()) *0.45) /(((Double.parseDouble(et_height.getText().toString()))*0.025) *((Double.parseDouble(et_height.getText().toString()))*0.025));
+					bmi_result.setVisibility(VISIBLE);
+					bmi_result.setText("BMI RESULT: "+Math.round(bmi));
+					if(bmi<=18.5){
+						bmi_image.setVisibility(VISIBLE);
+						bmi_image.setImageResource(R.drawable.underweight_image);
+					}
+					else if(bmi>=19 || bmi<=24.5){
+						bmi_image.setVisibility(VISIBLE);
+						bmi_image.setImageResource(R.drawable.normal_image);
+					}
+					else if(bmi>=25 || bmi<=29.5){
+						bmi_image.setVisibility(VISIBLE);
+						bmi_image.setImageResource(R.drawable.overweight_image);
+					}
+					else{
+						bmi_image.setVisibility(VISIBLE);
+						bmi_image.setImageResource(R.drawable.obese_image);
+					}
+					//Toast.makeText(getContext(), "BMI" + bmi, Toast.LENGTH_SHORT).show();
+				}
+				else{
+					Toast.makeText(getContext(), "Please fill up the requires filled!", Toast.LENGTH_SHORT).show();
+				}
+
+			}
+		});
+		btn_reset.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				et_weight.setText("");
+				et_height.setText("");
+			}
+		});
 		dialog.show();
 
 	}

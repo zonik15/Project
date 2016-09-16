@@ -11,7 +11,7 @@
         android:gravity="center"
         android:background="#008444">
         <TextView
-            android:id="@+id/tv_medical"
+            android:id="@+id/tv_bmi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Body Mass Index Calculator"
@@ -29,6 +29,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
         <TextView
+            android:id="@+id/tv_weight"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
@@ -36,14 +37,17 @@
             android:textColor="#008444"
             android:text="WEIGHT" />
         <EditText
+            android:id="@+id/et_weight"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.3"
             android:paddingLeft="10dp"
+            android:inputType="number"
             android:layout_marginRight="5dp"
             android:background="@drawable/shadow"
             android:hint="Ex. 50"/>
         <Spinner
+            android:id="@+id/sp_weight"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.5"
@@ -64,6 +68,7 @@
         android:layout_marginBottom="50dp"
         android:id="@+id/linearLayout">
         <TextView
+            android:id="@+id/tv_height"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
@@ -71,28 +76,31 @@
             android:textColor="#008444"
             android:text="HEIGHT" />
         <EditText
+            android:id="@+id/et_height"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.3"
+            android:inputType="number"
             android:paddingLeft="10dp"
             android:layout_marginRight="5dp"
             android:background="@drawable/shadow"
             android:hint="Ex. 150"/>
         <Spinner
+            android:id="@+id/sp_height"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.5"
             android:editable="false"
             android:paddingLeft="10dp"
             android:drawableRight="@drawable/arrow"
-            android:background="@drawable/shadow"
-            android:text="m"/>
+            android:background="@drawable/shadow" />
     </LinearLayout>
     <Button
+        android:id="@+id/btn_calculate"
         android:layout_width="110dp"
         android:layout_height="40dp"
         android:text="Calculate"
-        android:layout_alignTop="@+id/button3"
+        android:layout_alignTop="@+id/btn_reset"
         android:layout_alignLeft="@+id/linearLayout"
         android:layout_alignStart="@+id/linearLayout"
         android:layout_alignParentLeft="true"
@@ -101,6 +109,7 @@
         android:textColor="@color/white"
         android:layout_marginBottom="10dp"/>
     <Button
+        android:id="@+id/btn_reset"
         android:layout_width="110dp"
         android:layout_height="40dp"
         android:text="Reset"
@@ -109,9 +118,33 @@
         android:layout_marginRight="30dp"
         android:layout_alignRight="@+id/linearLayout"
         android:layout_alignEnd="@+id/linearLayout"
-        android:id="@+id/button3"
         android:background="@drawable/custombutton"
         android:textColor="@color/white"
         android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_reset">
+        <TextView
+            android:id="@+id/bmi_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/shadow"
+            android:textColor="#008444"
+            android:text="BMI Result: "
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/bmi_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/heyphilicon"
+            android:visibility="gone"/>
+    </LinearLayout>
 
 </RelativeLayout>

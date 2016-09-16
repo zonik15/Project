@@ -150,14 +150,14 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			Data.getCity=false;
 			text = "Here are the providers in " + Data.City + ". Tap or click the google marker to view information an to proceed to create or request LOA. Thank you!";
 			show(text);
-			updateResult(text);
+			//updateResult(text);
 		}
 		else if(Data.getPro){
 			player.stopPlayer();
 			Data.getPro=false;
 			text= Data.sprovider+" is located at "+ Data.sproviderad+". Tap google marker to view information.";
 			show(text);
-			updateResult(text);
+			//updateResult(text);
 		}
 		tts=new TextToSpeech(getApplicationContext(),new TextToSpeech.OnInitListener() {
 
@@ -197,7 +197,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 				text="Select provider to locate in google map.";
 				show(text);
 				Data.getPro=true;
-				updateResult(text);
+				//updateResult(text);
 				new GetProviders().execute();
 				//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
 				//new GetCity().execute();
@@ -528,7 +528,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		distances.setText(""+distance);
 		time.setText(""+duration);
 		text=""+tv_provider.getText().toString()+" is "+distance+" away from your current location. It takes "+duration+" to travel to get there!";
-		updateResult(text);
+		//updateResult(text);
 		pname= Data.name1.get(index);
 		paddress= Data.address.get(index);
 		pcontact= Data.tel.get(index).replace("NULL", "0");
