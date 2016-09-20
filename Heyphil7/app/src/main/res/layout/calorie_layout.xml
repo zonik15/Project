@@ -27,7 +27,6 @@
         android:layout_below="@+id/header">
     <LinearLayout
         android:id="@+id/weight"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -36,6 +35,7 @@
         android:layout_marginRight="20dp">
         <TextView
             android:id="@+id/tv_gender"
+            android:textColor="#008444"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
@@ -63,6 +63,7 @@
         android:id="@+id/ll_age">
         <TextView
             android:id="@+id/tv_age"
+            android:textColor="#008444"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
@@ -89,6 +90,7 @@
         android:id="@+id/ll_weight">
         <TextView
             android:id="@id/tv_weight"
+            android:textColor="#008444"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
@@ -116,6 +118,7 @@
         android:id="@+id/ll_height">
         <TextView
             android:id="@id/tv_height"
+            android:textColor="#008444"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
@@ -145,6 +148,7 @@
         android:id="@+id/linearLayout">
         <TextView
             android:id="@+id/tv_exercise"
+            android:textColor="#008444"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"

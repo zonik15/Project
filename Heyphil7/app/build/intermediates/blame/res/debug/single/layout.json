@@ -16,12 +16,12 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_benefits.xml"
     },
     {
-        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
-        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\com_facebook_activity_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_report_container.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_report_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\com_facebook_activity_layout.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
@@ -60,20 +60,20 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\product_detail.xml"
     },
     {
-        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
-        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\messenger_button_send_blue_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_screenshot_element.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_screenshot_element.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_screenshot_element.xml",
-        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_screenshot_element.xml"
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.15.0\\res\\layout\\messenger_button_send_blue_round.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_feedback_rating_fragment.xml",
