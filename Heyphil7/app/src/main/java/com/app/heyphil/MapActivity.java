@@ -51,6 +51,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.maps.android.ui.IconGenerator;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -361,15 +362,22 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
                     //Toast.makeText(getApplicationContext(), ""+Data.doctorLat.toString(), Toast.LENGTH_LONG).show();
 
                     // Adding a marker
-                    MarkerOptions marker = new MarkerOptions().position(
+                    IconGenerator iconFactory = new IconGenerator(getBaseContext());
+                    //addIcon(iconFactory, "Default", new LatLng(-33.8696, 151.2094));
+
+                    iconFactory.setColor(Color.WHITE);
+
+
+                    addIcon(iconFactory, Data.doctorProvider, new LatLng(latitude,longitude),Data.doctorPcode);
+                  /*  MarkerOptions marker = new MarkerOptions().position(
                             new LatLng(latitude,longitude))
                             .title("Hello Maps");
 
                     marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
+                     googleMap.addMarker(marker);*/
                     CameraPosition cameraPosition = new CameraPosition.Builder()
                             .target(new LatLng(Data.doctorLat,
                                     Data.doctorLon)).zoom(12).build();
-                    googleMap.addMarker(marker);
                     googleMap.animateCamera(CameraUpdateFactory
                             .newCameraPosition(cameraPosition));
 
@@ -381,6 +389,15 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
 
             }
         }
+    }
+    private void addIcon(IconGenerator iconFactory, CharSequence text, LatLng position, String i) {
+        MarkerOptions markerOptions = new MarkerOptions().
+                icon(BitmapDescriptorFactory.fromBitmap(iconFactory.makeIcon(text))).
+                position(position).
+                snippet(i).
+                anchor(iconFactory.getAnchorU(), iconFactory.getAnchorV());
+
+        googleMap.addMarker(markerOptions);
     }
     @Override
     public void onConnectionFailed(ConnectionResult arg0) {

@@ -200,7 +200,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler(this));
+		//Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler(this));
 		setContentView(R.layout.activity_chat);
 		textService = initTextToSpeechService();
 		/*

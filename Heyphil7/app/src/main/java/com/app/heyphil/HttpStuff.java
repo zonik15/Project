@@ -308,7 +308,7 @@ public class HttpStuff extends AsyncTask<String, Integer, String> {
 
                     }else{
 
-                        check = "I forgot my answer!!";
+                        check =Data.heyphilHasNoAnswer;
                     }
 
                 } catch (JSONException e) {

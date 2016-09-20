@@ -151,9 +151,11 @@ public class Data {
 	public static boolean logout;
 	public static String avatar;
 
-	public static String heyphilOpening = "Hi, I'm Phil. How may I help you today? Want a specific topic? You may type keywords such as 'Search my benefits', 'Search my provider', or 'Search prepaid products'. To create Letter of Agreement for Consultation, just type 'Create LOA'. You can also type 'help' if you need my assistance";
+	public static String heyphilOpening = "Hi, I'm Phil. How may I help you today?";
 	public static String heyphilHasNoAnswer = "I'm sorry. I can't answer your question at this moment";
 	public static String code;
+	public static Double Weight;
+	public static Double Height;
 
 
 

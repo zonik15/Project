@@ -11,7 +11,7 @@
         android:gravity="center"
         android:background="#008444">
         <TextView
-            android:id="@+id/tv_medical"
+            android:id="@+id/tv_calorie"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Calorie Calculator"
@@ -29,12 +29,14 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
         <TextView
+            android:id="@+id/tv_gender"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:textSize="15sp"
             android:text="Gender" />
         <Spinner
+            android:id="@+id/sp_gender"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.3"
@@ -54,17 +56,20 @@
         android:layout_marginRight="20dp"
         android:id="@+id/ll_age">
         <TextView
+            android:id="@+id/tv_age"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:textSize="15sp"
             android:text="Age" />
         <EditText
+            android:id="@+id/et_age"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.3"
             android:paddingLeft="10dp"
             android:layout_marginRight="5dp"
+            android:inputType="number"
             android:background="@drawable/shadow"/>
     </LinearLayout>
     <LinearLayout
@@ -77,16 +82,19 @@
         android:layout_marginRight="20dp"
         android:id="@+id/ll_weight">
         <TextView
+            android:id="@id/tv_weight"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:textSize="15sp"
             android:text="Weight" />
         <EditText
+            android:id="@+id/et_weight"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.3"
             android:paddingLeft="10dp"
+            android:inputType="number"
             android:layout_marginRight="5dp"
             android:background="@drawable/shadow"/>
     </LinearLayout>
@@ -100,16 +108,19 @@
         android:layout_marginRight="20dp"
         android:id="@+id/ll_height">
         <TextView
+            android:id="@id/tv_height"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:textSize="15sp"
             android:text="Height" />
         <EditText
+            android:id="@+id/et_height"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.3"
             android:paddingLeft="10dp"
+            android:inputType="number"
             android:layout_marginRight="5dp"
             android:background="@drawable/shadow"/>
     </LinearLayout>
@@ -124,12 +135,14 @@
         android:layout_marginBottom="20dp"
         android:id="@+id/linearLayout">
         <TextView
+            android:id="@+id/tv_exercise"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:textSize="15sp"
             android:text="Exercise Level" />
         <Spinner
+            android:id="@+id/sp_exercise"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.3"
@@ -138,10 +151,11 @@
             android:background="@drawable/shadow"/>
     </LinearLayout>
     <Button
+        android:id="@id/btn_calculate"
         android:layout_width="110dp"
         android:layout_height="40dp"
         android:text="Calculate"
-        android:layout_alignTop="@+id/button3"
+        android:layout_alignTop="@+id/btn_reset"
         android:layout_alignLeft="@+id/linearLayout"
         android:layout_alignStart="@+id/linearLayout"
         android:layout_alignParentLeft="true"
@@ -158,7 +172,7 @@
         android:layout_marginRight="30dp"
         android:layout_alignRight="@+id/linearLayout"
         android:layout_alignEnd="@+id/linearLayout"
-        android:id="@+id/button3"
+        android:id="@+id/btn_reset"
         android:background="@drawable/custombutton"
         android:textColor="@color/white"
         android:layout_marginBottom="10dp"/>

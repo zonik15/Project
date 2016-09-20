@@ -43,6 +43,7 @@
             android:layout_weight="0.3"
             android:paddingLeft="10dp"
             android:inputType="number"
+            android:imeOptions="actionDone"
             android:layout_marginRight="5dp"
             android:background="@drawable/shadow"
             android:hint="Ex. 50"/>
@@ -51,7 +52,7 @@
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.5"
-            android:editable="false"
+            android:spinnerMode="dropdown"
             android:paddingLeft="10dp"
             android:drawableRight="@drawable/arrow"
             android:background="@drawable/shadow"
@@ -82,6 +83,7 @@
             android:layout_weight="0.3"
             android:inputType="number"
             android:paddingLeft="10dp"
+            android:imeOptions="actionDone"
             android:layout_marginRight="5dp"
             android:background="@drawable/shadow"
             android:hint="Ex. 150"/>
@@ -90,9 +92,9 @@
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.5"
-            android:editable="false"
+            android:spinnerMode="dropdown"
             android:paddingLeft="10dp"
-            android:drawableRight="@drawable/arrow"
+            android:dropDownWidth="fill_parent"
             android:background="@drawable/shadow" />
     </LinearLayout>
     <Button
@@ -145,6 +147,14 @@
             android:layout_gravity="center"
             android:background="@drawable/heyphilicon"
             android:visibility="gone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_result"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="NORMAL"/>
     </LinearLayout>
 
 </RelativeLayout>

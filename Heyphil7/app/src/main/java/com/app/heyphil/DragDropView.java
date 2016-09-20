@@ -11,6 +11,7 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -338,6 +339,42 @@ public class DragDropView extends FrameLayout {
 		dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		dialog.setContentView(R.layout.calorie_layout);
 		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+		TextView tv_calorie=(TextView)dialog.findViewById(R.id.tv_calorie);
+		TextView tv_gender=(TextView)dialog.findViewById(R.id.tv_gender);
+		TextView tv_age=(TextView)dialog.findViewById(R.id.tv_age);
+		TextView tv_weight=(TextView)dialog.findViewById(R.id.tv_weight);
+		TextView tv_height=(TextView)dialog.findViewById(R.id.tv_height);
+		Spinner sp_gender=(Spinner) dialog.findViewById(R.id.sp_gender);
+		EditText et_age=(EditText)dialog.findViewById(R.id.et_age);
+		EditText et_weight=(EditText)dialog.findViewById(R.id.et_weight);
+		EditText et_height=(EditText)dialog.findViewById(R.id.et_height);
+		Spinner sp_exercise=(Spinner) dialog.findViewById(R.id.sp_exercise);
+		Button btn_calculate=(Button)dialog.findViewById(R.id.btn_calculate);
+		Button btn_reset=(Button)dialog.findViewById(R.id.btn_reset);
+		tv_calorie.setTypeface(tf);tv_gender.setTypeface(tf);tv_age.setTypeface(tf);tv_weight.setTypeface(tf);tv_height.setTypeface(tf);
+		et_age.setTypeface(tf);et_weight.setTypeface(tf);et_height.setTypeface(tf);btn_calculate.setTypeface(tf);btn_reset.setTypeface(tf);
+		String[] gender = new String[] {"Male", "Female"};
+		ArrayAdapter<String> gender_adapter = new ArrayAdapter<String>(getContext(),
+				android.R.layout.simple_spinner_item, gender);
+		gender_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		sp_gender.setAdapter(gender_adapter);
+		String[] exercise = new String[] {"No exercise or little exercise", "Light exercise or sports, 1-3x per week", "Moderate exercise and/or play sports, 3-5x per week", "Strenuous sports or hard exercise, 6-7x per week", "Very physically challenging jobs or exercise, 2x per day"};
+		ArrayAdapter<String> exercise_adapter = new ArrayAdapter<String>(getContext(),
+				android.R.layout.simple_spinner_item, exercise);
+		exercise_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		sp_exercise.setAdapter(exercise_adapter);
+		btn_calculate.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+			}
+		});
+		btn_reset.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+			}
+		});
 		dialog.show();
 
 	}
@@ -350,63 +387,192 @@ public class DragDropView extends FrameLayout {
 		TextView tv_bmi=(TextView)dialog.findViewById(R.id.tv_bmi);
 		TextView tv_weight=(TextView)dialog.findViewById(R.id.tv_weight);
 		final EditText et_weight=(EditText) dialog.findViewById(R.id.et_weight);
-		Spinner sp_weight=(Spinner)dialog.findViewById(R.id.sp_weight);
 		TextView tv_height=(TextView)dialog.findViewById(R.id.tv_height);
 		final EditText et_height=(EditText) dialog.findViewById(R.id.et_height);
-		Spinner sp_height=(Spinner)dialog.findViewById(R.id.sp_height);
 		Button btn_calculate=(Button)dialog.findViewById(R.id.btn_calculate);
 		Button btn_reset=(Button)dialog.findViewById(R.id.btn_reset);
 		final TextView bmi_result=(TextView)dialog.findViewById(R.id.bmi_result);
 		final ImageView bmi_image=(ImageView)dialog.findViewById(R.id.bmi_image);
+		final TextView tv_result=(TextView)dialog.findViewById(R.id.tv_result);
+		final Spinner sp_weight=(Spinner)dialog.findViewById(R.id.sp_weight);
+		final Spinner sp_height=(Spinner)dialog.findViewById(R.id.sp_height);
 		tv_bmi.setTypeface(tf);tv_height.setTypeface(tf);tv_weight.setTypeface(tf);bmi_result.setTypeface(tf);
-		et_height.setTypeface(tf);et_weight.setTypeface(tf);btn_calculate.setTypeface(tf);btn_reset.setTypeface(tf);
-		String[] weight = new String[] {"LBS", "KG"};
-		ArrayAdapter<String> adapterw = new ArrayAdapter<String>(getContext(),
+		et_height.setTypeface(tf);et_weight.setTypeface(tf);btn_calculate.setTypeface(tf);btn_reset.setTypeface(tf);tv_result.setTypeface(tf);
+		String[] weight = new String[] {"kg", "lbs"};
+		ArrayAdapter<String> weight_adapter = new ArrayAdapter<String>(getContext(),
 				android.R.layout.simple_spinner_item, weight);
-		adapterw.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		sp_weight.setAdapter(adapterw);
-		String[] height = new String[] {"IN", "M"};
-		ArrayAdapter<String> adapterh = new ArrayAdapter<String>(getContext(),
+		weight_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		sp_weight.setAdapter(weight_adapter);
+		String[] height = new String[] {"m", "cm", "inch", "ft"};
+		ArrayAdapter<String> height_adapter = new ArrayAdapter<String>(getContext(),
 				android.R.layout.simple_spinner_item, height);
-		adapterh.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		sp_weight.setAdapter(adapterh);
+		height_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		sp_height.setAdapter(height_adapter);
+		sp_weight.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				if(sp_weight.getItemAtPosition(position).toString()=="lbs")
+				{
+					if(et_weight.getText().toString().isEmpty())
+					{
+
+					}
+					else
+					{
+						Data.Weight=Double.parseDouble(et_weight.getText().toString())*0.453592;
+					}
+				}
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parent) {
+
+			}
+		});
+		et_weight.setOnFocusChangeListener(new OnFocusChangeListener() {
+			@Override
+			public void onFocusChange(View v, boolean hasFocus) {
+				if(!hasFocus)
+				{
+					if(et_weight.getText().toString().isEmpty())
+					{
+
+					}
+					else
+					{
+						if(sp_weight.getSelectedItem().toString()=="lbs")
+						{
+							Data.Weight = Double.parseDouble(et_weight.getText().toString()) * 0.453592;
+						}
+						else {
+							Data.Weight = Double.parseDouble(et_weight.getText().toString());
+						}
+					}
+				}
+			}
+		});
+		sp_height.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+			@Override
+			public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+				if(sp_height.getItemAtPosition(position).toString()=="cm")
+				{
+					if(et_height.getText().toString().isEmpty())
+					{
+
+					}
+					else
+					{
+						Data.Height=Double.parseDouble(et_height.getText().toString())*0.01;
+					}
+				}
+				else if(sp_height.getItemAtPosition(position).toString()=="inch")
+				{
+					if(et_height.getText().toString().isEmpty())
+					{
+
+					}
+					else
+					{
+						Data.Height=Double.parseDouble(et_height.getText().toString())*0.0254;
+					}
+				}
+				else if(sp_height.getItemAtPosition(position).toString()=="ft")
+				{
+					if(et_height.getText().toString().isEmpty())
+					{
+
+					}
+					else
+					{
+						Data.Height=Double.parseDouble(et_height.getText().toString())*0.3048;
+					}
+				}
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> parent) {
+
+			}
+		});
+		et_height.setOnFocusChangeListener(new OnFocusChangeListener() {
+			@Override
+			public void onFocusChange(View v, boolean hasFocus) {
+				if(!hasFocus)
+				{
+					if(et_height.getText().toString().isEmpty()){
+
+					}
+					else {
+						if(sp_height.getSelectedItem().toString()=="cm")
+						{
+							Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.01;
+						}
+						else if(sp_height.getSelectedItem().toString()=="inch")
+						{
+							Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.0254;
+						}
+						else if(sp_height.getSelectedItem().toString()=="inch")
+						{
+							Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.3048;
+						}
+						else {
+							Data.Height = Double.parseDouble(et_height.getText().toString());
+						}
+					}
+				}
+			}
+		});
+
 		btn_calculate.setOnClickListener(new OnClickListener() {
 			Double bmi;
 			@Override
 			public void onClick(View v) {
-				if(!et_weight.getText().toString().trim().isEmpty()&&!et_height.getText().toString().trim().isEmpty()) {
-					bmi = (Double.parseDouble(et_weight.getText().toString()) *0.45) /(((Double.parseDouble(et_height.getText().toString()))*0.025) *((Double.parseDouble(et_height.getText().toString()))*0.025));
+				if(!et_weight.getText().toString().trim().isEmpty()&&!et_height.getText().toString().trim().isEmpty())
+				{
+					bmi = (Data.Weight /(Data.Height *Data.Height));
 					bmi_result.setVisibility(VISIBLE);
 					bmi_result.setText("BMI RESULT: "+Math.round(bmi));
 					if(bmi<=18.5){
 						bmi_image.setVisibility(VISIBLE);
 						bmi_image.setImageResource(R.drawable.underweight_image);
+						tv_result.setVisibility(VISIBLE);
+						tv_result.setText("UNDERWEIGHT");
 					}
-					else if(bmi>=19 || bmi<=24.5){
+					else if(bmi>=19 && bmi<=24.5){
 						bmi_image.setVisibility(VISIBLE);
 						bmi_image.setImageResource(R.drawable.normal_image);
+						tv_result.setVisibility(VISIBLE);
+						tv_result.setText("NORMAL");
 					}
-					else if(bmi>=25 || bmi<=29.5){
+					else if(bmi>=25 && bmi<=29.5){
 						bmi_image.setVisibility(VISIBLE);
 						bmi_image.setImageResource(R.drawable.overweight_image);
+						tv_result.setVisibility(VISIBLE);
+						tv_result.setText("OVERWEIGHT");
 					}
 					else{
 						bmi_image.setVisibility(VISIBLE);
 						bmi_image.setImageResource(R.drawable.obese_image);
+						tv_result.setVisibility(VISIBLE);
+						tv_result.setText("OBESITY");
 					}
 					//Toast.makeText(getContext(), "BMI" + bmi, Toast.LENGTH_SHORT).show();
 				}
 				else{
-					Toast.makeText(getContext(), "Please fill up the requires filled!", Toast.LENGTH_SHORT).show();
+					Toast.makeText(getContext(), "Please fill up the required data!", Toast.LENGTH_SHORT).show();
 				}
 
 			}
 		});
+
 		btn_reset.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				et_weight.setText("");
 				et_height.setText("");
+				bmi_result.setVisibility(GONE);
+				bmi_image.setVisibility(GONE);
+				tv_result.setVisibility(GONE);
 			}
 		});
 		dialog.show();

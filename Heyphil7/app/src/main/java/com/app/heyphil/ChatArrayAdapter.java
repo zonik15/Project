@@ -64,7 +64,7 @@ public class ChatArrayAdapter extends ArrayAdapter<ChatMessage> {
 			ImageView imageView = (ImageView) convertView.findViewById(R.id.usericon);
 			textView.setText(getItem(position).getContent());
 
-			if(Data.avatar.equals("Salesman")){
+		/*	if(Data.avatar.equals("Salesman")){
 				imageView.setImageResource(R.drawable.salesman);
 			}
 			else if(Data.avatar.equals("Doctor")){
@@ -75,7 +75,7 @@ public class ChatArrayAdapter extends ArrayAdapter<ChatMessage> {
 			}
 			else{
 				imageView.setImageResource(R.drawable.male_icon);
-			}
+			}*/
 		}
 		return convertView;
 	}

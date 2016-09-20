@@ -484,7 +484,6 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		//com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
 		player.stopPlayer();
 		index=Integer.parseInt(arg0.getSnippet());
-		code=arg0.getSnippet();
 		directionUrl="https://maps.googleapis.com/maps/api/directions/json?origin="+Data.lat+",+"+Data.lon+"&destination="+Data.lat1.get(index)+",+"+Data.lon1.get(index)+"&sensor=false&mode=driving&alternatives=true&key=AIzaSyAh2tjcjLNp2FS4bmxMi0h-FXFvRUeXRho";
 		new getDirection().execute();
 		return true;
@@ -546,7 +545,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 				i.putExtra("Provider_Name", Data.name1.get(index));
 				i.putExtra("Provider_Address", Data.address.get(index));
 				i.putExtra("Provider_Contact", Data.tel.get(index).replace("NULL", "0"));
-				i.putExtra("Pcode", code);
+				i.putExtra("Pcode", Data.pcode.get(index));
 				i.putExtra("Dname", " ");
 				startActivity(i);
 				dialog.dismiss();
