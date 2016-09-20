@@ -60,7 +60,7 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f8a52cb-544e-4fea-b548-a8256dae9c33" name="Default" comment="">
@@ -73,18 +73,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/app/heyphil/DragDropView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/app/heyphil/DragDropView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/app/heyphil/DragDropView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/app/heyphil/DragDropView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/classes.zip" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/classes.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/resources.zip" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/resources.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/app/heyphil/DragDropView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/app/heyphil/DragDropView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/app/heyphil/DragDropView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/app/heyphil/DragDropView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/reload-changes.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/reload-changes.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/DragDropView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/heyphil/DragDropView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/speech/speech.iml" afterPath="$PROJECT_DIR$/speech/speech.iml" />
     </list>
     <ignored path="Heyphil7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -194,10 +188,12 @@
       <file leaf-file-name="DragDropView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/heyphil/DragDropView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8295964">
-              <caret line="430" column="84" selection-start-line="430" selection-start-column="84" selection-end-line="430" selection-end-column="84" />
+            <state vertical-scroll-proportion="4.573991">
+              <caret line="445" column="27" selection-start-line="445" selection-start-column="27" selection-end-line="445" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#19892#20007#0" expanded="true" />
+                <element signature="e#20006#20007#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -4297,7 +4293,13 @@
       <option name="project" value="LOCAL" />
       <updated>1474357089903</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update...">
+      <created>1474361103218</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1474361103218</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -4310,7 +4312,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14650767" sideWeight="0.15204236" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14650767" sideWeight="0.8479576" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14650767" sideWeight="0.8479576" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.49092284" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -4381,7 +4383,8 @@
     <MESSAGE value="update...layout &#10;revised BMI function" />
     <MESSAGE value="update...layout &#10;revised BMI function again" />
     <MESSAGE value="update...layout &#10;add Calorie calculator function&#10;add send button in chatbubble" />
-    <option name="LAST_COMMIT_MESSAGE" value="update...layout &#10;add Calorie calculator function&#10;add send button in chatbubble" />
+    <MESSAGE value="update..." />
+    <option name="LAST_COMMIT_MESSAGE" value="update..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -4864,10 +4867,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/heyphil/DragDropView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8295964">
-          <caret line="430" column="84" selection-start-line="430" selection-start-column="84" selection-end-line="430" selection-end-column="84" />
+        <state vertical-scroll-proportion="4.573991">
+          <caret line="445" column="27" selection-start-line="445" selection-start-column="27" selection-end-line="445" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#19892#20007#0" expanded="true" />
+            <element signature="e#20006#20007#0" expanded="true" />
           </folding>
         </state>
       </provider>

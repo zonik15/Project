@@ -442,7 +442,8 @@ public class DragDropView extends FrameLayout {
 		btn_reset.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-
+			dialog.dismiss();
+				calories();
 			}
 		});
 		dialog.show();
