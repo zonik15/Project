@@ -115,7 +115,19 @@ public class WebAPI {
 
         protected String doInBackground(String... params)
         {
-            chatBubbleActivity.updateResult(Data.heyphilOpening);
+            if(!Data.start) {
+                Data.start=true;
+                chatBubbleActivity.updateResult(Data.heyphilOpening);
+            }
+            else {
+                if(Data.logstat) {
+                    Data.logstat=false;
+                    chatBubbleActivity.updateResult("Welcome back "+Data.first_name+" ! How can I help you today?");
+                }
+                else{
+                    chatBubbleActivity.updateResult(Data.heyphil);
+                }
+            }
             /* This is to remove DIALOG SERVICE
             System.out.println("POST EXECUTE LOAD DIALOG ");
             DialService = new DialogService();
@@ -240,7 +252,19 @@ public class WebAPI {
             //ChatBubbleActivity chat = new ChatBubbleActivity();
             //chat.initWatsonService();
             System.out.println("RESULT FROM INSERTING CONVO =============== " + "Hello, I'm Phil. How can I help you today?");
-            chatBubbleActivity.updateResult("Hello, I'm Phil. How can I help you today?");
+            if(!Data.start) {
+                Data.start = true;
+                chatBubbleActivity.updateResult("Hello, I'm Phil. How can I help you today?");
+            }
+            else {
+                if(Data.logstat) {
+                    Data.logstat=false;
+                    chatBubbleActivity.updateResult("Welcome back "+Data.first_name+" ! How can I help you today?");
+                }
+                else{
+                    chatBubbleActivity.updateResult(Data.heyphil);
+                }
+            }
 
         }catch (ClientProtocolException e) {
             // TODO Auto-generated catch block

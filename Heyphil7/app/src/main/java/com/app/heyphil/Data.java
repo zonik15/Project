@@ -150,12 +150,16 @@ public class Data {
 	public static boolean Bitmap;
 	public static boolean logout;
 	public static String avatar;
-
+	public static boolean start;
+	public static boolean logstat;
+	public static String heyphil = "What else can I help you?";
 	public static String heyphilOpening = "Hi, I'm Phil. How may I help you today?";
 	public static String heyphilHasNoAnswer = "I'm sorry. I can't answer your question at this moment";
 	public static String code;
 	public static Double Weight;
 	public static Double Height;
+	public static int spin_gender_value;
+	public static int spin_ex_level_value;
 
 
 

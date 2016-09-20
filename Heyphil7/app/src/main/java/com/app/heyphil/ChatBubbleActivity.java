@@ -2774,6 +2774,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	}
 	public void logout(){
 		Data.logout=true;
+		Data.logstat=true;
 		Intent i= new Intent(this, LoginScreen.class);
 		startActivity(i);
 		finish();

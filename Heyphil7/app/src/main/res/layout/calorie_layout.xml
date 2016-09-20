@@ -19,9 +19,15 @@
             android:textSize="25dp"
             android:gravity="center"/>
     </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/header">
     <LinearLayout
         android:id="@+id/weight"
-        android:layout_below="@+id/header"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -95,6 +101,7 @@
             android:layout_weight="0.3"
             android:paddingLeft="10dp"
             android:inputType="number"
+            android:hint="Weight in Kilogram"
             android:layout_marginRight="5dp"
             android:background="@drawable/shadow"/>
     </LinearLayout>
@@ -121,8 +128,10 @@
             android:layout_weight="0.3"
             android:paddingLeft="10dp"
             android:inputType="number"
+            android:hint="Height in Centimeter"
             android:layout_marginRight="5dp"
             android:background="@drawable/shadow"/>
+            android:layout_weight="0.8"/>
     </LinearLayout>
     <LinearLayout
         android:layout_below="@+id/ll_height"
@@ -176,5 +185,44 @@
         android:background="@drawable/custombutton"
         android:textColor="@color/white"
         android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_result"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_main"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/calorie_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/shadow"
+            android:textColor="#008444"
+            android:text="Calorie Result "/>
+        <ImageView
+            android:id="@+id/calorie_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@drawable/healthyeatingplate"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="30dp"
+            android:id="@+id/tv_result"
+            android:gravity="center"
+            android:background="#008444"
+            android:textColor="@color/white"
+            android:text="result"
+            android:textStyle="bold"/>
+    </LinearLayout>
 
 </RelativeLayout>

@@ -151,7 +151,7 @@ public class MapActivity<ListData> extends Activity implements ConnectionCallbac
                 else {
                     new GetProviders().execute();
                 }
-                com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
+                //com.heyphilv2.speech.text_to_speech.v1.TextToSpeech.sharedInstance().tryStop();
                 text="Select provider to locate in google map.";
                 //updateResult(text);
                 new GetCity().execute();
