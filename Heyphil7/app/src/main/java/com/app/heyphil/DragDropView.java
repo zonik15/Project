@@ -391,56 +391,52 @@ public class DragDropView extends FrameLayout {
 			Double calorie;
 			@Override
 			public void onClick(View v) {
-				rl_main.setVisibility(GONE);
-				ll_result.setVisibility(VISIBLE);
-				if(Data.spin_gender_value==0){
-					bmr = ((13.7 * Double.parseDouble(et_weight.getText().toString())) + (5 * Double.parseDouble(et_height.getText().toString())) - (6.8 * Integer.parseInt(et_age.getText().toString()))) + 66;
-					if(Data.spin_ex_level_value==0){
-						calorie=(bmr*1.2);
-						tv_result.setText("You need "+Math.round(calorie)+"Calories to maintain your weight.");
+				if (!et_age.getText().toString().trim().isEmpty() && !et_height.getText().toString().trim().isEmpty() && !et_weight.getText().toString().trim().isEmpty()) {
+					rl_main.setVisibility(GONE);
+					ll_result.setVisibility(VISIBLE);
+					if (Data.spin_gender_value == 0) {
+						bmr = ((13.7 * Double.parseDouble(et_weight.getText().toString())) + (5 * Double.parseDouble(et_height.getText().toString())) - (6.8 * Integer.parseInt(et_age.getText().toString()))) + 66;
+						if (Data.spin_ex_level_value == 0) {
+							calorie = (bmr * 1.2);
+							tv_result.setText("You need " + Math.round(calorie) + " Calories to maintain your weight.");
+						} else if (Data.spin_ex_level_value == 1) {
+							calorie = (bmr * 1.375);
+							tv_result.setText("You need " + Math.round(calorie) + " Calories to maintain your weight.");
+						} else if (Data.spin_ex_level_value == 2) {
+							calorie = (bmr * 1.55);
+							tv_result.setText("You need " + Math.round(calorie) + " Calories to maintain your weight.");
+						} else if (Data.spin_ex_level_value == 3) {
+							calorie = (bmr * 1.725);
+							tv_result.setText("You need " + Math.round(calorie) + " Calories to maintain your weight.");
+						} else if (Data.spin_ex_level_value == 4) {
+							calorie = (bmr * 1.9);
+							tv_result.setText("You need " + Math.round(calorie) + "  to maintain your weight.");
+						}
+					} else if (Data.spin_gender_value == 1) {
+						bmr = ((9.6 * Double.parseDouble(et_weight.getText().toString())) + (1.8 * Double.parseDouble(et_height.getText().toString())) - (4.7 * Integer.parseInt(et_age.getText().toString()))) + 655;
+						if (Data.spin_ex_level_value == 0) {
+							calorie = (bmr * 1.2);
+							tv_result.setText("You need " + Math.round(calorie) + " Calories to maintain your weight.");
+						} else if (Data.spin_ex_level_value == 1) {
+							calorie = (bmr * 1.375);
+							tv_result.setText("You need " + Math.round(calorie) + " Calories to maintain your weight.");
+						} else if (Data.spin_ex_level_value == 2) {
+							calorie = (bmr * 1.55);
+							tv_result.setText("You need " + Math.round(calorie) + " Calories to maintain your weight.");
+						} else if (Data.spin_ex_level_value == 3) {
+							calorie = (bmr * 1.725);
+							tv_result.setText("You need " + Math.round(calorie) + " Calories to maintain your weight.");
+						} else if (Data.spin_ex_level_value == 4) {
+							calorie = (bmr * 1.9);
+							tv_result.setText("You need " + Math.round(calorie) + " Calories to maintain your weight.");
+						}
 					}
-					else if(Data.spin_ex_level_value==1){
-						calorie=(bmr*1.375);
-						tv_result.setText("You need "+Math.round(calorie)+"Calories to maintain your weight.");
-					}
-					else if(Data.spin_ex_level_value==2){
-						calorie=(bmr*1.55);
-						tv_result.setText("You need "+Math.round(calorie)+"Calories to maintain your weight.");
-					}
-					else if(Data.spin_ex_level_value==3){
-						calorie=(bmr*1.725);
-						tv_result.setText("You need "+Math.round(calorie)+"Calories to maintain your weight.");
-					}
-					else if(Data.spin_ex_level_value==4){
-						calorie=(bmr*1.9);
-						tv_result.setText("You need "+Math.round(calorie)+"Calories to maintain your weight.");
-					}
-				}
-				else if(Data.spin_gender_value==1){
-					bmr = ((9.6 * Double.parseDouble(et_weight.getText().toString())) + (1.8 * Double.parseDouble(et_height.getText().toString())) - (4.7 * Integer.parseInt(et_age.getText().toString()))) + 655;
-					if(Data.spin_ex_level_value==0){
-						calorie=(bmr*1.2);
-						tv_result.setText("You need "+Math.round(calorie)+"Calories to maintain your weight.");
-					}
-					else if(Data.spin_ex_level_value==1){
-						calorie=(bmr*1.375);
-						tv_result.setText("You need "+Math.round(calorie)+"Calories to maintain your weight.");
-					}
-					else if(Data.spin_ex_level_value==2){
-						calorie=(bmr*1.55);
-						tv_result.setText("You need "+Math.round(calorie)+"Calories to maintain your weight.");
-					}
-					else if(Data.spin_ex_level_value==3){
-						calorie=(bmr*1.725);
-						tv_result.setText("You need "+Math.round(calorie)+"Calories to maintain your weight.");
-					}
-					else if(Data.spin_ex_level_value==4){
-						calorie=(bmr*1.9);
-						tv_result.setText("You need "+Math.round(calorie)+"Calories to maintain your weight.");
-					}
-				}
 
 
+				} else
+				{
+					Toast.makeText(getContext(), "Please fill up the required data!", Toast.LENGTH_SHORT).show();
+				}
 			}
 		});
 		btn_reset.setOnClickListener(new OnClickListener() {
