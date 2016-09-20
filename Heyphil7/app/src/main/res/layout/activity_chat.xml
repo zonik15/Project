@@ -65,10 +65,10 @@
         <EditText
             android:id="@+id/et_message"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
+            android:layout_height="75dp"
             android:paddingLeft="10dp"
             android:paddingBottom="10dp"
-            android:hint="Type"
+            android:hint="Type message here..."
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
@@ -76,18 +76,37 @@
             android:layout_weight="1"
             android:imeOptions="actionDone"
             android:background="@drawable/shadow"/>
-
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="70dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="wrap_content">
         <com.mikhaellopez.circularimageview.CircularImageView
-            android:id="@+id/btn_send"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/btn_speak"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
             android:src="@drawable/microphone"
-            android:layout_alignParentRight="true"
             app:civ_border="true"
             app:civ_border_color="#008444"
             app:civ_border_width="2dp"
             android:layout_marginRight="10dp"
             app:civ_shadow_radius="0" />
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btn_speak"
+            android:layout_width="70dp"
+            android:gravity="center"
+            android:background="@drawable/custombutton"
+            android:layout_alignParentRight="true"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:text="Send"/>
+</RelativeLayout>
     </LinearLayout>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"

@@ -94,7 +94,6 @@
             android:layout_weight="0.5"
             android:spinnerMode="dropdown"
             android:paddingLeft="10dp"
-            android:dropDownWidth="fill_parent"
             android:background="@drawable/shadow" />
     </LinearLayout>
     <Button

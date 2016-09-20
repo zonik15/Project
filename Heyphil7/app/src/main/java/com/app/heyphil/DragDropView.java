@@ -419,7 +419,7 @@ public class DragDropView extends FrameLayout {
 					}
 					else
 					{
-						Data.Weight=Double.parseDouble(et_weight.getText().toString())*0.453592;
+						Data.Weight=Double.parseDouble(et_weight.getText().toString())*0.45;
 					}
 				}
 			}
@@ -442,7 +442,24 @@ public class DragDropView extends FrameLayout {
 					{
 						if(sp_weight.getSelectedItem().toString()=="lbs")
 						{
-							Data.Weight = Double.parseDouble(et_weight.getText().toString()) * 0.453592;
+							Data.Weight = Double.parseDouble(et_weight.getText().toString()) * 0.45;
+						}
+						else {
+							Data.Weight = Double.parseDouble(et_weight.getText().toString());
+						}
+					}
+				}
+				else
+				{
+					if(et_weight.getText().toString().isEmpty())
+					{
+
+					}
+					else
+					{
+						if(sp_weight.getSelectedItem().toString()=="lbs")
+						{
+							Data.Weight = Double.parseDouble(et_weight.getText().toString()) * 0.45;
 						}
 						else {
 							Data.Weight = Double.parseDouble(et_weight.getText().toString());
@@ -473,7 +490,7 @@ public class DragDropView extends FrameLayout {
 					}
 					else
 					{
-						Data.Height=Double.parseDouble(et_height.getText().toString())*0.0254;
+						Data.Height=Double.parseDouble(et_height.getText().toString())*0.025;
 					}
 				}
 				else if(sp_height.getItemAtPosition(position).toString()=="ft")
@@ -484,7 +501,7 @@ public class DragDropView extends FrameLayout {
 					}
 					else
 					{
-						Data.Height=Double.parseDouble(et_height.getText().toString())*0.3048;
+						Data.Height=Double.parseDouble(et_height.getText().toString())*0.30;
 					}
 				}
 			}
@@ -509,11 +526,34 @@ public class DragDropView extends FrameLayout {
 						}
 						else if(sp_height.getSelectedItem().toString()=="inch")
 						{
-							Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.0254;
+							Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.025;
+						}
+						else if(sp_height.getSelectedItem().toString()=="ft")
+						{
+							Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.30;
+						}
+						else {
+							Data.Height = Double.parseDouble(et_height.getText().toString());
+						}
+					}
+				}
+				else
+				{
+					if(et_height.getText().toString().isEmpty()){
+
+					}
+					else {
+						if(sp_height.getSelectedItem().toString()=="cm")
+						{
+							Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.01;
 						}
 						else if(sp_height.getSelectedItem().toString()=="inch")
 						{
-							Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.3048;
+							Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.025;
+						}
+						else if(sp_height.getSelectedItem().toString()=="ft")
+						{
+							Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.30;
 						}
 						else {
 							Data.Height = Double.parseDouble(et_height.getText().toString());
@@ -522,35 +562,75 @@ public class DragDropView extends FrameLayout {
 				}
 			}
 		});
+		btn_calculate.setOnTouchListener(new OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				if(et_weight.getText().toString().isEmpty())
+				{
 
+				}
+				else
+				{
+					if(sp_weight.getSelectedItem().toString()=="lbs")
+					{
+						Data.Weight = Double.parseDouble(et_weight.getText().toString()) * 0.45;
+					}
+					else {
+						Data.Weight = Double.parseDouble(et_weight.getText().toString());
+					}
+				}
+				if(et_height.getText().toString().isEmpty()){
+
+				}
+				else {
+					if(sp_height.getSelectedItem().toString()=="cm")
+					{
+						Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.01;
+					}
+					else if(sp_height.getSelectedItem().toString()=="inch")
+					{
+						Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.025;
+					}
+					else if(sp_height.getSelectedItem().toString()=="ft")
+					{
+						Data.Height = Double.parseDouble(et_height.getText().toString()) * 0.30;
+					}
+					else {
+						Data.Height = Double.parseDouble(et_height.getText().toString());
+					}
+				}
+				return false;
+			}
+		});
 		btn_calculate.setOnClickListener(new OnClickListener() {
 			Double bmi;
 			@Override
 			public void onClick(View v) {
+
 				if(!et_weight.getText().toString().trim().isEmpty()&&!et_height.getText().toString().trim().isEmpty())
 				{
 					bmi = (Data.Weight /(Data.Height *Data.Height));
 					bmi_result.setVisibility(VISIBLE);
 					bmi_result.setText("BMI RESULT: "+Math.round(bmi));
-					if(bmi<=18.5){
+					if(bmi<18.5){
 						bmi_image.setVisibility(VISIBLE);
 						bmi_image.setImageResource(R.drawable.underweight_image);
 						tv_result.setVisibility(VISIBLE);
 						tv_result.setText("UNDERWEIGHT");
 					}
-					else if(bmi>=19 && bmi<=24.5){
+					else if(bmi>18.5 && bmi<24.5){
 						bmi_image.setVisibility(VISIBLE);
 						bmi_image.setImageResource(R.drawable.normal_image);
 						tv_result.setVisibility(VISIBLE);
 						tv_result.setText("NORMAL");
 					}
-					else if(bmi>=25 && bmi<=29.5){
+					else if(bmi>24.5 && bmi<29.50){
 						bmi_image.setVisibility(VISIBLE);
 						bmi_image.setImageResource(R.drawable.overweight_image);
 						tv_result.setVisibility(VISIBLE);
 						tv_result.setText("OVERWEIGHT");
 					}
-					else{
+					else if(bmi>29.5){
 						bmi_image.setVisibility(VISIBLE);
 						bmi_image.setImageResource(R.drawable.obese_image);
 						tv_result.setVisibility(VISIBLE);
@@ -568,11 +648,8 @@ public class DragDropView extends FrameLayout {
 		btn_reset.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				et_weight.setText("");
-				et_height.setText("");
-				bmi_result.setVisibility(GONE);
-				bmi_image.setVisibility(GONE);
-				tv_result.setVisibility(GONE);
+				dialog.dismiss();
+				bmi();
 			}
 		});
 		dialog.show();

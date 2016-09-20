@@ -99,7 +99,8 @@ import java.util.Locale;
 public class ChatBubbleActivity extends Activity implements GoogleApiClient.ConnectionCallbacks,GoogleApiClient.OnConnectionFailedListener {
 	//Conversation
 	private ListView mListView;
-	private CircularImageView mButtonSend;
+	private CircularImageView mButtonSpeak;
+	private Button Send;
 	private EditText mEditTextMessage;
 	private ChatArrayAdapter mAdapter;
 	//SpeechRecognition
@@ -221,18 +222,31 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		mGoogleApiClient.connect();
 		doctor_link ="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo="+ Data.cert+"&Province=&Area=&DoctorName=&Specialization=";
 		mListView = (ListView) findViewById(R.id.listView);
-		mButtonSend = (CircularImageView) findViewById(R.id.btn_send);
+		mButtonSpeak = (CircularImageView) findViewById(R.id.btn_speak);
 		mEditTextMessage = (EditText) findViewById(R.id.et_message);
+		Send=(Button)findViewById(R.id.btn_send);
 		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 		mAdapter = new ChatArrayAdapter(this, new ArrayList<ChatMessage>());
 		mListView.setAdapter(mAdapter);
 
 
-		mButtonSend.setOnClickListener(new View.OnClickListener() {
+		mButtonSpeak.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Data.avatar="none";
 				startSpeechToText();
+			}
+		});
+		Send.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				String message = mEditTextMessage.getText().toString().trim();
+				if (TextUtils.isEmpty(message)) {
+				}
+				else {
+					Data.avatar="none";
+					sendMessage(message);
+				}
 			}
 		});
 		mEditTextMessage.setOnKeyListener(new View.OnKeyListener() {
