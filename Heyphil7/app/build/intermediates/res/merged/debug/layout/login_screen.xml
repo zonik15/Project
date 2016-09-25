@@ -12,33 +12,53 @@
         android:layout_height="wrap_content"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:layout_marginTop="50dp"
-        android:orientation="vertical" >
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/heyphil_logo"
-            android:layout_gravity="center"/>
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/heyphil"
+            android:layout_width="270dp"
+            android:layout_height="200dp"
+            android:background="@drawable/hphilscreen"
+            android:layout_centerHorizontal="true"/>
+
+<RelativeLayout
+    android:layout_below="@+id/heyphil"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#339933"
+    android:padding="20dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginLeft="40dp"
+    android:gravity="center"
+    android:id="@+id/relativeLayout">
         <EditText
             android:id="@+id/et_username"
             android:paddingLeft="10dp"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:ems="10"
             android:inputType="text"
             android:singleLine="true"
             android:background="@drawable/shadow"
             android:layout_gravity="center"
             android:textColor="#6d6767"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:hint="USERNAME"/>
 
         <EditText
             android:id="@+id/et_password"
+            android:layout_below="@+id/et_username"
             android:paddingLeft="10dp"
             android:layout_width="250dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:ems="10"
             android:inputType="textPassword"
             android:singleLine="true"
@@ -46,15 +66,27 @@
             android:background="@drawable/shadow"
             android:layout_gravity="center"
             android:textColor="#6d6767"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:hint="PASSWORD"/>
+
+</RelativeLayout>
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:background="@drawable/oval"
+                android:layout_marginTop="135dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        </RelativeLayout>
 
         <LinearLayout
             android:id="@+id/layout_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal" >
 
             <View
@@ -67,22 +99,23 @@
         <Button
             android:id="@+id/btn_login"
             android:layout_width="119dp"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:background="@drawable/button"
             android:layout_gravity="center_horizontal"
             android:text="@string/string_login_btn_text"
             android:textColor="@color/white"
-            android:textSize="25sp"/>
+            android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/tv_btn_forgot_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:ems="10"
             android:text="@string/string_text_button_forgot_password"
             android:textColor="@color/white"
             android:gravity="center"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <LinearLayout
             android:id="@+id/layout_main1"
@@ -116,12 +149,15 @@
         </LinearLayout>
         <TextView
             android:id="@+id/tv_note"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="If you are an existing PhilCare Go!Mobile user, no registration is required. You may directly proceed to access the app by using your PhilCare Go!Mobile account."
+            android:text="Note: If you are an existing PhilCare Go!Mobile user, no registration is required. You may directly proceed to access the app by using your PhilCare Go!Mobile account."
             android:background="@drawable/custombutton"
             android:textAlignment="center"
             android:gravity="center"
+            android:textSize="12sp"
             android:textColor="@color/white"/>
     </LinearLayout>
 

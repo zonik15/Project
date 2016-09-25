@@ -117,15 +117,17 @@ public class WebAPI {
         {
             if(!Data.start) {
                 Data.start=true;
-                chatBubbleActivity.updateResult(Data.heyphilOpening);
+                chatBubbleActivity.updateResult1(Data.heyphilOpening);
             }
             else {
                 if(Data.logstat) {
                     Data.logstat=false;
-                    chatBubbleActivity.updateResult("Welcome back "+Data.first_name+" ! How can I help you today?");
+                    chatBubbleActivity.updateResult1(Data.heyphilOpening);
+                    //chatBubbleActivity.updateResult("Welcome back "+Data.first_name+" ! How can I help you today?");
                 }
                 else{
-                    chatBubbleActivity.updateResult(Data.heyphil);
+                    chatBubbleActivity.updateResult1(Data.heyphilOpening);
+                    //chatBubbleActivity.updateResult(Data.heyphil);
                 }
             }
             /* This is to remove DIALOG SERVICE

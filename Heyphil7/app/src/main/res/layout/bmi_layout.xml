@@ -42,6 +42,7 @@
             android:layout_height="40dp"
             android:layout_weight="0.3"
             android:paddingLeft="10dp"
+            android:textColor="#6d6767"
             android:inputType="number"
             android:imeOptions="actionDone"
             android:layout_marginRight="5dp"
@@ -51,6 +52,7 @@
             android:id="@+id/sp_weight"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
+            android:textColor="#6d6767"
             android:layout_weight="0.5"
             android:spinnerMode="dropdown"
             android:paddingLeft="10dp"
@@ -82,6 +84,7 @@
             android:layout_height="40dp"
             android:layout_weight="0.3"
             android:inputType="number"
+            android:textColor="#6d6767"
             android:paddingLeft="10dp"
             android:imeOptions="actionDone"
             android:layout_marginRight="5dp"
@@ -91,6 +94,7 @@
             android:id="@+id/sp_height"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
+            android:textColor="#6d6767"
             android:layout_weight="0.5"
             android:spinnerMode="dropdown"
             android:paddingLeft="10dp"
@@ -154,6 +158,13 @@
             android:textStyle="bold"
             android:visibility="gone"
             android:text="NORMAL"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_desc"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Descriprion"/>
     </LinearLayout>
 
 </RelativeLayout>

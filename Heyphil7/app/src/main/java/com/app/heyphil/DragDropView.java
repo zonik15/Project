@@ -137,7 +137,15 @@ public class DragDropView extends FrameLayout {
 							TextView setting=(TextView)dialog.findViewById(R.id.setting);
 							final TextView logout=(TextView)dialog.findViewById(R.id.logout);
 							myaccount.setTypeface(tf);bmi.setTypeface(tf);calorie.setTypeface(tf);setting.setTypeface(tf);logout.setTypeface(tf);
+							if(!Data.Bitmap && Data.sex.equals("FEMALE")){
+								user.setImageResource(R.drawable.femele_icon);
+							}
+							else if(!Data.Bitmap && Data.sex.equals("MALE")){
+							user.setImageResource(R.drawable.male_icon);
+							}
+							else{
 							user.setImageBitmap(Data.bitmap);
+							}
 							myaccount.setOnClickListener(new OnClickListener() {
 								@Override
 								public void onClick(View view) {
@@ -240,13 +248,13 @@ public class DragDropView extends FrameLayout {
 		TextView tv_province=(TextView)dialog.findViewById(R.id.tv_province);
 		TextView tv_code=(TextView)dialog.findViewById(R.id.tv_code);
 		TextView tv_mobile_no=(TextView)dialog.findViewById(R.id.tv_mobile_no);
-		EditText et_bldg_no=(EditText) dialog.findViewById(R.id.bldg_no);
-		EditText et_street=(EditText) dialog.findViewById(R.id.street);
-		EditText et_brgy=(EditText) dialog.findViewById(R.id.et_brgy);
-		EditText et_city=(EditText) dialog.findViewById(R.id.et_city);
-		EditText et_province=(EditText) dialog.findViewById(R.id.et_province);
+		final EditText et_bldg_no=(EditText) dialog.findViewById(R.id.bldg_no);
+		final EditText et_street=(EditText) dialog.findViewById(R.id.street);
+		final EditText et_brgy=(EditText) dialog.findViewById(R.id.et_brgy);
+		final EditText et_city=(EditText) dialog.findViewById(R.id.et_city);
+		final EditText et_province=(EditText) dialog.findViewById(R.id.et_province);
 		EditText et_code=(EditText) dialog.findViewById(R.id.code);
-		EditText et_mobile_no=(EditText) dialog.findViewById(R.id.et_mobile_no);
+		final EditText et_mobile_no=(EditText) dialog.findViewById(R.id.et_mobile_no);
 		Button save=(Button) dialog.findViewById(R.id.save);
 		Button cancel=(Button) dialog.findViewById(R.id.cancel);
 		save.setTypeface(tf);
@@ -262,12 +270,6 @@ public class DragDropView extends FrameLayout {
 		tv_bldg_no.setTypeface(tf);tv_street.setTypeface(tf);tv_brgy.setTypeface(tf);tv_city.setTypeface(tf);tv_province.setTypeface(tf);
 		tv_code.setTypeface(tf);tv_mobile_no.setTypeface(tf);et_bldg_no.setTypeface(tf);et_street.setTypeface(tf);et_brgy.setTypeface(tf);
 		et_city.setTypeface(tf);et_province.setTypeface(tf);et_code.setTypeface(tf);et_mobile_no.setTypeface(tf);
-		et_bldg_no.setText(Data.bldg_no);
-		et_street.setText(Data.street);
-		et_brgy.setText(Data.brgy);
-		et_city.setText(Data.city);
-		et_province.setText(Data.province);
-		et_mobile_no.setText(Data.mobile_number.replaceAll("[+63 ]",""));
 		lastname.setText(Data.last_name);
 		firstname.setText(Data.first_name);
 		middle.setText(Data.mi);
@@ -301,7 +303,12 @@ public class DragDropView extends FrameLayout {
 			@Override
 			public void onClick(View v) {
 				rledit.setVisibility(VISIBLE);
-
+				et_bldg_no.setText(Data.bldg_no+"\n");
+				et_street.setText(Data.street+"\n");
+				et_brgy.setText(Data.brgy+"\n");
+				et_city.setText(Data.city+"\n");
+				et_province.setText(Data.province+"\n");
+				et_mobile_no.setText(Data.mobile_number.replaceAll("[+63 ]",""));
 				tv_homeaddress.setVisibility(GONE);
 				homeaddress.setVisibility(GONE);
 				tv_mobile.setVisibility(GONE);

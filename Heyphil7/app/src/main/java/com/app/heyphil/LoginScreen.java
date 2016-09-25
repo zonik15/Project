@@ -50,6 +50,7 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
+import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
@@ -438,7 +439,56 @@ public class LoginScreen extends Activity {
 
 		protected void onPostExecute(String stream)
 		{
-			new LoadImage().execute("https://philcare.com.ph/gateway/upload/profile/"+ Data.cert+".jpg");
+			String customURL = "https://philcare.com.ph/gateway/upload/profile/"+ Data.cert+".jpg";
+			MyTask task = new MyTask();
+			task.execute(customURL);
+
+		}
+	}
+	private class MyTask extends AsyncTask<String, Void, Boolean> {
+
+		@Override
+		protected void onPreExecute() {
+
+		}
+
+		@Override
+		protected Boolean doInBackground(String... params) {
+
+			try {
+				HttpURLConnection.setFollowRedirects(false);
+				HttpURLConnection con =  (HttpURLConnection) new URL(params[0]).openConnection();
+				con.setRequestMethod("HEAD");
+				System.out.println(con.getResponseCode());
+				return (con.getResponseCode() == HttpURLConnection.HTTP_OK);
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+				return false;
+			}
+		}
+
+		@Override
+		protected void onPostExecute(Boolean result) {
+			boolean bResponse = result;
+			if (bResponse==true)
+			{
+				//Toast.makeText(LoginScreen.this, "File exists!", Toast.LENGTH_SHORT).show();
+				new LoadImage().execute("https://philcare.com.ph/gateway/upload/profile/"+ Data.cert+".jpg");
+			}
+			else
+			{
+				//Toast.makeText(LoginScreen.this, "File does not exist!", Toast.LENGTH_SHORT).show();
+				Data.Bitmap=false;
+				System.out.println("False Bitmap Result"+Data.bitmap);
+				//Toast.makeText(LoginScreen.this, "Image Does Not exist or Network Error"+Data.bitmap, Toast.LENGTH_SHORT).show();
+				successful_flag = "True";
+				Intent intent =new Intent(getBaseContext(),ChatBubbleActivity.class);
+				startActivity(intent);
+				et_username.setText("");
+				et_password.setText("");
+				finish();
+			}
 		}
 	}
 
@@ -683,6 +733,7 @@ public class LoginScreen extends Activity {
 			if(image != null){
 				pDialog.dismiss();
 				Data.Bitmap=true;
+				System.out.println("True Bitmap Result"+Data.bitmap);
 				//Toast.makeText(LoginScreen.this, "Image", Toast.LENGTH_SHORT).show();
 				successful_flag = "True";
 				Intent intent =new Intent(getBaseContext(),ChatBubbleActivity.class);
@@ -693,6 +744,7 @@ public class LoginScreen extends Activity {
 			}else{
 				pDialog.dismiss();
 				Data.Bitmap=false;
+				System.out.println("False Bitmap Result"+Data.bitmap);
 				//Toast.makeText(LoginScreen.this, "Image Does Not exist or Network Error"+Data.bitmap, Toast.LENGTH_SHORT).show();
 				successful_flag = "True";
 				Intent intent =new Intent(getBaseContext(),ChatBubbleActivity.class);

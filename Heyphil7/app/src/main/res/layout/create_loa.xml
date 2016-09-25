@@ -8,14 +8,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#008444"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center">
         <TextView
             android:id="@+id/title"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="HEYPHIL"
-            android:textSize="24sp"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEY"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" PHIL"
+            android:layout_marginLeft="-10dp"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
             android:textColor="@color/white"/>
 
         <!-- <ImageView
@@ -142,7 +152,7 @@
         android:id="@+id/tv_doctor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Referring Physician/ Specialist:"
+        android:text="Referring Physician/ Specialization:"
         android:textColor="@color/display_text_color"
         android:layout_marginTop="5dp"
         android:gravity="center"
@@ -215,7 +225,7 @@
         android:layout_height="27.5dp"
         android:background="@drawable/philcarelogo"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/btnsubmit"
-        android:layout_alignEnd="@+id/btnsubmit" />
+        android:layout_alignRight="@+id/et_doctor"
+        android:layout_alignEnd="@+id/et_doctor" />
 
 </RelativeLayout>

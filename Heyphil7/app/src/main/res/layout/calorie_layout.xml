@@ -46,6 +46,7 @@
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.3"
+            android:textColor="#6d6767"
             android:paddingLeft="10dp"
             android:layout_marginRight="5dp"
             android:background="@drawable/shadow"
@@ -74,6 +75,7 @@
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.3"
+            android:textColor="#6d6767"
             android:paddingLeft="10dp"
             android:layout_marginRight="5dp"
             android:inputType="number"
@@ -101,6 +103,7 @@
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:layout_weight="0.3"
+            android:textColor="#6d6767"
             android:paddingLeft="10dp"
             android:inputType="number"
             android:hint="Weight in Kilogram"
@@ -130,11 +133,11 @@
             android:layout_height="40dp"
             android:layout_weight="0.3"
             android:paddingLeft="10dp"
+            android:textColor="#6d6767"
             android:inputType="number"
             android:hint="Height in Centimeter"
             android:layout_marginRight="5dp"
             android:background="@drawable/shadow"/>
-            android:layout_weight="0.8"/>
     </LinearLayout>
     <LinearLayout
         android:layout_below="@+id/ll_height"
@@ -158,6 +161,7 @@
             android:id="@+id/sp_exercise"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
+            android:textColor="#6d6767"
             android:layout_weight="0.3"
             android:paddingLeft="10dp"
             android:layout_marginRight="5dp"
@@ -227,6 +231,17 @@
             android:textColor="@color/white"
             android:text="result"
             android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#6d6767"
+            android:padding="5dp"
+            android:background="@drawable/shadow"
+            android:text="Description"/>
     </LinearLayout>
 
 </RelativeLayout>

@@ -29,7 +29,7 @@
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
-        android:icon="@drawable/heyphilicon">
+        android:icon="@drawable/appicon">
         <activity
             android:name=".LoginScreen"
             android:label="@string/app_name"
@@ -42,6 +42,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.facebook.FacebookActivity"/>
+        <activity android:name=".Registration"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
         <activity android:name=".HeyphilScreen"
             android:theme="@android:style/Theme.NoTitleBar"
             android:configChanges="orientation"
@@ -100,6 +105,7 @@
         <activity android:name="com.ibm.mqa.ui.ProblemActivity" />
         <activity android:name="com.ibm.mqa.ui.FeedbackActivity" />
         <activity android:name="com.ibm.mqa.ui.ScreenshotEditorActivity" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

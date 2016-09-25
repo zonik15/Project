@@ -85,5 +85,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_example">Example action</string>
+    <string name="facebook_app_id">1605706099732437</string>
 
 </resources>

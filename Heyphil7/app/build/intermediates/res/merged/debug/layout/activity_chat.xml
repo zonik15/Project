@@ -10,14 +10,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#008444"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center">
         <TextView
             android:id="@+id/title"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="HEYPHIL"
-            android:textSize="24sp"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEY"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" PHIL"
+            android:layout_marginLeft="-10dp"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
             android:textColor="@color/white"/>
 
    <!--     <ImageView

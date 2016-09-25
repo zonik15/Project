@@ -16,18 +16,28 @@
         android:layout_alignParentTop="true"
         android:orientation="horizontal" >
 		<LinearLayout
-			android:id="@+id/lheader"
+			android:id="@+id/header"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:background="#008444"
-			android:orientation="horizontal">
+			android:orientation="horizontal"
+			android:padding="5dp"
+			android:gravity="center">
 			<TextView
 				android:id="@+id/title"
-				android:layout_width="match_parent"
-				android:layout_height="50dp"
-				android:text="HEYPHIL"
-				android:textSize="24sp"
-				android:gravity="center"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="HEY"
+				android:textSize="30sp"
+				android:textColor="@color/white"/>
+			<TextView
+				android:id="@+id/title1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text=" PHIL"
+				android:layout_marginLeft="-10dp"
+				android:textStyle="bold|italic"
+				android:textSize="30sp"
 				android:textColor="@color/white"/>
 
 			<!--<ImageView
@@ -44,14 +54,14 @@
 		</LinearLayout>
 		<EditText
 		    android:id="@+id/provider"
-			android:layout_below="@+id/lheader"
+			android:layout_below="@+id/header"
 		    android:layout_width="match_parent"
 		    android:layout_marginTop="5dp"
 			android:layout_marginLeft="40dp"
 			android:layout_marginRight="40dp"
 			android:padding="10dp"
 		    android:layout_height="40dp"
-			android:drawableRight="@drawable/arrow"
+			android:drawableRight="@drawable/dropdown"
 			android:hint="Select Provider"
 			android:background="@drawable/shadow"
 		    android:textSize="15sp"
@@ -106,6 +116,13 @@
 			android:layout_above="@+id/send_message_layout"
 			android:background="@drawable/philcarelogo"
 			android:layout_alignParentBottom="true"/>
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/dropdown"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="109dp"
+			android:layout_marginRight="50dp"/>
 
     </RelativeLayout>
 

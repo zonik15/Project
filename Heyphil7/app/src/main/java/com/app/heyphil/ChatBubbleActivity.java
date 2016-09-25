@@ -18,6 +18,7 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.media.AudioTrack;
+import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -143,6 +144,38 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	//TextView
 	private ListView lv_dentist;
 	//String
+	private String last_name;
+	private String first_name;
+	private String mi;
+	private String sex;
+	private String civil_status;
+	private String birthday;
+	private String home_address;
+	private String home_number;
+	private String mobile_number;
+	private String certificate_number;
+	private String member_type;
+	private String agreement_name;
+	private String agreement_no;
+	private String effectivity_date;
+	private String expiration_date;
+	private String bldg_no;
+	private String street;
+	private String brgy;
+	private String city;
+	private String province;
+	private String ben_pack;
+	private String plan_type;
+	private String room_desc;
+	private String ben_limit;
+	private String hospitals;
+	private String pre_ex;
+	private String philhealth;
+	private String riders;
+	private String room_rate;
+	private String ape;
+	private String dental;
+	private String policyno;
 	private String doctor_link;
 	private String pro;
 	private String add;
@@ -178,6 +211,12 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	private int             maxBarValue;
 	private int             total;
 	private int             currentDownload         = 1;
+	List<String>            list_xml_link2           = new ArrayList<String>();
+	List<String>            list_xml_data2           = new ArrayList<String>();
+	private String          successful_flag2         = "";
+	private int             maxBarValue2;
+	private int             total2;
+	private int             currentDownload2         = 1;
 	List<String>            list_xml_link3          = new ArrayList<String>();
 	List<String>            list_xml_data3           = new ArrayList<String>();
 	private String          successful_flag3         = "";
@@ -196,13 +235,17 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 
 	private StreamPlayer player = new StreamPlayer();
 	private TextToSpeech textService;
-
+	int wd;
+	int ht;
+	int w, h;
+	private MediaPlayer mediaPlayer;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		//Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler(this));
 		setContentView(R.layout.activity_chat);
+		mediaPlayer = MediaPlayer.create(this, R.raw.result);
 		textService = initTextToSpeechService();
 		/*
 		com.ibm.mqa.config.Configuration configuration = new com.ibm.mqa.config.Configuration.Builder(this)
@@ -213,6 +256,8 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 				.build();
 		MQA.startNewSession(this, configuration);
 		*/
+		System.out.print("ttsuser "+Data.ttsUsername);
+		System.out.print("ttsuser "+Data.ttsPassword);
 		context = this;
 		new onMedInfoAsync().execute();
 		new GetSpecialization().execute();
@@ -305,20 +350,24 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			}
 		});
 		initialConversation();
-		System.out.println("GENDER"+ Data.sex+"AVATAR"+ Data.Bitmap);
 		Display display = ((WindowManager) this.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+		ht=(int)Math.round(display.getHeight()*0.1);
+		wd= (int) Math.round(display.getWidth()*0.2-(display.getWidth()*0.2-display.getHeight()*0.1));
+		//h=Math.round(display.getHeight()*0.1));
+		//w=Integer.parseInt(String.valueOf((display.getWidth()*0.2-(display.getWidth()*0.2-display.getHeight()*0.1))));
 		LinearLayout llContainerMain = (LinearLayout) findViewById(R.id.llMainContainer);
 		DragDropView dragDropView = new DragDropView(context);
 		dragDropView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 		CircularImageView ivTest = new CircularImageView(context);
 		ivTest.setBorderWidth(2);
 		ivTest.bringToFront();
-		if(!Data.Bitmap&& Data.sex.equals("FEMALE"))
+		if(!Data.Bitmap && Data.sex.equals("FEMALE"))
 		{
+			System.out.println("GENDER"+ Data.sex+"AVATAR"+ Data.bitmap);
 			ivTest.setImageDrawable(context.getResources().getDrawable(R.drawable.femele_icon));
 			Data.Bitmap=false;
 		}
-		if(!Data.Bitmap&& Data.sex.equals("MALE"))
+		else if(!Data.Bitmap && Data.sex.equals("MALE"))
 		{
 			ivTest.setImageDrawable(context.getResources().getDrawable(R.drawable.male_icon));
 			Data.Bitmap=false;
@@ -327,7 +376,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		{
 			ivTest.setImageBitmap(Data.bitmap);
 		}
-		dragDropView.AddDraggableView(ivTest,10,display.getHeight()-330, 125, 125);
+		dragDropView.AddDraggableView(ivTest,10,display.getHeight()-330, ht, wd);
 		llContainerMain.addView(dragDropView);
 	}
 
@@ -684,6 +733,17 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		}
 		return null;
 	}
+	public void updateResult1(final String result) {
+		mediaPlayer.start();
+		ChatBubbleActivity.this.runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				ChatMessage chatMessage = new ChatMessage(result, false);
+				mAdapter.add(chatMessage);
+				mEditTextMessage.setText("");
+			}
+		});
+	}
 	public void updateResult(final String result)
 	{
 
@@ -952,6 +1012,14 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 				"type"}, new int[] { R.id.tv_name,
 				R.id.tv_cert, R.id.tv_type});
 		lv_dependent.setAdapter(Dependentadapter);
+		lv_dependent.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				final String cert=((TextView) view.findViewById(R.id.tv_cert)).getText().toString();
+
+			}
+		});
+
 
 		Log.e("trace", "Build.VERSION.SDK_INT == " + Build.VERSION.SDK_INT);
 		Log.e("trace", "Build.VERSION_CODES.ICE_CREAM_SANDWICH == " + Build.VERSION_CODES.ICE_CREAM_SANDWICH);
@@ -2778,6 +2846,368 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		Intent i= new Intent(this, LoginScreen.class);
 		startActivity(i);
 		finish();
+	}
+	private void getXMLMemberinfo()
+	{
+		String mem_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Members.svc/MembersInfo/?CertNo="+ Data.cert;
+		list_xml_link2.clear();
+		System.out.println("==========url"+convertToUrlMember(mem_link));
+		list_xml_link2.add(convertToUrlMember(mem_link));
+	}
+	public static String convertToUrlMember(String urlStr)
+	{
+		try
+		{
+			URL url = new URL(urlStr);
+			URI uri = new URI(url.getProtocol(), url.getUserInfo(), url.getHost(), url.getPort(), url.getPath(), url.getQuery(), url.getRef());
+			url = uri.toURL();
+			return String.valueOf(url);
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		return "";
+	}
+	private class onMemberAsync extends AsyncTask<String, String, String>
+	{
+		protected void onPreExecute()
+		{
+			getXMLMemberinfo();
+		}
+
+
+		protected String doInBackground(String... params)
+		{
+
+			String status = null;
+
+			try
+			{
+				status =getXMLMember(list_xml_link2.get(0));
+
+				if (status.equals("error"))
+				{
+					status = "error";
+				}
+				else
+				{
+					status = getXMLValueMember(status);
+					total2++;
+				}
+			}
+			catch (XmlPullParserException e)
+			{
+				e.printStackTrace();
+			}
+			catch (IOException e)
+			{
+				e.printStackTrace();
+			}
+
+			return status;
+		}
+
+
+		protected void onPostExecute(String result)
+		{
+			if (result.equals("False"))
+			{
+			}
+			else if (result.equals("True"))
+			{
+				//getXMLLinks();
+				new onGetAllXMLDataMember().execute();
+			}
+			else if (result.equals("error"))
+			{
+				successful_flag2 = "False";
+
+			}
+		}
+	}
+	 /* *//**//**//**//**
+	 * Get XML data.
+	 *
+	 * @param// sevice
+	 *              - URL on string format
+	 * @return String - return XML value
+	 *
+	 * @response String - returned if error occur
+	 *//**//**//**//**/
+	public static String getXMLMember(String service)
+	{
+
+		String result = null;
+		HttpGet request = new HttpGet(service);
+
+		HttpParams httpParams = new BasicHttpParams();
+		int some_reasonable_timeout = (int) (50 * 1000);
+		HttpConnectionParams.setConnectionTimeout(httpParams, some_reasonable_timeout);
+		HttpConnectionParams.setSoTimeout(httpParams, some_reasonable_timeout);
+		HttpClient client = new DefaultHttpClient(httpParams);
+
+		try
+		{
+			HttpResponse response = client.execute(request);
+			StatusLine status = response.getStatusLine();
+			if (status.getStatusCode() == HttpStatus.SC_OK)
+			{
+				ResponseHandler<String> responseHandler = new BasicResponseHandler();
+				result = responseHandler.handleResponse(response);
+			}
+			else
+			{
+				Log.e("trace", "Error1");
+				return "error";
+			}
+		}
+		catch (ClientProtocolException e)
+		{
+			Log.e("trace", "Error2", e);
+			return "error";
+		}
+		catch (IOException e)
+		{
+			Log.e("trace", "Error3", e);
+			return "error";
+		}
+		finally
+		{
+			Log.e("trace", "finally");
+			client.getConnectionManager().shutdown();
+		}
+
+		return result;
+	}
+	// get All XML Data
+	private class onGetAllXMLDataMember extends AsyncTask<String, String, String>
+	{
+		int list_xml_link_total;
+
+
+		protected void onPreExecute()
+		{
+			maxBarValue2 = list_xml_link2.size();
+		}
+
+
+		protected String doInBackground(String... params)
+		{
+			list_xml_link_total = list_xml_link2.size();
+			String s;
+			for (int i = currentDownload2; i < list_xml_link_total; i++)
+			{
+				s = getXMLMember(list_xml_link2.get(i));
+				if (s.equals("error"))
+				{
+					currentDownload2 = i;
+					return "false";
+				}
+				else
+				{
+					list_xml_data2.add(s);
+					total2++;
+
+				}
+
+			}
+
+			return "true";
+		}
+
+
+		protected void onPostExecute(String result)
+		{
+			if (result.equals("true"))
+			{
+			}
+			else
+			{
+				successful_flag2 = "False";
+
+			}
+		}
+	}
+	private String getXMLValueMember(String xml) throws XmlPullParserException, IOException
+	{
+		XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
+		factory.setNamespaceAware(true);
+		XmlPullParser xpp = factory.newPullParser();
+
+		xpp.setInput(new StringReader(xml));
+		int eventType = xpp.getEventType();
+
+		while (eventType != XmlPullParser.END_DOCUMENT)
+		{
+			if (eventType == XmlPullParser.START_TAG)
+			{
+				if (xpp.getName().equals("APE") || xpp.getName().equals("a:APE"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) ape = xpp.getText();
+					Data.ape=ape;
+				}
+				else if (xpp.getName().equals("Address") || xpp.getName().equals("a:Address"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) home_address = xpp.getText();
+					Data.home_address=home_address;
+				}
+				else if (xpp.getName().equals("AgreementName") || xpp.getName().equals("a:AgreementName"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) agreement_name = xpp.getText();
+					Data.agreement_name=agreement_name;
+				}
+				else if (xpp.getName().equals("AgreementNo") || xpp.getName().equals("a:AgreementNo"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) agreement_no = xpp.getText();
+					Data.agreement_no=agreement_no;
+				}
+				else if (xpp.getName().equals("Barangay") || xpp.getName().equals("a:Barangay"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) brgy = xpp.getText();
+					Data.brgy=brgy;
+				}
+				else if (xpp.getName().equals("BenefitLimit") || xpp.getName().equals("a:BenefitLimit"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) ben_limit = xpp.getText();
+					Data.ben_limit=ben_limit;
+				}
+				else if (xpp.getName().equals("BirthDate") || xpp.getName().equals("a:BirthDate"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) birthday = xpp.getText();
+					Data.birthday=birthday;
+				}
+				else if (xpp.getName().equals("CertNo") || xpp.getName().equals("a:CertNo"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) certificate_number = xpp.getText();
+					Data.certificate_number=certificate_number;
+				}
+				else if (xpp.getName().equals("City") || xpp.getName().equals("a:City"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) city = xpp.getText();
+					Data.city=city;
+				}
+				else if (xpp.getName().equals("CivilStat") || xpp.getName().equals("a:CivilStat"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) civil_status = xpp.getText();
+					Data.civil_status=civil_status;
+				}
+				else if (xpp.getName().equals("ContactNumber") || xpp.getName().equals("a:ContactNumber"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) mobile_number = xpp.getText();
+					Data.mobile_number=mobile_number;
+				}
+				else if (xpp.getName().equals("Dental") || xpp.getName().equals("a:Dental"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) dental = xpp.getText();
+					Data.dental=dental;
+				}
+				else if (xpp.getName().equals("EffectiveDate") || xpp.getName().equals("a:EffectiveDate"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) effectivity_date = xpp.getText();
+					Data.effectivity_date=effectivity_date;
+				}
+				else if (xpp.getName().equals("ExpiryDate") || xpp.getName().equals("a:ExpiryDate"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) expiration_date = xpp.getText();
+					Data.expiration_date=expiration_date;
+				}
+				else if (xpp.getName().equals("FirstName") || xpp.getName().equals("a:FirstName"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) first_name = xpp.getText();
+					Data.first_name=first_name;
+				}
+				else if (xpp.getName().equals("HomeNo") || xpp.getName().equals("a:HomeNo"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) home_number = xpp.getText();
+				}
+				else if (xpp.getName().equals("Hospitals") || xpp.getName().equals("a:Hospitals"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) hospitals = xpp.getText();
+					Data.hospitals=hospitals;
+				}
+				else if (xpp.getName().equals("HouseNo") || xpp.getName().equals("a:HouseNo"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) bldg_no = xpp.getText();
+					Data.bldg_no=bldg_no;
+				}
+				else if (xpp.getName().equals("LastName") || xpp.getName().equals("a:LastName"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) last_name = xpp.getText();
+					Data.last_name=last_name;
+				}
+				else if (xpp.getName().equals("MemberType") || xpp.getName().equals("a:MemberType"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) member_type = xpp.getText();
+					Data.member_type=member_type;
+
+				}
+				else if (xpp.getName().equals("MiddleName") || xpp.getName().equals("a:MiddleName"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) mi = xpp.getText();
+					Data.mi=mi;
+				}
+				else if (xpp.getName().equals("PackageDescription") || xpp.getName().equals("a:PackageDescription"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) ben_pack = xpp.getText();
+					Data.ben_pack=ben_pack;
+				}
+				else if (xpp.getName().equals("PhilHealth") || xpp.getName().equals("a:PhilHealth"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) philhealth = xpp.getText();
+					Data.philhealth=philhealth;
+				}
+				else if (xpp.getName().equals("PlanType") || xpp.getName().equals("a:PlanType"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) plan_type = xpp.getText();
+					Data.plan_type=plan_type;
+				}
+				else if (xpp.getName().equals("PolicyNo") || xpp.getName().equals("a:PolicyNo"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) policyno = xpp.getText();
+					Data.policyno=policyno;
+				}
+				else if (xpp.getName().equals("PreEx") || xpp.getName().equals("a:PreEx"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) pre_ex = xpp.getText();
+					Data.pre_ex=pre_ex;
+				}
+				else if (xpp.getName().equals("Province") || xpp.getName().equals("a:Province"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) province = xpp.getText();
+					Data.province=province;
+				}
+				else if (xpp.getName().equals("Riders") || xpp.getName().equals("a:Riders"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) riders = xpp.getText();
+					Data.riders=riders;
+				}
+				else if (xpp.getName().equals("RoomDescription") || xpp.getName().equals("a:RoomDescription"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) room_desc = xpp.getText();
+					Data.room_desc=room_desc;
+				}
+				else if (xpp.getName().equals("RoomRate") || xpp.getName().equals("a:RoomRate"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) room_rate = xpp.getText();
+					Data.room_rate=room_rate;
+					System.out.println("Room-----"+room_rate);
+				}
+				else if (xpp.getName().equals("Sex") || xpp.getName().equals("a:Sex"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) sex = xpp.getText();
+					Data.sex=sex;
+				}
+				else if (xpp.getName().equals("Street") || xpp.getName().equals("a:Street"))
+				{
+					if (xpp.next() == XmlPullParser.TEXT) street = xpp.getText();
+					Data.street=street;
+				}
+			}
+			eventType = xpp.next();
+		}
+		return successful_flag2;
+
 	}
 
 }
