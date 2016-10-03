@@ -194,12 +194,18 @@ public class CreateLOA extends Activity{
 		}
 		
 		}});
+		doctor.setOnTouchListener(new View.OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				return false;
+			}
+		});
 		doctor.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				if(!complaint.getText().toString().isEmpty()){
 					lv_doctor.setVisibility(View.VISIBLE);
-					System.out.println("doctor"+doctorList.toString());
+					System.out.println("doctorSIZE"+doctorList.size());
 					if(doctorList.isEmpty()) {
 					}
 					cancel.setVisibility(View.GONE);

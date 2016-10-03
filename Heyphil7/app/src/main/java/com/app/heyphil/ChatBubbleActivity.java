@@ -329,13 +329,13 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 							// Left to Right swipe action
 							if (x2 > x1)
 							{
-								Toast.makeText(getBaseContext(), "Left to Right swipe [Next]", Toast.LENGTH_SHORT).show ();
+								//Toast.makeText(getBaseContext(), "Left to Right swipe [Next]", Toast.LENGTH_SHORT).show ();
 							}
 
 							// Right to left swipe action
 							else
 							{
-								Toast.makeText(getBaseContext(), "Right to Left swipe [Previous]", Toast.LENGTH_SHORT).show ();
+								//Toast.makeText(getBaseContext(), "Right to Left swipe [Previous]", Toast.LENGTH_SHORT).show ();
 
 							}
 
@@ -494,7 +494,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 					// Left to Right swipe action
 					if (x2 > x1)
 					{
-						Toast.makeText(this, "Left to Right swipe [Next]", Toast.LENGTH_SHORT).show ();
+						//Toast.makeText(this, "Left to Right swipe [Next]", Toast.LENGTH_SHORT).show ();
 
 					}
 
@@ -747,8 +747,12 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	public void updateResult(final String result)
 	{
 
-
-		new SynthesisTask().execute(result);
+		if(result.length()<300) {
+			new SynthesisTask().execute(result);
+		}
+		else{
+			new SynthesisTask().execute("Here's what I found.");
+		}
 
 		ChatBubbleActivity.this.runOnUiThread(new Runnable() {
 			@Override
@@ -1005,8 +1009,17 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		dialog.setContentView(R.layout.custom_dependent);
 		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		TextView tv_dependent=(TextView)dialog.findViewById(R.id.tv_dependents);
+		TextView tv_empty=(TextView)dialog.findViewById(R.id.empty);
 		ListView lv_dependent=(ListView)dialog.findViewById(R.id.lv_dependents);
 		tv_dependent.setTypeface(tf);
+		tv_empty.setTypeface(tf);
+		if(DependentList.size()!=0){
+			tv_empty.setVisibility(View.GONE);
+		}
+		else{
+			lv_dependent.setVisibility(View.GONE);
+			tv_empty.setVisibility(View.VISIBLE);
+		}
 		Dependentadapter = new SimpleAdapter(ChatBubbleActivity.this, DependentList,
 				R.layout.my_dependent, new String[] { "name", "cert",
 				"type"}, new int[] { R.id.tv_name,
@@ -1129,8 +1142,18 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		dialog.setContentView(R.layout.custom_utilization);
 		dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		TextView tv_utilization=(TextView)dialog.findViewById(R.id.tv_utilization);
+		TextView tv_empty=(TextView)dialog.findViewById(R.id.empty);
 		ListView lv_utilzation=(ListView)dialog.findViewById(R.id.lv_utilization);
 		tv_utilization.setTypeface(tf);
+		tv_empty.setTypeface(tf);
+		if(UtilizationList.size()!=0)
+		{
+			tv_empty.setVisibility(View.GONE);
+		}
+		else {
+			lv_utilzation.setVisibility(View.GONE);
+			tv_empty.setVisibility(View.VISIBLE);
+		}
 		Utilizationradapter = new SimpleAdapter(ChatBubbleActivity.this, UtilizationList,
 				R.layout.my_utilization, new String[] { "provider", "caseno",
 				"dateavailed","datecreated", "illness", "nature"}, new int[] { R.id.tv_provider,
@@ -1603,9 +1626,10 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		int ii=0;
 		do{
 			if(mEditTextMessage.getText().toString().toLowerCase().contains(Data.mylist.get(ii).toLowerCase())){
-				Data.loc= Data.mylist.get(ii);
-				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.loc+"&area=&Certno="+ Data.cert;
-				/* new onLoginAsync().execute();
+				Data.loc=   Data.mylist.get(ii);
+				System.out.println("resultCITy--------"+Data.loc);
+				/* provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.loc+"&area=&Certno="+ Data.cert;
+				new onLoginAsync().execute();
 				 Intent n=new Intent(getApplicationContext(),MainActivity.class);
 			     startActivity(n);
 				 i=Data.mylist.size();*/
@@ -1656,12 +1680,18 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		Data.City= Data.loc;
 		if(Data.loc.equals("Select Location")){
 			Data.loc="";
-			doctor_link ="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo="+ Data.cert+"&Province="+ Data.loc+"&Area=&DoctorName=&Specialization="+result;
+			doctor_link ="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo="+ Data.cert+"&Province=&Area=&DoctorName=&Specialization="+result.replaceAll(" ","+").replaceAll("[&]","%26");
 			dStatus=true;
 			new GetDoctor().execute();
 		}
+		/*else if(Data.loc.contains("Makati")||Data.loc.contains("CITY")){
+			doctor_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo=" + Data.cert + "&Province=&Area=" + Data.loc.replaceAll(" ","+").replaceAll("CITY","")+"City&DoctorName=&Specialization=" + result.replaceAll(" ","+");
+			dStatus = true;
+			Data.loc = "";
+			new GetDoctor().execute();
+		}*/
 		else {
-			doctor_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo=" + Data.cert + "&Province=" + Data.loc+ "&Area=&DoctorName=&Specialization=" + result;
+			doctor_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo=" + Data.cert + "&Province=&Area=" + Data.loc.replaceAll(" ","+")+ "&DoctorName=&Specialization=" + result.replaceAll(" ","+").replaceAll("[&]","%26");;
 			dStatus = true;
 			Data.loc = "";
 			new GetDoctor().execute();
@@ -1670,10 +1700,19 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 	public void loadD(){
 		DoctorList.clear();
 		Data.City= Data.loc;
-		doctor_link ="https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo="+ Data.cert+"&Province="+ Data.loc+"&Area=&DoctorName=&Specialization=";
-		dStatus=true;
-		Data.loc = "";
-		new GetDoctor().execute();
+		/*if(Data.loc.contains("Makati")||Data.loc.contains("CITY")) {
+			doctor_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo=" + Data.cert + "&Province=&Area=" + Data.loc.replaceAll("CITY","").replaceAll(" ","+") + "City&DoctorName=&Specialization=";
+			dStatus = true;
+			Data.loc = "";
+			new GetDoctor().execute();
+		}
+		else
+		{*/
+			doctor_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Search.svc/SearchDoctors/?CertNo=" + Data.cert + "&Province=&Area=" + Data.loc.replaceAll(" ","+")+"&DoctorName=&Specialization=";
+			dStatus = true;
+			Data.loc = "";
+			new GetDoctor().execute();
+		//}
 	}
 
 	public void byCities(){
@@ -1683,7 +1722,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			if(mEditTextMessage.getText().toString().toLowerCase().contains(Data.mylist.get(ii).toLowerCase())){
 				Data.loc= Data.mylist.get(ii);
 				Data.City= Data.mylist.get(ii);
-				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.loc+"&area=&Certno="+ Data.cert;
+				provider_link = "https://apps.philcare.com.ph/PhilcareWatsonTest/Providers.svc/HospitalsPerMember/?Location="+ Data.loc.replaceAll(" ","+")+"&area=&Certno="+ Data.cert;
 				/* new onLoginAsync().execute();
 				 Intent n=new Intent(getApplicationContext(),MainActivity.class);
 			     startActivity(n);
@@ -1838,7 +1877,9 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
-			Data.mylist.add(Data.currentCity);
+			if(Data.getCity) {
+				Data.mylist.add(Data.currentCity);
+			}
 			// Showing progress dialog
 			pDialog = new ProgressDialog(ChatBubbleActivity.this);
 			pDialog.setMessage("Please wait...");
@@ -2416,6 +2457,7 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 			String jsonStr = sh.makeServiceCall(doctor_link, ServiceHandler.GET);
 
 			Log.d("Response: ", "> " + jsonStr);
+			Log.d("Response: ", "> " + doctor_link);
 
 			if (jsonStr != null) {
 				try {

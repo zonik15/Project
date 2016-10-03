@@ -77,7 +77,7 @@
 			android:layout_marginRight="40dp"
 		    android:layout_below="@+id/provider"
 		   	android:visibility="gone"
-		   	android:background="#B3ffffff"></ListView>
+		   	android:background="#CCffffff"></ListView>
 
         <Spinner
             android:id="@+id/current"
@@ -117,6 +117,7 @@
 			android:background="@drawable/philcarelogo"
 			android:layout_alignParentBottom="true"/>
 		<ImageView
+			android:id="@+id/arrow"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:background="@drawable/dropdown"

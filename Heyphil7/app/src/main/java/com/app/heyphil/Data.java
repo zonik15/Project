@@ -160,6 +160,8 @@ public class Data {
 	public static Double Height;
 	public static int spin_gender_value;
 	public static int spin_ex_level_value;
+	public static String fbprofile;
+
 
 
 

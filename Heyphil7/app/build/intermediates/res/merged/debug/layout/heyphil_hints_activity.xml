@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:paddingLeft="@dimen/activity_horizontal_margin"
 
 
@@ -19,6 +18,14 @@
         android:dividerHeight="10px"
         android:layout_marginLeft="70dp"
         android:alpha="1"
-        android:background="#ffffff"/>
+        android:background="@drawable/shadow"/>
+    <TextView
+        android:layout_width="84dp"
+        android:layout_height="27.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/send_message_layout"
+        android:background="@drawable/philcarelogo"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

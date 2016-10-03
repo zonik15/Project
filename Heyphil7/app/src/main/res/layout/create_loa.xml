@@ -71,13 +71,14 @@
         android:id="@+id/view" />
     <TextView
         android:id="@+id/providername"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Provider Name"
         android:textColor="@color/display_text_color"
         android:gravity="center"
         android:textSize="17sp"
+        android:textStyle="bold"
         android:layout_below="@+id/loa"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -219,13 +220,14 @@
         android:layout_below="@+id/doctor"
         android:layout_alignLeft="@+id/view"
         android:layout_alignStart="@+id/view"
-        android:layout_marginTop="47dp" />
+        android:layout_marginTop="70dp" />
     <TextView
         android:layout_width="84dp"
         android:layout_height="27.5dp"
         android:background="@drawable/philcarelogo"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/et_doctor"
-        android:layout_alignEnd="@+id/et_doctor" />
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

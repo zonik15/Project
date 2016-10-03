@@ -17,10 +17,20 @@
         app:civ_border_width="2dp"
         app:civ_shadow="true"
         app:civ_shadow_radius="0" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/circularImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"/>
 
    <TextView
-       android:layout_below="@id/circularImageView"
+       android:layout_below="@id/name"
        android:id="@+id/myaccount"
+       android:layout_margin="2dp"
        android:layout_width="match_parent"
        android:gravity="center"
        android:layout_height="wrap_content"
@@ -32,6 +42,7 @@
     <TextView
         android:layout_below="@id/myaccount"
         android:id="@+id/bmi"
+        android:layout_margin="2dp"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
@@ -42,6 +53,7 @@
     <TextView
         android:layout_below="@id/bmi"
         android:id="@+id/calorie"
+        android:layout_margin="2dp"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="wrap_content"
@@ -53,6 +65,7 @@
         android:id="@+id/setting"
         android:layout_width="match_parent"
         android:gravity="center"
+        android:layout_margin="2dp"
         android:layout_height="wrap_content"
         android:text="SETTING"
         android:textColor="#008444"
@@ -62,6 +75,7 @@
         android:id="@+id/logout"
         android:layout_width="match_parent"
         android:gravity="center"
+        android:layout_margin="2dp"
         android:layout_height="wrap_content"
         android:text="LOGOUT"
         android:textColor="#008444"

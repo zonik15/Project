@@ -7,7 +7,7 @@
     <LinearLayout
         android:id="@+id/ll_utilization"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:gravity="center"
         android:background="#008444">
         <TextView
@@ -16,12 +16,22 @@
             android:layout_height="wrap_content"
             android:text="MEMBERS UTILIZATION"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="20sp"
             android:gravity="center"/>
     </LinearLayout>
+    <TextView
+        android:layout_below="@+id/ll_utilization"
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="No Utilization Found!"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:visibility="gone"
+        />
         <ListView
             android:id="@+id/lv_utilization"
-            android:layout_below="@+id/ll_utilization"
+            android:layout_below="@+id/empty"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#6d6767"></ListView>

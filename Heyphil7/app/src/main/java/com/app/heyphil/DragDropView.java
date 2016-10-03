@@ -131,11 +131,14 @@ public class DragDropView extends FrameLayout {
 							//dialog.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
 							Typeface tf = Typeface.create("Helvetica", Typeface.BOLD);
 							CircularImageView user=(CircularImageView)dialog.findViewById(R.id.circularImageView);
+							TextView myname=(TextView)dialog.findViewById(R.id.name);
 							TextView myaccount=(TextView)dialog.findViewById(R.id.myaccount);
 							final TextView bmi=(TextView)dialog.findViewById(R.id.bmi);
 							TextView calorie=(TextView)dialog.findViewById(R.id.calorie);
 							TextView setting=(TextView)dialog.findViewById(R.id.setting);
 							final TextView logout=(TextView)dialog.findViewById(R.id.logout);
+							myname.setTypeface(tf);
+							myname.setText(Data.first_name+" "+Data.last_name);
 							myaccount.setTypeface(tf);bmi.setTypeface(tf);calorie.setTypeface(tf);setting.setTypeface(tf);logout.setTypeface(tf);
 							if(!Data.Bitmap && Data.sex.equals("FEMALE")){
 								user.setImageResource(R.drawable.femele_icon);

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:2:1-117:12
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:2:1-121:12
 	package
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml
@@ -277,7 +277,7 @@ MERGED from [com.google.android.gms:play-services-maps:8.3.0] C:\Users\ABDalisay
 	android:required
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:27:9-32
 application
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:29:5-115:19
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:29:5-119:19
 MERGED from [com.android.support:appcompat-v7:23.2.1] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:23.2.1] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
@@ -450,7 +450,7 @@ activity#com.facebook.FacebookActivity
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:45:9-65
 	android:name
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:45:19-63
-activity#com.app.heyphil.Registration
+activity#com.app.heyphil.PreRegister
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:46:9-49:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:49:13-49
@@ -459,8 +459,8 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 	android:theme
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:47:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:46:19-47
-activity#com.app.heyphil.HeyphilScreen
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:46:19-46
+activity#com.app.heyphil.Registration
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:50:9-53:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:53:13-49
@@ -469,8 +469,8 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 	android:theme
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:51:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:50:19-48
-activity#com.app.heyphil.RegisterScreen
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:50:19-47
+activity#com.app.heyphil.HeyphilScreen
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:54:9-57:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:57:13-49
@@ -479,8 +479,8 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 	android:theme
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:55:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:54:19-49
-activity#com.app.heyphil.MainActivity
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:54:19-48
+activity#com.app.heyphil.RegisterScreen
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:58:9-61:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:61:13-49
@@ -489,8 +489,8 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 	android:theme
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:59:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:58:19-47
-activity#com.app.heyphil.Product
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:58:19-49
+activity#com.app.heyphil.MainActivity
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:62:9-65:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:65:13-49
@@ -499,8 +499,8 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 	android:theme
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:63:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:62:19-42
-activity#com.app.heyphil.TestMap
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:62:19-47
+activity#com.app.heyphil.Product
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:66:9-69:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:69:13-49
@@ -510,7 +510,7 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:67:13-60
 	android:name
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:66:19-42
-activity#com.app.heyphil.ChatBubbleActivity
+activity#com.app.heyphil.TestMap
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:70:9-73:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:73:13-49
@@ -519,8 +519,8 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 	android:theme
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:71:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:70:19-53
-activity#com.app.heyphil.MapActivity
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:70:19-42
+activity#com.app.heyphil.ChatBubbleActivity
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:74:9-77:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:77:13-49
@@ -529,8 +529,8 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 	android:theme
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:75:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:74:19-46
-activity#com.app.heyphil.CreateLOA
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:74:19-53
+activity#com.app.heyphil.MapActivity
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:78:9-81:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:81:13-49
@@ -539,8 +539,8 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 	android:theme
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:79:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:78:19-44
-activity#com.app.heyphil.PdfCreator
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:78:19-46
+activity#com.app.heyphil.CreateLOA
 ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:82:9-85:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:85:13-49
@@ -549,39 +549,39 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 	android:theme
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:83:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:82:19-45
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:82:19-44
+activity#com.app.heyphil.PdfCreator
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:86:9-89:51
+	android:screenOrientation
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:89:13-49
+	android:configChanges
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:88:13-48
+	android:theme
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:87:13-60
+	android:name
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:86:19-45
 activity#com.app.heyphil.PhilcareProducts
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:86:9-90:51
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:90:9-94:51
 	android:screenOrientation
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:90:13-49
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:94:13-49
 	android:configChanges
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:89:13-48
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:93:13-48
 	android:theme
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:88:13-60
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:92:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:87:13-45
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:91:13-45
 activity#com.app.heyphil.ProductList
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:91:9-95:51
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:95:9-99:51
 	android:screenOrientation
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:95:13-49
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:99:13-49
 	android:configChanges
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:94:13-48
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:98:13-48
 	android:theme
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:93:13-60
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:97:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:92:13-40
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:96:13-40
 activity#com.app.heyphil.ProductBuy
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:96:9-100:51
-	android:screenOrientation
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:100:13-49
-	android:configChanges
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:99:13-48
-	android:theme
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:98:13-60
-	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:97:13-39
-activity#com.app.heyphil.Pdf_Download
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:101:9-104:51
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:100:9-104:51
 	android:screenOrientation
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:104:13-49
 	android:configChanges
@@ -589,30 +589,40 @@ ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\And
 	android:theme
 		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:102:13-60
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:101:19-47
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:101:13-39
+activity#com.app.heyphil.Pdf_Download
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:105:9-108:51
+	android:screenOrientation
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:108:13-49
+	android:configChanges
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:107:13-48
+	android:theme
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:106:13-60
+	android:name
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:105:19-47
 activity#com.ibm.mqa.ui.ProblemActivity
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:105:9-67
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:109:9-67
 MERGED from [Heyphil7:MQA-Android-3.4.0:unspecified] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\Heyphil7\MQA-Android-3.4.0\unspecified\AndroidManifest.xml:27:9-67
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:105:19-64
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:109:19-64
 activity#com.ibm.mqa.ui.FeedbackActivity
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:106:9-68
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:110:9-68
 MERGED from [Heyphil7:MQA-Android-3.4.0:unspecified] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\Heyphil7\MQA-Android-3.4.0\unspecified\AndroidManifest.xml:28:9-68
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:106:19-65
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:110:19-65
 activity#com.ibm.mqa.ui.ScreenshotEditorActivity
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:107:9-76
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:111:9-76
 MERGED from [Heyphil7:MQA-Android-3.4.0:unspecified] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\Heyphil7\MQA-Android-3.4.0\unspecified\AndroidManifest.xml:29:9-76
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:107:19-73
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:111:19-73
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:108:9-107
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:112:9-107
 	android:value
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:108:66-105
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:112:66-105
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:108:20-65
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:112:20-65
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:109:9-111:69
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:113:9-115:69
 MERGED from [com.google.android.gms:play-services-basement:8.3.0] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.3.0] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.3.0] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:21:9-23:69
@@ -649,15 +659,15 @@ MERGED from [com.google.android.gms:play-services-basement:8.3.0] C:\Users\ABDal
 MERGED from [com.google.android.gms:play-services-basement:8.3.0] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.3.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.maps.android:android-maps-utils:0.4.4] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\com.google.maps.android\android-maps-utils\0.4.4\AndroidManifest.xml:8:9-10:69
 	android:value
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:111:13-66
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:115:13-66
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:110:13-58
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:114:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:112:9-114:71
+ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:116:9-118:71
 	android:value
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:114:13-68
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:118:13-68
 	android:name
-		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:113:13-62
+		ADDED from C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\src\main\AndroidManifest.xml:117:13-62
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads:8.3.0] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:26:9-29:64
 MERGED from [com.google.android.gms:play-services-ads:8.3.0] C:\Users\ABDalisay\Documents\GitHub\Project\Heyphil7\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:26:9-29:64

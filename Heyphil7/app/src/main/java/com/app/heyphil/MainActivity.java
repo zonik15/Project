@@ -131,6 +131,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 	String Providerurl;
 	Context context;
 	private StreamPlayer player = new StreamPlayer();
+	ImageView arrow;
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
@@ -140,6 +141,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		et_provider=(EditText)findViewById(R.id.provider);
 		lv_provider=(ListView)findViewById(R.id.lv_provider);
 		btn_request=(Button)findViewById(R.id.requestloa);
+		arrow=(ImageView)findViewById(R.id.arrow);
 		Typeface tf = Typeface.create("Helvetica", Typeface.NORMAL);
 		et_provider.setTypeface(tf);
 		btn_request.setTypeface(tf);
@@ -148,8 +150,15 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		if(Data.getCity) {
 			player.stopPlayer();
 			Data.getCity=false;
-			text = "Here are the providers in " + Data.City + ". Tap or click the google marker to view information an to proceed to create or request LOA. Thank you!";
-			show(text);
+			if(Data.name1.size()!=0) {
+				text = "Here are the providers in " + Data.City + ". Tap or click the google marker to view information an to proceed to create or request LOA. Thank you!";
+			}
+			else
+			{
+				text = "No providers found in " + Data.City + ". Select another location. Thank you!";
+
+			}
+				show(text);
 			//updateResult(text);
 		}
 		else if(Data.getPro){
@@ -194,6 +203,8 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 				// TODO Auto-generated method stub
 				player.stopPlayer();
 				btn_request.setVisibility(View.GONE);
+				current.setVisibility(View.GONE);
+				arrow.setVisibility(View.GONE);
 				text="Select provider to locate in google map.";
 				show(text);
 				Data.getPro=true;
@@ -506,6 +517,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		TextView distances=(TextView)dialog.findViewById(R.id.distance);
 		TextView tv_time=(TextView)dialog.findViewById(R.id.tv_time);
 		TextView time=(TextView)dialog.findViewById(R.id.time);
+		final TextView tv_favorite=(TextView)dialog.findViewById(R.id.favorite);
 		Button btn_no=(Button)dialog.findViewById(R.id.button);
 		Button btn_yes=(Button)dialog.findViewById(R.id.button2) ;
 		ImageView exit=(ImageView)dialog.findViewById(R.id.exit);
@@ -521,11 +533,19 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		tv_time.setTypeface(tf);
 		distances.setTypeface(tf);
 		time.setTypeface(tf);
+		tv_favorite.setTypeface(tf);
 		tv_provider.setText(Data.name1.get(index));
 		tv_address.setText(Data.address.get(index));
 		tv_contact.setText(Data.tel.get(index));
 		distances.setText(""+distance);
 		time.setText(""+duration);
+		tv_favorite.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				tv_favorite.setText("Favorited!");
+				tv_favorite.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.favicon,0);
+			}
+		});
 		text=""+tv_provider.getText().toString()+" is "+distance+" away from your current location. It takes "+duration+" to travel to get there!";
 		//updateResult(text);
 		pname= Data.name1.get(index);
@@ -836,7 +856,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			 * */
 			Provideradapter = new SimpleAdapter(
 					MainActivity.this, Data.providerList,
-					R.layout.provider_list, new String[] { TAG_PNAME, TAG_CITY,
+					R.layout.general_layout, new String[] { TAG_PNAME, TAG_CITY,
 							TAG_TEL,TAG_PCODE, TAG_LAT, TAG_LONG }, new int[] { R.id.name,
 							R.id.address, R.id.mobile, R.id.pcode, R.id.lat, R.id.lon });
 			lv_provider.setAdapter(Provideradapter);
@@ -967,6 +987,7 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 		if(lv_provider.getVisibility()==View.VISIBLE){
 			lv_provider.setVisibility(View.GONE);
 			current.setVisibility(View.VISIBLE);
+			arrow.setVisibility(View.VISIBLE);
 		}
 		else {
 			Data.sprovider = null;

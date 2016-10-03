@@ -28,6 +28,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
+import com.facebook.Profile;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.StatusLine;
@@ -54,6 +64,7 @@ import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class LoginScreen extends Activity {
@@ -62,13 +73,13 @@ public class LoginScreen extends Activity {
 	private EditText	et_password;
 	
 	private Button		btn_login;
-	
+	private Button 	facebook;
 	private TextView	tv_signup;
 	private TextView	tv_forgotpassword;
 	
 	private String		login_link;
 	private String		Link="https://heyphil.mybluemix.net/cert=";
-	private String		APILink="https://apps.philcare.com.ph/PCareWebServices/login.svc/";
+	private String		APILink="https://apps.philcare.com.ph/PhilcareWatsonTest/Login.svc/";
 	private String		user;
 	private String		pass;
 	
@@ -126,6 +137,10 @@ public class LoginScreen extends Activity {
 	private String ape;
 	private String dental;
 	private String policyno;
+	private CallbackManager callbackManager;
+	ProgressDialog progress;
+	private String facebook_id,f_name, m_name, l_name, gender, profile_image, full_name, email_id;
+	boolean fbstat;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -144,6 +159,71 @@ public class LoginScreen extends Activity {
 		tv_forgotpassword.setTypeface(tf);
 		et_username.setTypeface(tf);
 		et_password.setTypeface(tf);
+		facebook=(Button) findViewById(R.id.facebooklogin);
+		progress=new ProgressDialog(LoginScreen.this);
+		progress.setMessage("Please Wait");
+		progress.setIndeterminate(false);
+		progress.setCancelable(false);
+		facebook_id=f_name= m_name= l_name= gender= profile_image= full_name= email_id="";
+		//for facebook
+		FacebookSdk.sdkInitialize(getApplicationContext());
+		callbackManager = CallbackManager.Factory.create();
+		LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+			@Override
+			public void onSuccess(LoginResult loginResult) {
+				progress.show();
+				Profile profile = Profile.getCurrentProfile();
+				if (profile != null) {
+					facebook_id=profile.getId();
+					f_name=profile.getFirstName();
+					m_name=profile.getMiddleName();
+					l_name=profile.getLastName();
+					full_name=profile.getName();
+					profile_image=profile.getProfilePictureUri(400, 400).toString();
+					Data.fbprofile=profile_image;
+				}
+				//Toast.makeText(LoginScreen.this,"Wait...",Toast.LENGTH_SHORT).show();
+				//System.out.println("TOKEN ID+++++"+AccessToken.getCurrentAccessToken().getToken());
+				GraphRequest request = GraphRequest.newMeRequest(loginResult.getAccessToken(),
+						new GraphRequest.GraphJSONObjectCallback() {
+							@Override
+							public void onCompleted(JSONObject object, GraphResponse response) {
+								Log.v("LoginActivity", response.toString());
+								progress.dismiss();
+								// Application code
+								try {
+									email_id=object.getString("email");
+									fbstat=true;
+									new onLoginAsync().execute();
+								} catch (JSONException e) {
+									e.printStackTrace();
+								}
+							}
+						});
+				Bundle parameters = new Bundle();
+				parameters.putString("fields", "id,name,email,gender,birthday");
+				request.setParameters(parameters);
+				request.executeAsync();
+			}
+
+			@Override
+			public void onCancel() {
+				Toast.makeText(LoginScreen.this,"cancel",Toast.LENGTH_SHORT).show();
+				progress.dismiss();
+			}
+
+			@Override
+			public void onError(FacebookException error) {
+				Toast.makeText(LoginScreen.this,"login failed",Toast.LENGTH_SHORT).show();
+				progress.dismiss();
+			}
+		});
+		facebook.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				LoginManager.getInstance().logInWithReadPermissions(LoginScreen.this, Arrays.asList("public_profile", "user_friends", "email", "user_birthday"));
+			}
+		});
 		try {
 			gps_enabled = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);
 			isStoragePermissionGranted();
@@ -183,7 +263,6 @@ public class LoginScreen extends Activity {
 			}
 		}
 		btn_login.setTypeface(tf);
-		
 		btn_login.setOnClickListener(new OnClickListener(){
 
 			@Override
@@ -195,6 +274,7 @@ public class LoginScreen extends Activity {
 					Ed.putString("User",et_username.getText().toString());
 					Ed.putString("Psw",et_password.getText().toString());
 					Ed.commit();
+					fbstat=false;
 					    onLogin();
 				}
 				else{
@@ -206,10 +286,15 @@ public class LoginScreen extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent intent=new Intent(getBaseContext(),RegisterScreen.class);
+				Intent intent=new Intent(getBaseContext(),PreRegister.class);
 				startActivity(intent);
 				finish();
 			}});
+	}
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		callbackManager.onActivityResult(requestCode, resultCode, data);
 	}
 	public  boolean isStoragePermissionGranted() {
 		Boolean check;
@@ -260,7 +345,14 @@ public class LoginScreen extends Activity {
 	  {
 			protected void onPreExecute()
 			{
-				  getLoginXML();
+				if(fbstat)
+				{
+					getLoginXMLfacebook();
+				}
+				else
+				{
+					getLoginXML();
+				}
 				  progressDialog(context, "Verifying data. Please wait...");
 			}
 
@@ -479,15 +571,23 @@ public class LoginScreen extends Activity {
 			else
 			{
 				//Toast.makeText(LoginScreen.this, "File does not exist!", Toast.LENGTH_SHORT).show();
-				Data.Bitmap=false;
-				System.out.println("False Bitmap Result"+Data.bitmap);
-				//Toast.makeText(LoginScreen.this, "Image Does Not exist or Network Error"+Data.bitmap, Toast.LENGTH_SHORT).show();
-				successful_flag = "True";
-				Intent intent =new Intent(getBaseContext(),ChatBubbleActivity.class);
-				startActivity(intent);
-				et_username.setText("");
-				et_password.setText("");
-				finish();
+				if(fbstat) {
+					fbstat=false;
+					System.out.println("False Bitmap Result"+Data.fbprofile);
+					new LoadImage().execute(Data.fbprofile);
+					System.out.println("False Bitmap Result"+Data.bitmap);
+					Data.Bitmap=true;
+				}
+				else {
+					Data.Bitmap = false;
+
+					//Toast.makeText(LoginScreen.this, "Image Does Not exist or Network Error"+Data.bitmap, Toast.LENGTH_SHORT).show();
+					Intent intent = new Intent(getBaseContext(), ChatBubbleActivity.class);
+					startActivity(intent);
+					et_username.setText("");
+					et_password.setText("");
+					finish();
+				}
 			}
 		}
 	}
@@ -497,12 +597,22 @@ public class LoginScreen extends Activity {
 		  {
 				user = et_username.getText().toString();
 				pass= et_password.getText().toString();
-				login_link = "Login/?Username=" + user + "&pwd=" + pass;
+				login_link = "Login/?Username=" + user + "&pwd=" + pass+"&UserID=&Email=&FbFrom=0";
 				login_link = APILink + login_link;
 				list_xml_link.clear();
 				System.out.println("==========url"+convertToUrl(login_link));
 				list_xml_link.add(convertToUrl(login_link));
 		  }
+	private void getLoginXMLfacebook()
+	{
+		user = et_username.getText().toString();
+		pass= et_password.getText().toString();
+		login_link = "Login/?Username=&pwd=&UserID="+facebook_id+"&Email="+email_id+"&FbFrom=1";
+		login_link = APILink + login_link;
+		list_xml_link.clear();
+		System.out.println("==========url"+convertToUrl(login_link));
+		list_xml_link.add(convertToUrl(login_link));
+	}
 		  // get XML value Data
 		  private String getXMLValue(String xml) throws XmlPullParserException, IOException
 		  {
@@ -670,7 +780,7 @@ public class LoginScreen extends Activity {
 					alertDialog2.setMessage("Are you sure you want to exit Heyphil?");
 
 					// Setting Icon to Dialog
-					alertDialog2.setIcon(R.drawable.icon1);
+					alertDialog2.setIcon(R.drawable.appdialog);
 
 					// Setting Positive "Yes" Btn
 					alertDialog2.setPositiveButton("YES",
@@ -735,7 +845,6 @@ public class LoginScreen extends Activity {
 				Data.Bitmap=true;
 				System.out.println("True Bitmap Result"+Data.bitmap);
 				//Toast.makeText(LoginScreen.this, "Image", Toast.LENGTH_SHORT).show();
-				successful_flag = "True";
 				Intent intent =new Intent(getBaseContext(),ChatBubbleActivity.class);
 				startActivity(intent);
 				et_username.setText("");
@@ -746,7 +855,6 @@ public class LoginScreen extends Activity {
 				Data.Bitmap=false;
 				System.out.println("False Bitmap Result"+Data.bitmap);
 				//Toast.makeText(LoginScreen.this, "Image Does Not exist or Network Error"+Data.bitmap, Toast.LENGTH_SHORT).show();
-				successful_flag = "True";
 				Intent intent =new Intent(getBaseContext(),ChatBubbleActivity.class);
 				startActivity(intent);
 				et_username.setText("");

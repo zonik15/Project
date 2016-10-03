@@ -101,6 +101,7 @@ public class HttpStuff extends AsyncTask<String, Integer, String> {
     final String INTENT_VALIDITY = "my-validity";
     final String INTENT_MY_NAME = "my-name";
     final String INTENT_ACTION_LOGOUT = "action-logout";
+    final String INTENT_MY_GENDER = "my-gender";
 
     public String questions = "";
     public String url;
@@ -405,6 +406,8 @@ public class HttpStuff extends AsyncTask<String, Integer, String> {
             }else if(nlcTopic.contains(INTENT_ACTION_LOGOUT)){
                 chatBubbleActivity.logout();
                 replyText = "0";
+            }else if(nlcTopic.contains(INTENT_MY_GENDER)){
+                replyText = "Your gender is "+ Data.sex;
             }
             else{
                 System.out.println("SHOULD GET RESPONSE"+getResponse(nlcTopic));

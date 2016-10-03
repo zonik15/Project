@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\erv60.jpg",
-        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\erv60.jpg"
-    },
-    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\product.png",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\product.png"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\erv60.jpg",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\erv60.jpg"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\applause_login_quick_list_selector.xml",
@@ -28,6 +28,10 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\gpin.png"
     },
     {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favorite.png",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\favorite.png"
+    },
+    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\applause_report_bug_normal.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\drawable\\applause_report_bug_normal.xml"
     },
@@ -38,6 +42,10 @@
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ervantage40.png",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\ervantage40.png"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_facebook.png",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\btn_facebook.png"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\heyphil_logo.png",
@@ -128,12 +136,16 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.5.0\\res\\drawable\\com_facebook_button_like_background.xml"
     },
     {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\drawable\\mr_ic_pause_light.xml"
+    },
+    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shadow.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\shadow.xml"
     },
     {
-        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
-        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\drawable\\mr_ic_pause_light.xml"
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\facebook_login.png",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\facebook_login.png"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\male_icon.png",
@@ -260,6 +272,10 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\homepage_button.xml"
     },
     {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\normal.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\normal.xml"
+    },
+    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\female.png",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\female.png"
     },
@@ -376,6 +392,14 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\pdf.png"
     },
     {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favicon.png",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\favicon.png"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\facebooklogin.png",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\facebooklogin.png"
+    },
+    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\signup.png",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\signup.png"
     },
@@ -398,6 +422,10 @@
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_button_land.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\custom_button_land.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\appdialog.png",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\appdialog.png"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
@@ -484,6 +512,10 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\heyphil_title.png"
     },
     {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\brg.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\brg.xml"
+    },
+    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
     },
@@ -498,6 +530,10 @@
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\applause_checkbox.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\drawable\\applause_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sign_up_fb.png",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\sign_up_fb.png"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\applause_screenshot_thumbnail_overlay.xml",
@@ -548,8 +584,20 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\drawable\\applause_problem_edittext_focused.xml"
     },
     {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\favsicon.png",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\favsicon.png"
+    },
+    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\erv80.jpg",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\erv80.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\facebook.png",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\facebook.png"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fb.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\fb.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
@@ -658,6 +706,10 @@
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pressed.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\drawable\\pressed.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\number.png",

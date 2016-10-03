@@ -19,9 +19,19 @@
             android:textSize="25dp"
             android:gravity="center"/>
     </LinearLayout>
+    <TextView
+        android:layout_below="@+id/ll_dependents"
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="No Dependent Found!"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:visibility="gone"
+        />
     <ListView
         android:id="@+id/lv_dependents"
-        android:layout_below="@+id/ll_dependents"
+        android:layout_below="@+id/empty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#6d6767"></ListView>

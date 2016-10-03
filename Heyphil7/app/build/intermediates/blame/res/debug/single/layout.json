@@ -48,12 +48,12 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\test_map.xml"
     },
     {
-        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
-    },
-    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product_detail.xml",
@@ -94,6 +94,10 @@
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_dependent.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_dependent.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\general_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\general_layout.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_rating_bar.xml",
