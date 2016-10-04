@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+    <!-- Provider Name-->
+    <TextView
+        android:id="@+id/pname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Provider Name"
+        android:textColor="#29a329"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+    <!-- Provider Address -->
+    <TextView
+        android:id="@+id/paddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pname"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:text="Provider Address"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"/>
+
+    <!-- Provider Contact -->
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paddress"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:text="Contact"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"/>
+    <!-- Provider Code -->
+    <TextView
+        android:id="@+id/pcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobile"
+        android:visibility="gone"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"/>
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_below="@+id/pcode"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/btn_delete"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

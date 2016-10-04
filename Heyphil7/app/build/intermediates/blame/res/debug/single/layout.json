@@ -60,12 +60,12 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\product_detail.xml"
     },
     {
-        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
@@ -140,6 +140,10 @@
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\calorie_layout.xml"
     },
     {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\edm_layout.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\edm_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\product.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\product.xml"
     },
@@ -194,6 +198,10 @@
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\heyphil_hints_activity.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\heyphil_hints_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_favorites.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\item_favorites.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pdfview.xml",
@@ -310,6 +318,10 @@
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\applause_problem_actual_result_fragment.xml",
         "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\exploded-aar\\Heyphil7\\MQA-Android-3.4.0\\unspecified\\res\\layout\\applause_problem_actual_result_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\my_favorites.xml",
+        "source": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\src\\main\\res\\layout\\my_favorites.xml"
     },
     {
         "merged": "C:\\Users\\ABDalisay\\Documents\\GitHub\\Project\\Heyphil7\\app\\build\\intermediates\\res\\merged\\debug\\layout\\login_screen.xml",

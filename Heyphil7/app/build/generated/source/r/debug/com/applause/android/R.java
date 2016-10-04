@@ -281,14 +281,14 @@ public final class R {
 		public static final int applause_video_save_action = 0x7f02009d;
 	}
 	public static final class id {
-		public static final int applause_attach_file = 0x7f0c0289;
-		public static final int applause_discard_report = 0x7f0c0287;
+		public static final int applause_attach_file = 0x7f0c028d;
+		public static final int applause_discard_report = 0x7f0c028b;
 		public static final int applause_editor_actions_menu = 0x7f0c00c2;
 		public static final int applause_editor_blur_action = 0x7f0c00c4;
 		public static final int applause_editor_brush_action = 0x7f0c00c5;
-		public static final int applause_editor_discard_action = 0x7f0c0284;
+		public static final int applause_editor_discard_action = 0x7f0c0288;
 		public static final int applause_editor_reset_action = 0x7f0c00c3;
-		public static final int applause_editor_save_action = 0x7f0c0285;
+		public static final int applause_editor_save_action = 0x7f0c0289;
 		public static final int applause_feedback_attach_screenshot_fragment = 0x7f0c00c7;
 		public static final int applause_feedback_description_fragment = 0x7f0c00c8;
 		public static final int applause_feedback_include_screenshot_check_box = 0x7f0c00ca;
@@ -378,7 +378,7 @@ public final class R {
 		public static final int applause_screenshot_loader = 0x7f0c0117;
 		public static final int applause_screenshot_overlay = 0x7f0c0115;
 		public static final int applause_screenshot_small = 0x7f0c0114;
-		public static final int applause_send_report = 0x7f0c0286;
+		public static final int applause_send_report = 0x7f0c028a;
 		public static final int applause_steps_container = 0x7f0c00e0;
 		public static final int applause_test_cycle_name = 0x7f0c0118;
 		public static final int applause_test_cycles_layouts_flipper = 0x7f0c0119;
@@ -401,7 +401,7 @@ public final class R {
 		public static final int applause_user_name = 0x7f0c0129;
 		public static final int applause_video_play_button = 0x7f0c0116;
 		public static final int applause_video_view = 0x7f0c012a;
-		public static final int applause_wifi_only_report = 0x7f0c0288;
+		public static final int applause_wifi_only_report = 0x7f0c028c;
 	}
 	public static final class integer {
 		public static final int applause_default_circle_indicator_orientation = 0x7f0a0004;

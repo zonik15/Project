@@ -174,7 +174,7 @@ public class LoginScreen extends Activity {
 				progress.show();
 				Profile profile = Profile.getCurrentProfile();
 				if (profile != null) {
-					facebook_id=profile.getId();
+					//facebook_id=profile.getId();
 					f_name=profile.getFirstName();
 					m_name=profile.getMiddleName();
 					l_name=profile.getLastName();
@@ -192,8 +192,10 @@ public class LoginScreen extends Activity {
 								progress.dismiss();
 								// Application code
 								try {
+									facebook_id=object.getString("id");
 									email_id=object.getString("email");
 									fbstat=true;
+									System.out.println("Facebook id"+facebook_id);
 									new onLoginAsync().execute();
 								} catch (JSONException e) {
 									e.printStackTrace();
@@ -229,38 +231,57 @@ public class LoginScreen extends Activity {
 			isStoragePermissionGranted();
 		}
 		catch(Exception ex) {}
-		if(Data.logout){
-			context.getSharedPreferences("Login",0).edit().clear().commit();
-			Data.logout=false;
-		}
-		if(!gps_enabled && !network_enabled) {
-			// notify user
-			Builder dialog = new Builder(context);
-			dialog.setMessage("Please enable your GPS! ");
+		if (android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+			final Builder dialog = new Builder(context);
+			dialog.setMessage("Lower Version! ");
+			Data.tts=false;
 			dialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
 				@Override
 				public void onClick(DialogInterface paramDialogInterface, int paramInt) {
 					// TODO Auto-generated method stub
-					Intent myIntent = new Intent( Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-					context.startActivity(myIntent);
+					Intent intent = new Intent(getBaseContext(), ChatBubbleActivity.class);
+					startActivity(intent);
 					//get gps
 				}
 			});
 			dialog.show();
+
 		}
-		else{
-			SharedPreferences sp1=this.getSharedPreferences("Login",0);
-			final String pass = sp1.getString("Psw", "");
-			final String user = sp1.getString("User", "");
-			if (pass!=null&&!pass.isEmpty()&&user!=null&&!user.isEmpty()){
-				et_username.setText(user);
-				et_password.setText(pass);
-				onLogin();
+		else
+		{
+			if (!gps_enabled && !network_enabled) {
+				// notify user
+				Builder dialog = new Builder(context);
+				dialog.setMessage("Please enable your GPS! ");
+				dialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+						// TODO Auto-generated method stub
+						Intent myIntent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+						context.startActivity(myIntent);
+						//get gps
+					}
+				});
+				dialog.show();
+			} else {
+				SharedPreferences sp1 = this.getSharedPreferences("Login", 0);
+				final String pass = sp1.getString("Psw", "");
+				final String user = sp1.getString("User", "");
+				if (pass != null && !pass.isEmpty() && user != null && !user.isEmpty()) {
+					et_username.setText(user);
+					et_password.setText(pass);
+					onLogin();
+				} else {
+					et_username.setText("");
+					et_password.setText("");
+				}
 			}
-			else{
-				et_username.setText("");
-				et_password.setText("");
-			}
+		}
+
+		if(Data.logout)
+		{
+			context.getSharedPreferences("Login",0).edit().clear().commit();
+			Data.logout=false;
 		}
 		btn_login.setTypeface(tf);
 		btn_login.setOnClickListener(new OnClickListener(){

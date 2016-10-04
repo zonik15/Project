@@ -172,7 +172,7 @@ public class PreRegister extends Activity {
                 tv_message.setVisibility(View.VISIBLE);
                 tv_message.setText("Your Certificate Number and Birthday doesn't match!");
             }
-            else if(success=="1"){
+            else{
                 Intent i=new Intent(PreRegister.this,Registration.class);
                 i.putExtra("Cert",certno);
                 i.putExtra("Bday",bday);

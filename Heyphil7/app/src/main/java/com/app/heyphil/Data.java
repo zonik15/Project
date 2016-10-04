@@ -161,6 +161,8 @@ public class Data {
 	public static int spin_gender_value;
 	public static int spin_ex_level_value;
 	public static String fbprofile;
+	public static ArrayList<HashMap<String, String>> favorite;
+	public static boolean tts;
 
 
 

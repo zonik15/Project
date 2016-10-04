@@ -246,7 +246,10 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 		//Thread.setDefaultUncaughtExceptionHandler(new MyExceptionHandler(this));
 		setContentView(R.layout.activity_chat);
 		mediaPlayer = MediaPlayer.create(this, R.raw.result);
-		textService = initTextToSpeechService();
+		if(Data.tts)
+		{
+			textService = initTextToSpeechService();
+		}
 		/*
 		com.ibm.mqa.config.Configuration configuration = new com.ibm.mqa.config.Configuration.Builder(this)
 				.withAPIKey(APP_KEY) //Provides the quality assurance application APP_KEY
@@ -494,8 +497,74 @@ public class ChatBubbleActivity extends Activity implements GoogleApiClient.Conn
 					// Left to Right swipe action
 					if (x2 > x1)
 					{
-						//Toast.makeText(this, "Left to Right swipe [Next]", Toast.LENGTH_SHORT).show ();
+						LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
+						//final PopupWindow popupWindow = new PopupWindow(inflater.inflate(R.layout.heyphil_hints_activity, null, false),
+						//		ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT, true);
+						final PopupWindow popupWindow = new PopupWindow(inflater.inflate(R.layout.edm_layout, null, false),
+								ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT, true);
+						popupWindow.setAnimationStyle(Animation.START_ON_FIRST_FRAME);
+
+						popupWindow.setFocusable(true);
+						popupWindow.setOutsideTouchable(true);
+						popupWindow.setTouchable(true);
+						popupWindow.setBackgroundDrawable(new BitmapDrawable());
+						final View pvu = popupWindow.getContentView();
+
+
+						listView = (ListView) pvu.findViewById(R.id.list);
+// Attach the adapter to a ListView
+						//listView = (ListView) pvu.findViewById(R.id.list);
+						//listView.setAdapter(adapter);
+
+						//mRecyclerView = (RecyclerView) pvu.findViewById(R.id.list);
+						final String url = "http://philcare.com.ph/api/heyphil/api.php/hints";
+						new cardInfo().execute(url);
+						popupWindow.setTouchInterceptor(new View.OnTouchListener()
+						{
+							@Override
+							public boolean onTouch(View v, MotionEvent event)
+							{
+
+								switch(event.getAction())
+								{
+									case MotionEvent.ACTION_DOWN:
+										x1 = event.getX();
+										break;
+									case MotionEvent.ACTION_UP:
+										x2 = event.getX();
+										float deltaX = x2 - x1;
+
+										if (Math.abs(deltaX) > MIN_DISTANCE)
+										{
+											// Left to Right swipe action
+											if (x2 > x1) {
+											}
+											else
+											{
+												feedItemList.clear();
+												Log.d("POPUP_WINDOW", "v: "+v.getTag() + " | event: "+event.getAction());
+												popupWindow.dismiss(); return true;
+											}
+
+										}
+
+								}
+								return false;
+							}
+						});
+						findViewById(R.id.heyphil).post(new Runnable() {
+
+							@Override
+							public void run() {
+								// TODO Auto-generated method stub
+								popupWindow.showAtLocation(findViewById(R.id.heyphil), Gravity.CENTER, 0, 0);
+
+							}
+						});
+
+
+						System.out.println("Downloading data from below url");
 					}
 
 					// Right to left swipe action

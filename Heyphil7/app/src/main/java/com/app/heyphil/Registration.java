@@ -114,7 +114,7 @@ public class Registration extends Activity {
                 progress.show();
                 Profile profile = Profile.getCurrentProfile();
                 if (profile != null) {
-                    facebook_id=profile.getId();
+                    //facebook_id=profile.getId();
                     f_name=profile.getFirstName();
                     m_name=profile.getMiddleName();
                     l_name=profile.getLastName();
@@ -135,6 +135,7 @@ public class Registration extends Activity {
                                     et_firstname.setText(f_name);
                                     et_lastname.setText(l_name);
                                     et_mi.setText(m_name);
+                                    facebook_id=object.getString("id");
                                     et_email.setText(object.getString("email"));
                                     registrationUrl="https://apps.philcare.com.ph/PhilcareWatsonTest/Members.svc/PhilcareWatsonMemberRegistration/?fromFB=1&email="+object.getString("email")+"&certNo="+Certno+"&userID="+facebook_id+"&profilePicURL="+profile_image+"&mobileNo=&userName="+object.getString("email")+"=&password=philcare&bldgNo=&street=&brgy=&city=&province=&homeNo=&birthDate="+bday+"&firstName="+et_firstname.getText().toString()+"&lastName="+et_lastname.getText().toString();
                                     System.out.println("URL"+registrationUrl);

@@ -544,6 +544,12 @@ public class MainActivity<ListData> extends Activity implements ConnectionCallba
 			public void onClick(View v) {
 				tv_favorite.setText("Favorited!");
 				tv_favorite.setCompoundDrawablesWithIntrinsicBounds(0,0,R.drawable.favicon,0);
+				HashMap<String, String> favorite = new HashMap<String, String>();
+				favorite.put("ProviderName", Data.name1.get(index));
+				favorite.put("ProviderAddress", Data.address.get(index));
+				favorite.put("ProviderContact", Data.tel.get(index));
+				favorite.put("ProviderCode",Data.pcode.get(index));
+				Data.favorite.add(favorite);
 			}
 		});
 		text=""+tv_provider.getText().toString()+" is "+distance+" away from your current location. It takes "+duration+" to travel to get there!";
